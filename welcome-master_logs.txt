@@ -1,0 +1,275 @@
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+5 package(s) needed for security, out of 8 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-30-4-144 ~]$ free -h
+              total        used        free      shared  buff/cache   available
+Mem:           1.9G         49M        1.6G        384K        338M        1.7G
+Swap:            0B          0B          0B
+[ec2-user@ip-172-30-4-144 ~]$ sudo vi /etc/hosts
+[ec2-user@ip-172-30-4-144 ~]$ ping master.pulkit.co
+PING master.pulkit.co (172.30.4.144) 56(84) bytes of data.
+64 bytes from master.pulkit.co (172.30.4.144): icmp_seq=1 ttl=255 time=0.020 ms
+64 bytes from master.pulkit.co (172.30.4.144): icmp_seq=2 ttl=255 time=0.029 ms
+64 bytes from master.pulkit.co (172.30.4.144): icmp_seq=3 ttl=255 time=0.028 ms
+64 bytes from master.pulkit.co (172.30.4.144): icmp_seq=4 ttl=255 time=0.029 ms
+^C
+--- master.pulkit.co ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3058ms
+rtt min/avg/max/mdev = 0.020/0.026/0.029/0.006 ms
+[ec2-user@ip-172-30-4-144 ~]$
+[ec2-user@ip-172-30-4-144 ~]$ ping agent.pulkit.co
+PING agent.pulkit.co (172.30.4.180) 56(84) bytes of data.
+64 bytes from agent.pulkit.co (172.30.4.180): icmp_seq=1 ttl=255 time=0.542 ms
+64 bytes from agent.pulkit.co (172.30.4.180): icmp_seq=2 ttl=255 time=1.40 ms
+64 bytes from agent.pulkit.co (172.30.4.180): icmp_seq=3 ttl=255 time=0.474 ms
+64 bytes from agent.pulkit.co (172.30.4.180): icmp_seq=4 ttl=255 time=1.56 ms
+64 bytes from agent.pulkit.co (172.30.4.180): icmp_seq=5 ttl=255 time=0.493 ms
+^Z
+[3]+  Stopped                 ping agent.pulkit.co
+[ec2-user@ip-172-30-4-144 ~]$ ping master.pulkit.co
+PING master.pulkit.co (172.30.4.144) 56(84) bytes of data.
+64 bytes from master.pulkit.co (172.30.4.144): icmp_seq=1 ttl=255 time=0.025 ms
+64 bytes from master.pulkit.co (172.30.4.144): icmp_seq=2 ttl=255 time=0.028 ms
+64 bytes from master.pulkit.co (172.30.4.144): icmp_seq=3 ttl=255 time=0.027 ms
+64 bytes from master.pulkit.co (172.30.4.144): icmp_seq=4 ttl=255 time=0.027 ms
+^Z
+[4]+  Stopped                 ping master.pulkit.co
+[ec2-user@ip-172-30-4-144 ~]$ sudo yum -y install ntp ntpdate
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+amzn2-core                                                 | 2.4 kB  00:00:00
+Resolving Dependencies
+--> Running transaction check
+---> Package ntp.x86_64 0:4.2.6p5-28.amzn2.2.2 will be installed
+--> Processing Dependency: libopts.so.25()(64bit) for package: ntp-4.2.6p5-28.amzn 2.2.2.x86_64
+---> Package ntpdate.x86_64 0:4.2.6p5-28.amzn2.2.2 will be installed
+--> Running transaction check
+---> Package autogen-libopts.x86_64 0:5.18-5.amzn2.0.2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==================================================================================
+ Package              Arch        Version                   Repository       Size
+==================================================================================
+Installing:
+ ntp                  x86_64      4.2.6p5-28.amzn2.2.2      amzn2-core      552 k
+ ntpdate              x86_64      4.2.6p5-28.amzn2.2.2      amzn2-core       86 k
+Installing for dependencies:
+ autogen-libopts      x86_64      5.18-5.amzn2.0.2          amzn2-core       67 k
+
+Transaction Summary
+==================================================================================
+Install  2 Packages (+1 Dependent package)
+
+Total download size: 705 k
+Installed size: 1.6 M
+Downloading packages:
+(1/3): autogen-libopts-5.18-5.amzn2.0.2.x86_64.rpm         |  67 kB  00:00:00
+(2/3): ntp-4.2.6p5-28.amzn2.2.2.x86_64.rpm                 | 552 kB  00:00:00
+(3/3): ntpdate-4.2.6p5-28.amzn2.2.2.x86_64.rpm             |  86 kB  00:00:00
+----------------------------------------------------------------------------------
+Total                                                4.7 MB/s | 705 kB  00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : ntpdate-4.2.6p5-28.amzn2.2.2.x86_64                            1/3
+  Installing : autogen-libopts-5.18-5.amzn2.0.2.x86_64                        2/3
+  Installing : ntp-4.2.6p5-28.amzn2.2.2.x86_64                                3/3
+  Verifying  : ntp-4.2.6p5-28.amzn2.2.2.x86_64                                1/3
+  Verifying  : autogen-libopts-5.18-5.amzn2.0.2.x86_64                        2/3
+  Verifying  : ntpdate-4.2.6p5-28.amzn2.2.2.x86_64                            3/3
+
+Installed:
+  ntp.x86_64 0:4.2.6p5-28.amzn2.2.2     ntpdate.x86_64 0:4.2.6p5-28.amzn2.2.2
+
+Dependency Installed:
+  autogen-libopts.x86_64 0:5.18-5.amzn2.0.2
+
+Complete!
+[ec2-user@ip-172-30-4-144 ~]$ sudo ntpdate 0.centos.pool.ntp.org
+11 Mar 19:34:15 ntpdate[3526]: adjust time server 216.6.2.70 offset -0.000014 sec
+[ec2-user@ip-172-30-4-144 ~]$ sudo systemctl start ntpd
+[ec2-user@ip-172-30-4-144 ~]$ sudo systemctl enable ntpd
+Created symlink from /etc/systemd/system/multi-user.target.wants/ntpd.service to / usr/lib/systemd/system/ntpd.service.
+[ec2-user@ip-172-30-4-144 ~]$ sudo rpm -Uvh https://yum.puppetlabs.com/puppet5/pup pet5-release-el-7.noarch.rpm
+Retrieving https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+warning: /var/tmp/rpm-tmp.fvWiXD: Header V4 RSA/SHA256 Signature, key ID ef8d349f:  NOKEY
+Preparing...                          ################################# [100%]
+Updating / installing...
+   1:puppet5-release-5.0.0-4.el7      ################################# [100%]
+[ec2-user@ip-172-30-4-144 ~]$ sudo reboot
+
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Mon Mar 11 19:17:39 2019 from 103.83.148.206
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+5 package(s) needed for security, out of 8 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-30-4-144 ~]$ sudo yum -y install puppetserver
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package puppetserver.noarch 0:5.3.7-1.el7 will be installed
+--> Processing Dependency: puppet-agent >= 4.99.0 for package: puppetserver-5.3.7- 1.el7.noarch
+--> Processing Dependency: java-1.8.0-openjdk-headless for package: puppetserver-5 .3.7-1.el7.noarch
+--> Running transaction check
+---> Package java-1.8.0-openjdk-headless.x86_64 1:1.8.0.191.b12-0.amzn2 will be in stalled
+--> Processing Dependency: tzdata-java >= 2015d for package: 1:java-1.8.0-openjdk- headless-1.8.0.191.b12-0.amzn2.x86_64
+--> Processing Dependency: copy-jdk-configs >= 2.2 for package: 1:java-1.8.0-openj dk-headless-1.8.0.191.b12-0.amzn2.x86_64
+--> Processing Dependency: lksctp-tools(x86-64) for package: 1:java-1.8.0-openjdk- headless-1.8.0.191.b12-0.amzn2.x86_64
+--> Processing Dependency: jpackage-utils for package: 1:java-1.8.0-openjdk-headle ss-1.8.0.191.b12-0.amzn2.x86_64
+---> Package puppet-agent.x86_64 0:5.5.10-1.el7 will be installed
+--> Running transaction check
+---> Package copy-jdk-configs.noarch 0:3.3-10.amzn2 will be installed
+---> Package javapackages-tools.noarch 0:3.4.1-11.amzn2 will be installed
+--> Processing Dependency: python-javapackages = 3.4.1-11.amzn2 for package: javap ackages-tools-3.4.1-11.amzn2.noarch
+--> Processing Dependency: libxslt for package: javapackages-tools-3.4.1-11.amzn2. noarch
+---> Package lksctp-tools.x86_64 0:1.0.17-2.amzn2.0.2 will be installed
+---> Package tzdata-java.noarch 0:2018i-1.amzn2 will be installed
+--> Running transaction check
+---> Package libxslt.x86_64 0:1.1.28-5.amzn2.0.2 will be installed
+---> Package python-javapackages.noarch 0:3.4.1-11.amzn2 will be installed
+--> Processing Dependency: python-lxml for package: python-javapackages-3.4.1-11.a mzn2.noarch
+--> Running transaction check
+---> Package python-lxml.x86_64 0:3.2.1-4.amzn2.0.2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+==================================================================================
+ Package                      Arch    Version                   Repository   Size
+==================================================================================
+Installing:
+ puppetserver                 noarch  5.3.7-1.el7               puppet5      54 M
+Installing for dependencies:
+ copy-jdk-configs             noarch  3.3-10.amzn2              amzn2-core   21 k
+ java-1.8.0-openjdk-headless  x86_64  1:1.8.0.191.b12-0.amzn2   amzn2-core   32 M
+ javapackages-tools           noarch  3.4.1-11.amzn2            amzn2-core   73 k
+ libxslt                      x86_64  1.1.28-5.amzn2.0.2        amzn2-core  243 k
+ lksctp-tools                 x86_64  1.0.17-2.amzn2.0.2        amzn2-core   88 k
+ puppet-agent                 x86_64  5.5.10-1.el7              puppet5      20 M
+ python-javapackages          noarch  3.4.1-11.amzn2            amzn2-core   31 k
+ python-lxml                  x86_64  3.2.1-4.amzn2.0.2         amzn2-core  1.0 M
+ tzdata-java                  noarch  2018i-1.amzn2             amzn2-core  187 k
+
+Transaction Summary
+==================================================================================
+Install  1 Package (+9 Dependent packages)
+
+Total download size: 107 M
+Installed size: 182 M
+Downloading packages:
+(1/10): copy-jdk-configs-3.3-10.amzn2.noarch.rpm           |  21 kB  00:00:00
+(2/10): javapackages-tools-3.4.1-11.amzn2.noarch.rpm       |  73 kB  00:00:00
+(3/10): libxslt-1.1.28-5.amzn2.0.2.x86_64.rpm              | 243 kB  00:00:00
+(4/10): lksctp-tools-1.0.17-2.amzn2.0.2.x86_64.rpm         |  88 kB  00:00:00
+(5/10): python-javapackages-3.4.1-11.amzn2.noarch.rpm      |  31 kB  00:00:00
+(6/10): python-lxml-3.2.1-4.amzn2.0.2.x86_64.rpm           | 1.0 MB  00:00:00
+(7/10): tzdata-java-2018i-1.amzn2.noarch.rpm               | 187 kB  00:00:00
+warning: /var/cache/yum/x86_64/2/puppet5/packages/puppet-agent-5.5.10-1.el7.x86_64 .rpm: Header V4 RSA/SHA256 Signature, key ID ef8d349f: NOKEY
+Public key for puppet-agent-5.5.10-1.el7.x86_64.rpm is not installed
+(8/10): puppet-agent-5.5.10-1.el7.x86_64.rpm               |  20 MB  00:00:01
+(9/10): java-1.8.0-openjdk-headless-1.8.0.191.b12-0.amzn2. |  32 MB  00:00:02
+(10/10): puppetserver-5.3.7-1.el7.noarch.rpm               |  54 MB  00:00:02
+----------------------------------------------------------------------------------
+Total                                                 37 MB/s | 107 MB  00:02
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-puppet5-release
+Importing GPG key 0xEF8D349F:
+ Userid     : "Puppet, Inc. Release Key (Puppet, Inc. Release Key) <release@puppet .com>"
+ Fingerprint: 6f6b 1550 9cf8 e59e 6e46 9f32 7f43 8280 ef8d 349f
+ Package    : puppet5-release-5.0.0-4.el7.noarch (installed)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-puppet5-release
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+Warning: RPMDB altered outside of yum.
+  Installing : libxslt-1.1.28-5.amzn2.0.2.x86_64                             1/10
+  Installing : python-lxml-3.2.1-4.amzn2.0.2.x86_64                          2/10
+  Installing : python-javapackages-3.4.1-11.amzn2.noarch                     3/10
+  Installing : javapackages-tools-3.4.1-11.amzn2.noarch                      4/10
+  Installing : tzdata-java-2018i-1.amzn2.noarch                              5/10
+  Installing : puppet-agent-5.5.10-1.el7.x86_64                              6/10
+  Installing : copy-jdk-configs-3.3-10.amzn2.noarch                          7/10
+  Installing : lksctp-tools-1.0.17-2.amzn2.0.2.x86_64                        8/10
+  Installing : 1:java-1.8.0-openjdk-headless-1.8.0.191.b12-0.amzn2.x86_64    9/10
+  Installing : puppetserver-5.3.7-1.el7.noarch                              10/10
+usermod: no changes
+  Verifying  : puppetserver-5.3.7-1.el7.noarch                               1/10
+  Verifying  : lksctp-tools-1.0.17-2.amzn2.0.2.x86_64                        2/10
+  Verifying  : libxslt-1.1.28-5.amzn2.0.2.x86_64                             3/10
+  Verifying  : copy-jdk-configs-3.3-10.amzn2.noarch                          4/10
+  Verifying  : 1:java-1.8.0-openjdk-headless-1.8.0.191.b12-0.amzn2.x86_64    5/10
+  Verifying  : python-javapackages-3.4.1-11.amzn2.noarch                     6/10
+  Verifying  : puppet-agent-5.5.10-1.el7.x86_64                              7/10
+  Verifying  : python-lxml-3.2.1-4.amzn2.0.2.x86_64                          8/10
+  Verifying  : tzdata-java-2018i-1.amzn2.noarch                              9/10
+  Verifying  : javapackages-tools-3.4.1-11.amzn2.noarch                     10/10
+
+Installed:
+  puppetserver.noarch 0:5.3.7-1.el7
+
+Dependency Installed:
+  copy-jdk-configs.noarch 0:3.3-10.amzn2
+  java-1.8.0-openjdk-headless.x86_64 1:1.8.0.191.b12-0.amzn2
+  javapackages-tools.noarch 0:3.4.1-11.amzn2
+  libxslt.x86_64 0:1.1.28-5.amzn2.0.2
+  lksctp-tools.x86_64 0:1.0.17-2.amzn2.0.2
+  puppet-agent.x86_64 0:5.5.10-1.el7
+  python-javapackages.noarch 0:3.4.1-11.amzn2
+  python-lxml.x86_64 0:3.2.1-4.amzn2.0.2
+  tzdata-java.noarch 0:2018i-1.amzn2
+
+Complete!
+[ec2-user@ip-172-30-4-144 ~]$ sudo vi /etc/sysconfig/puppetserver
+[ec2-user@ip-172-30-4-144 ~]$ cd /etc/puppetlabs/puppet
+[ec2-user@ip-172-30-4-144 puppet]$ ls
+auth.conf  hiera.yaml  puppet.conf  ssl
+[ec2-user@ip-172-30-4-144 puppet]$ sudo vi puppet.conf
+[ec2-user@ip-172-30-4-144 puppet]$ sudo systemctl start puppetserver
+[ec2-user@ip-172-30-4-144 puppet]$ sudo systemctl enable puppetserver
+Created symlink from /etc/systemd/system/multi-user.target.wants/puppetserver.serv ice to /usr/lib/systemd/system/puppetserver.service.
+[ec2-user@ip-172-30-4-144 puppet]$ sudo /opt/puppetlabs/bin/puppet cert list
+Warning: `puppet cert` is deprecated and will be removed in a future release.
+   (location: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:37 0:in `run')
+  "agent.pulkit.co" (SHA256) 1C:A6:7C:43:DF:41:FE:5C:22:D0:48:54:B9:9F:F2:8A:6B:D4 :67:67:82:C3:BF:A5:F4:8C:FD:8B:B9:32:D8:92
+[ec2-user@ip-172-30-4-144 puppet]$ sudo /opt/puppetlabs/bin/puppet cert sign agent .pulkit.co
+Warning: `puppet cert` is deprecated and will be removed in a future release.
+   (location: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:37 0:in `run')
+Signing Certificate Request for:
+  "agent.pulkit.co" (SHA256) 1C:A6:7C:43:DF:41:FE:5C:22:D0:48:54:B9:9F:F2:8A:6B:D4 :67:67:82:C3:BF:A5:F4:8C:FD:8B:B9:32:D8:92
+Notice: Signed certificate request for agent.pulkit.co
+Notice: Removing file Puppet::SSL::CertificateRequest agent.pulkit.co at '/etc/pup petlabs/puppet/ssl/ca/requests/agent.pulkit.co.pem'
+[ec2-user@ip-172-30-4-144 puppet]$ cd /etc/puppetlabs/code/
+[ec2-user@ip-172-30-4-144 code]$ cd ..
+[ec2-user@ip-172-30-4-144 puppetlabs]$ ls
+code  mcollective  puppet  puppetserver  pxp-agent
+[ec2-user@ip-172-30-4-144 puppetlabs]$ cd code/
+[ec2-user@ip-172-30-4-144 code]$ ls
+environments  modules
+[ec2-user@ip-172-30-4-144 code]$ cd modules/
+[ec2-user@ip-172-30-4-144 modules]$ ls
+[ec2-user@ip-172-30-4-144 modules]$ cd ..
+[ec2-user@ip-172-30-4-144 code]$ cd environments/
+[ec2-user@ip-172-30-4-144 environments]$ ls
+production
+[ec2-user@ip-172-30-4-144 environments]$ cd production/
+[ec2-user@ip-172-30-4-144 production]$ ls
+data  environment.conf  hiera.yaml  manifests  modules
+[ec2-user@ip-172-30-4-144 production]$ cd manifests/
+[ec2-user@ip-172-30-4-144 manifests]$ ls
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+[ec2-user@ip-172-30-4-144 manifests]$
