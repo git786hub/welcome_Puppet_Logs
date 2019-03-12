@@ -1,0 +1,177 @@
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Mon Mar 11 19:37:47 2019 from 103.83.148.206
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-30-4-144 ~]$ sudo systemctl status puppetserver
+● puppetserver.service - puppetserver Service
+   Loaded: loaded (/usr/lib/systemd/system/puppetserver.service; enabled; vendor p reset: disabled)
+   Active: active (running) since Tue 2019-03-12 04:26:42 UTC; 1h 43min ago
+  Process: 3033 ExecStart=/opt/puppetlabs/server/apps/puppetserver/bin/puppetserve r start (code=exited, status=0/SUCCESS)
+ Main PID: 3048 (java)
+    Tasks: 36 (limit: 4915)
+   CGroup: /system.slice/puppetserver.service
+           └─3048 /usr/bin/java -Xms1g -Xmx1g -Djruby.logger.class=com.puppetla...
+
+Mar 12 04:25:37 ip-172-30-4-144.ec2.internal systemd[1]: Starting puppetserver ...
+Mar 12 04:26:42 ip-172-30-4-144.ec2.internal systemd[1]: Started puppetserver S...
+Hint: Some lines were ellipsized, use -l to show in full.
+[ec2-user@ip-172-30-4-144 ~]$  puppet module install puppetlabs-java
+Notice: Preparing to install into /home/ec2-user/.puppetlabs/etc/code/modules ...
+Notice: Created target directory /home/ec2-user/.puppetlabs/etc/code/modules
+Notice: Downloading from https://forgeapi.puppet.com ...
+Notice: Installing -- do not interrupt ...
+/home/ec2-user/.puppetlabs/etc/code/modules
+└─┬ puppetlabs-java (v3.3.0)
+  ├── puppet-archive (v3.2.1)
+  └── puppetlabs-stdlib (v5.2.0)
+[ec2-user@ip-172-30-4-144 ~]$ puppet module install puppetlabs-tomcat
+Notice: Preparing to install into /home/ec2-user/.puppetlabs/etc/code/modules ...
+Notice: Downloading from https://forgeapi.puppet.com ...
+Notice: Installing -- do not interrupt ...
+/home/ec2-user/.puppetlabs/etc/code/modules
+└─┬ puppetlabs-tomcat (v2.5.0)
+  ├── puppet-archive (v3.2.1)
+  ├─┬ puppetlabs-concat (v5.3.0)
+  │ └── puppetlabs-translate (v1.2.0)
+  └── puppetlabs-stdlib (v5.2.0)
+[ec2-user@ip-172-30-4-144 ~]$ sudo vi /etc/puppet/manifests/site.pp
+[ec2-user@ip-172-30-4-144 production]$ ls
+data  environment.conf  hiera.yaml  manifests  modules
+Authenticating with public key "imported-openssh-key"
+Last login: Tue Mar 12 06:08:19 2019 from 192.8.162.212
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-30-4-144 ~]$ ls
+[ec2-user@ip-172-30-4-144 ~]$
+[ec2-user@ip-172-30-4-144 ~]$ ls -la
+total 20
+drwx------ 4 ec2-user ec2-user  130 Mar 12 06:10 .
+drwxr-xr-x 3 root     root       22 Mar 11 19:16 ..
+-rw------- 1 ec2-user ec2-user 1116 Mar 11 20:53 .bash_history
+-rw-r--r-- 1 ec2-user ec2-user   18 Jul 27  2018 .bash_logout
+-rw-r--r-- 1 ec2-user ec2-user  193 Jul 27  2018 .bash_profile
+-rw-r--r-- 1 ec2-user ec2-user  231 Jul 27  2018 .bashrc
+drwxrwxr-x 5 ec2-user ec2-user   39 Mar 12 06:10 .puppetlabs
+drwx------ 2 ec2-user ec2-user   29 Mar 11 19:16 .ssh
+-rw------- 1 ec2-user ec2-user  580 Mar 11 20:04 .viminfo
+[ec2-user@ip-172-30-4-144 ~]$ cd .puppetlabs/
+[ec2-user@ip-172-30-4-144 .puppetlabs]$ ls
+etc  opt  var
+[ec2-user@ip-172-30-4-144 .puppetlabs]$ cd etc/
+[ec2-user@ip-172-30-4-144 etc]$ ls
+code
+[ec2-user@ip-172-30-4-144 etc]$ cd code/
+[ec2-user@ip-172-30-4-144 code]$ ls
+modules
+[ec2-user@ip-172-30-4-144 code]$ cd modules/
+[ec2-user@ip-172-30-4-144 modules]$ ls
+archive  concat  java  stdlib  tomcat  translate
+[ec2-user@ip-172-30-4-144 modules]$ pwd
+/home/ec2-user/.puppetlabs/etc/code/modules
+[ec2-user@ip-172-30-4-144 modules]$ sudo cp -r /etc/puppetlabs/code/modules/.  /etc/puppetlabs/code/environments/production/modules/
+[ec2-user@ip-172-30-4-144 modules]$ ls
+java
+[ec2-user@ip-172-30-4-144 modules]$ cd ..
+[ec2-user@ip-172-30-4-144 production]$ ls
+data  environment.conf  hiera.yaml  manifests  modules
+[ec2-user@ip-172-30-4-144 production]$ cd manifests/
+[ec2-user@ip-172-30-4-144 manifests]$ ls
+site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ puppet parser validate site.pp
+Error: Could not parse for environment production: Syntax error at '' (file: /etc/puppetlabs/code/environments/production/manifests/site.pp, line: 2, column: 10)
+[ec2-user@ip-172-30-4-144 manifests]$ puppet parser validate site.pp
+Error: Could not parse for environment production: Syntax error at '' (file: /etc/puppetlabs/code/environments/production/manifests/site.pp, line: 2, column: 10)
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ puppet parser validate site.pp
+Error: Could not parse for environment production: Syntax error at '=' (file: /etc/puppetlabs/code/environments/production/manifests/site.pp, line: 3, column: 10)
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ puppet parser validate site.pp
+Error: Could not parse for environment production: Syntax error at ':' (file: /etc/puppetlabs/code/environments/production/manifests/site.pp, line: 3, column: 39)
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ puppet parser validate site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+
+[ec2-user@ip-172-30-4-144 manifests]$ cd
+[ec2-user@ip-172-30-4-144~]$  sudo cp -r /home/ec2-user/.puppetlabs/etc/code/modules/.  /etc/puppetlabs/code/environments/production/modules/
+[ec2-user@ip-172-30-4-144 modules]$ ls
+archive  concat  java  stdlib  tomcat  translate
+[ec2-user@ip-172-30-4-144 modules]$ cd tomcat/
+[ec2-user@ip-172-30-4-144 tomcat]$ ls
+CHANGELOG.md     Gemfile     MAINTAINERS.md  Rakefile      spec
+checksums.json   HISTORY.md  manifests       README.md     templates
+CONTRIBUTING.md  LICENSE     metadata.json   readmes
+examples         locales     NOTICE          REFERENCE.md
+[ec2-user@ip-172-30-4-144 tomcat]$ cd ..
+[ec2-user@ip-172-30-4-144 modules]$
+[ec2-user@ip-172-30-4-144 modules]$
+[ec2-user@ip-172-30-4-144 modules]$
+[ec2-user@ip-172-30-4-144 modules]$ ls
+archive  concat  java  stdlib  tomcat  translate
+[ec2-user@ip-172-30-4-144 modules]$
+[ec2-user@ip-172-30-4-144 modules]$
+
+
+login as: ec2-user
+Authenticating with public key "imported-openssh-key"
+Last login: Tue Mar 12 07:16:55 2019 from 1.187.119.138
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-30-4-144 ~]$ cd /etc/puppetlabs/code/environments/production/manifests/
+[ec2-user@ip-172-30-4-144 manifests]$ ls
+site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ sudo vi site.pp
+[ec2-user@ip-172-30-4-144 manifests]$ n
+-bash: n: command not found
+[ec2-user@ip-172-30-4-144 manifests]$
+[ec2-user@ip-172-30-4-144 manifests]$
+[ec2-user@ip-172-30-4-144 manifests]$
+[ec2-user@ip-172-30-4-144 manifests]$
+[ec2-user@ip-172-30-4-144 manifests]$ cd
+[ec2-user@ip-172-30-4-144 ~]$ cd .puppetlabs/
+[ec2-user@ip-172-30-4-144 .puppetlabs]$ ls
+etc  opt  var
+[ec2-user@ip-172-30-4-144 .puppetlabs]$ cd etc/
+[ec2-user@ip-172-30-4-144 etc]$ ls
+code
+[ec2-user@ip-172-30-4-144 etc]$ cd code/
+[ec2-user@ip-172-30-4-144 code]$ ls
+modules
+[ec2-user@ip-172-30-4-144 code]$ cd modules/
+[ec2-user@ip-172-30-4-144 modules]$ ls
+archive  concat  java  stdlib  tomcat  translate
+[ec2-user@ip-172-30-4-144 modules]$ pwd
+/home/ec2-user/.puppetlabs/etc/code/modules
+[ec2-user@ip-172-30-4-144 modules]$ ls
+archive  concat  java  stdlib  tomcat  translate
+[ec2-user@ip-172-30-4-144 modules]$ cd /home/ec2-user/.puppetlabs/etc/code/modules
+[ec2-user@ip-172-30-4-144 modules]$ ls
+archive  concat  java  stdlib  tomcat  translate
+[ec2-user@ip-172-30-4-144 modules]$
+[ec2-user@ip-172-30-4-144 modules]$
+[ec2-user@ip-172-30-4-144 modules]$ cd ..
+[ec2-user@ip-172-30-4-144 code]$ cd
+[ec2-user@ip-172-30-4-144 ~]$ cd /etc/puppetlabs/code/environments/production/modu les/
+[ec2-user@ip-172-30-4-144 modules]$ ls
+archive  concat  java  stdlib  tomcat  translate
+[ec2-user@ip-172-30-4-144 modules]$ cd ..
+[ec2-user@ip-172-30-4-144 production]$
+[ec2-user@ip-172-30-4-144 production]$ cd manifests/
+[ec2-user@ip-172-30-4-144 manifests]$ ls
+site.pp
