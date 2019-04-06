@@ -1,4 +1,5 @@
 #!/bin/bash
+#pulkit
 export Slave=0
 sudo yum install java -y
 sudo chmod +x /home/ec2-user/script.sh
