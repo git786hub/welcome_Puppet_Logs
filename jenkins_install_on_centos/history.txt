@@ -1,0 +1,335 @@
+    1  sudo yum install jenkins
+    2  sudo yum install java-1.8.0-openjdk-devel
+    3  curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
+    4  sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+    5  sudo yum install jenkins
+    6  sudo systemctl start jenkins
+    7  systemctl status jenkins
+    8  sudo systemctl enable jenkins
+    9  sudo vi /var/lib/jenkins/secrets/initialAdminPassword
+   10  sudo vi /var/lib/jenkins/.ssh/known_hosts
+   11  cd 
+   12  ls
+   13  ls -la
+   14  cd .ssh/
+   15  ls
+   16  vi authorized_keys 
+   17  sudo vi id_rsa
+   18  sudo chmod 777 id_rsa 
+   19  ssh -i id_rsa ec2-user@35.174.204.74
+   20  ls
+   21  cd
+   22  vi authorized_keys 
+   23  /var/lib/jenkins/.ssh/
+   24  cd /var/lib/jenkins/.ssh/
+   25  sudo vi /var/lib/jenkins/.ssh/known_hosts
+   26  cd  sh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDEnn8Z+PUDjAJLZ+l2VmYWudbGbAfsZEv1xKeiuNiog0N5NNGyfW0nFZDyL2taa2/F5Z7aXGbBgAFbRNfiyePkCGIA2c9iTTkVYIiUcMc63YIHgtK4dZJWThXB5HHDbS5b8gKCXPSpgihYGYlYRAxYxRPYTUw08+GYJ3XgTUlerlFJ8lLEcO9ujJWlqtjwIviqvBWT5mQRfz7PXwMgZ6gO2JM4C/GeuEVO5uwJ4Pu4vXpU5090J3typ8047xQxxkurDDYEJ/MwHofBSAqko/uEwBgWAcrVvShqIsR0ermoXPcSB5uhwYQTbAMBTefjWFQ9lZ0Kp61fnBf9DuuYTz+1 welcome
+   27  cd \ /var/lib/jenkins/.ssh/
+   28  cd /var/lib/jenkins/.ssh/
+   29  cd .ssh/
+   30  ls
+   31  vi known_hosts 
+   32  vi authorized_keys 
+   33  vi known_hosts 
+   34  vi authorized_keys 
+   35  vi known_hosts 
+   36  pwd
+   37  ls
+   38  cd ..
+   39  sudo cp .ssh /var/lib/jenkins/
+   40  sudo cp -r .ssh /var/lib/jenkins/
+   41  cd /var/lib/jenkins/
+   42  ls
+   43  cd .ssh/
+   44  ls
+   45  ls -la
+   46   sudo chmod 777 .ssh/
+   47  ls -la
+   48  sudo chown ec2-user:ec2-user .ssh
+   49  ls -la
+   50  cd /var/
+   51  ls
+   52  cd opt/
+   53  ls
+   54  cd ..
+   55  cd /usr/
+   56  ls
+   57  whereis jenkins
+   58  cd/usr/lib/
+   59  cd /usr/lib/
+   60  ls
+   61  cd jenkins/
+   62  ls
+   63  cd ..
+   64  cd /etc/sysconfig/
+   65  cd je
+   66  ls
+   67  vi jenkins 
+   68  sudo vi jenkins 
+   69  cd /var/lib/jenkins/
+   70  ls
+   71  cd workspace/
+   72  ls
+   73  cd p
+   74  cd Puppet/
+   75  ls
+   76  ls -la
+   77  ls
+   78  cd ..
+   79  ls
+   80  cd Puppet/
+   81  LS
+   82  ls
+   83  cd /pulkit/workspace/Puppet/1Create Puppet_Master
+   84  cd /pulkit/workspace/Puppet/
+   85  cd 
+   86  cd /
+   87  ls
+   88  cd /var/lib/jenkins/
+   89  ls
+   90  cd workspace/
+   91  ls
+   92  cd Puppet/
+   93  ls
+   94  def abcd= "1234"
+   95  echo DNS_name
+   96  echo "DNS_Name"
+   97  echo $DNS_Name
+   98  DNS_Name = "abcd"
+   99  $DNS_Name = "abcd"
+  100  $DNS_Name="abcd"
+  101  ac="av"
+  102  DNS_Name="abcd"
+  103  echo $DNS_Name
+  104  cd 
+  105   cd /var/lib/jenkins/workspace/Puppet/demo4
+  106  ls
+  107  abcd="124"
+  108  echo $abcd
+  109  cd
+  110  echo $abcd
+  111  echo $DNS_Name
+  112  pwd
+  113  sudo yum install groovy
+  114  groovy --version
+  115  whereis groovy
+  116  cd /usr/bin/
+  117  ls
+  118  echo $DNS_Name
+  119  echo $q
+  120  echo $DNS_Nmae
+  121  echo $DNS_Namee
+  122  echo $DNS_Name
+  123  cd /var/lib/jenkins/workspace/Puppet/demo4
+  124  ls
+  125  echo $DNS_Name
+  126  echo $(DNS_Name)
+  127  echo ${DNS_Name}
+  128  echo AOEU=$(echo aoeu) > propsfile
+  129  ls
+  130  vi propsfile 
+  131  echo AOEU=$(echo aoeu)
+  132  AOEU=$(echo aoeu)
+  133  echo $AOEU
+  134  AOEU=$(echo DNS_Name)
+  135  echo $AOEU
+  136  AOEU=$(echo 12)
+  137  echo $AOEU
+  138  git
+  139  var AOEU=$(echo 12)
+  140  VAR  AOEU=$(echo 12)
+  141  vi  /var/lib/jenkins/workspace/envinject/propsfile
+  142  pwd
+  143  cd  /var/lib/jenkins/workspace/envinject
+  144  ls
+  145  vi  /var/lib/jenkins/workspace/envinject/propsfile
+  146  vi /var/lib/jenkins/workspace/envinject/propsfile
+  147  cd /var/lib/jenkins/workspace/ENV-Inject plugin/envinject
+  148  ls
+  149  vi propsfile 
+  150  cd /var/lib/jenkins/workspace/ENV-Inject plugin/envinject
+  151  cd 
+  152  cd /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+  153  ls
+  154  vi propsfile 
+  155  ls
+  156  vi propsfile 
+  157  pwd
+  158  ls
+  159  vi propsfile 
+  160  cd
+  161  cd /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+  162  ls
+  163  vi propsfile 
+  164  ls
+  165  vi propsfile 
+  166  ls
+  167  vi propsfile 
+  168  ls
+  169  cd
+  170  cd /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+  171  ls
+  172  vi o
+  173  vi propsfile 
+  174  cd /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+  175  ls
+  176  vi propsfile 
+  177  vi propsfile.properties
+  178  ls
+  179  sudo vi propsfile.properties
+  180  ls
+  181  vi propsfile.properties 
+  182  sudo chmod 777 propsfile.properties 
+  183  vi propsfile.properties 
+  184  pwd
+  185  ls
+  186  vi propsfile
+  187  pwd
+  188  ls
+  189  sudo vi propsfile1
+  190  ls
+  191  sudo vi propsfile1
+  192  ls
+  193  cp /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile1 /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile1
+  194  cp /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile1 /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile
+  195  sudo cp /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile1 /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile
+  196  ls
+  197  vi propsfile1
+  198  cd /var/lib/jenkins/workspace/ENV-Inject_pluginvinject
+  199  cd /var/lib/jenkins/workspace/ENV-Inject_plugin/vinject
+  200  cd /var/lib/jenkins/workspace/ENV-Inject_plugin
+  201  ls
+  202  cd envinject/
+  203  ls
+  204  sudo vi propsfile
+  205  sudo vi propsfile1
+  206  cat  propsfile
+  207  cat  propsfile > propsfile1
+  208  sudo cat  propsfile > propsfile1
+  209  sudo chmod 777 propsfile
+  210  sudo chmod 777 propsfile1
+  211  sudo chmod 777 propsfile
+  212  sudo cat  propsfile > propsfile1
+  213  vi propsfile1
+  214  vi propsfile
+  215  vi propsfile1
+  216  sudo cat  propsfile >> propsfile1
+  217  vi propsfile1
+  218  ls
+  219  vi propsfile1
+  220  ls
+  221  cd .ssh/
+  222  ls
+  223  vi known_hosts 
+  224  vi id_rsa 
+  225  ssh -i id_rsa ec2-user@54.236.44.236
+  226  ls
+  227  vi known_hosts 
+  228  ssh -i id_rsa ec2-user@54.236.44.236
+  229  ls
+  230  vi known_hosts 
+  231  vi authorized_keys 
+  232  ls
+  233  cd
+  234  ls
+  235  cd .ssh/
+  236  ls
+  237  vi known_hosts 
+  238  ls
+  239  vi authorized_keys 
+  240  vi known_hosts 
+  241  ssh -i id_rsa ec2-user@100.26.235.20
+  242  ls
+  243   vi known_hosts 
+  244  vi id_rsa 
+  245  ssh -i id_rsa ec2-user@100.25.47.240
+  246  ls
+  247  vi known_hosts 
+  248  cd /opt/
+  249  ls
+  250  cd
+  251  ls
+  252  cd /
+  253  ls
+  254  cd usr/
+  255  ls
+  256  cd .
+  257  cd ..
+  258  s
+  259  ls
+  260  cd var/
+  261  ls
+  262  whereis jenkins
+  263  cd /usr/lib/
+  264  ls
+  265  cd jenkins/
+  266  ls
+  267  cd ..
+  268  ls
+  269  cd ..
+  270  ls
+  271  whereis jenkins
+  272  cd /etc/profile.d/
+  273  ls
+  274  cd  /var/lib/jenkins
+  275  ls
+  276  cd .ssh/
+  277  ls
+  278  vi known_hosts 
+  279  cd  
+  280  cd .ssh/
+  281  ls
+  282  vi known_hosts 
+  283  cd /var/lib/jenkins/.ssh/
+  284  ls
+  285  vi known_hosts 
+  286  vi authorized_keys 
+  287  ls
+  288  vi authorized_keys 
+  289  q!
+  290  sudo vi authorized_keys 
+  291  ls
+  292  vi known_hosts 
+  293  cd .sh
+  294  cd .ssh/
+  295  ls
+  296  ssh -i id_rsa ec2-user@52.91.149.228
+  297  cd /var/lib/
+  298  ls
+  299  cd jenkins/
+  300  cd .ssh/
+  301  ls
+  302  vi known_hosts 
+  303  cd
+  304  cd .ssh/
+  305  ls
+  306  vi known_hosts 
+  307  cd /var/lib/jenkins/.ssh/
+  308  ls
+  309  vi known_hosts 
+  310  cd .ssh/
+  311  ls
+  312  vi authorized_keys 
+  313  cd /var/lib/
+  314  cd jenkins/
+  315  cd .ssh/
+  316  ls
+  317  vi authorized_keys 
+  318  sudo vi authorized_keys 
+  319  vi id_rsa 
+  320  sudo chmod 777 authorized_keys id_rsa known_hosts 
+  321  ls
+  322  sudo yum install java -y
+  323  export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.201.b09-0.amzn2.x86_64/jre
+  324  export PATH=$JAVA_HOME/bin:$PATH
+  325  cd /home/ec2-user
+  326  mkdir jenkin
+  327  java -version
+  328  free -h
+  329  dh
+  330  free dh
+  331  free 
+  332  sudo service jenkins status
+  333  sudo service jenkins restart
+  334  history
+  335  history > history.txt
