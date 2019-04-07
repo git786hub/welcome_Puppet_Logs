@@ -1,0 +1,7 @@
+[Unit]
+Description=Start Git Daemon
+[Service]
+ExecStart=/usr/bin/git daemon --reuseaddr --base-path=/opt --export-all  --enable=receive-pack
+[Install]
+WantedBy=getty.target
+DefaultInstace=ttyl
