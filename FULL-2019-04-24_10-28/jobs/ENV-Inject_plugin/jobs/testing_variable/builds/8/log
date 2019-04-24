@@ -1,0 +1,25 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/testing_variable
+[SSH] executing pre build script:
+
+sudo yum install git -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package git-2.17.2-2.amzn2.x86_64 already installed and latest version
+Nothing to do
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[testing_variable] $ /bin/sh -xe /tmp/jenkins363900152600776759.sh
+++ echo DNS_Name
++ AOEU=DNS_Name
+[SSH] executing post build script:
+DNS_Name="hello"
+
+sudo VAR  AOEU=$(echo DNS_Name)
+sudo: VAR: command not found
+
+[SSH] completed
+[SSH] exit-status: 1
+
+Finished: FAILURE

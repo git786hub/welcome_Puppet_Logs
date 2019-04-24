@@ -1,0 +1,20 @@
+Started by upstream project "[8mha:////4J8SliF4FjKPiZy6/ZcprwU/lYQNf9v5JtIGIHIAtaSyAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBAjCgoQFQ0IAWExACWIUdiONmWfYlgDdaAhiEYhx2Ikor85r/i6f/XF3rBwzgv0mBNfLImWMJ4a1Ok9d2hJ22uO8sITToRwM3DqOX/qbPl8718uE8E0Qb6hCbjPIFu4YlhkFxUqQQpk4kDe22yRTU3bM2tmm7/ugomDHNxsUexL5xDrnHqapZoGL1MkRVrClIbGUiVKHMbWJ41ofgBTJfZse8AAAA=[0mPuppet/2puppet_enter_detatils_in_slave_host_file" build number [8mha:////4Fe7vUSH8ja5SgI62v8FaDFP8YMVCJeXRJw1oJ+KKLp2AAAAvx+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBALChoIBUNSICQGMAy5EgcTrZlXxCswRrQMATjsANRUpHf/Fc8/f/6Qi94GOdlGqyJT9YESxhvbYq0ujv0pM1lZxmhSScCuHkYtfw/dZY838nDfSKI1tAnNBnnG+iWnhgGm0JdlSBlMnFgr002r+aGrbll0+1fV0HEsBCFPYp96RxyjVNXs0TD6GWKrFhTkNrIQOqKMreB5VkTisn0BzQc8BbxAAAA[0m12
+originally caused by:
+ Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4FGGt52tokjCl7jQADAa9GKRZO2Md/Px5/v7XiDtxiJ3AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXfyAgAmcdh2tUAAAA=[0m22
+ originally caused by:
+  Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Hra6a3XwZ0tmlvp9zu1e/v5XAH8a4OUkHe773jQTF0tAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMLAGI9RnvBAAAA[0m78 in workspace /home/ec2-user/jenkin/workspace/Puppet/3puppet_slave_install_script
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins8907290330415853326.sh
++ sudo yum -y install ntp ntpdate
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package ntp-4.2.6p5-28.amzn2.2.2.x86_64 already installed and latest version
+Package ntpdate-4.2.6p5-28.amzn2.2.2.x86_64 already installed and latest version
+Nothing to do
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins6986387555575329040.sh
++ sudo ntpdate 0.centos.pool.ntp.org
+ 3 Apr 08:19:19 ntpdate[5718]: the NTP socket is in use, exiting
+Build step 'Execute shell' marked build as failure
+Returning node parameter for 78
+Triggering a new build of [8mha:////4OmyvAMDFgrN73v9zJifQeapbsM4lKngaEJ1/+26A2L3AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzxEgZ5/az8JP2A0oKC1BIw0wTCji9KTcrPL9EHAOplpXrUAAAA[0mPuppet » 4Puppet_reboot
+Finished: FAILURE

@@ -1,0 +1,68 @@
+Started by upstream project "[8mha:////4NvUIhiQMVWsJ7pW445IuulmIERGg4LQR0iPsw/WnPhnAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzlEgZd/az8JP2A0oKC1BIw07gAzI4vzkksS43PzCsuSczJiS9OLsosKNEHAMFbqz7iAAAA[0mPuppet/3puppet_slave_install_script" build number [8mha:////4GKVWlHejF8pEafp74WCM2cyHx3AbvMBaZDPMr1iwim9AAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBj39rPwk/YDSgoLUEjDTuADMji/OSSxLjc/MKy5JzMmJL04uyiwo0TcBAPMOKivjAAAA[0m4
+originally caused by:
+ Started by upstream project "[8mha:////4J8SliF4FjKPiZy6/ZcprwU/lYQNf9v5JtIGIHIAtaSyAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBAjCgoQFQ0IAWExACWIUdiONmWfYlgDdaAhiEYhx2Ikor85r/i6f/XF3rBwzgv0mBNfLImWMJ4a1Ok9d2hJ22uO8sITToRwM3DqOX/qbPl8718uE8E0Qb6hCbjPIFu4YlhkFxUqQQpk4kDe22yRTU3bM2tmm7/ugomDHNxsUexL5xDrnHqapZoGL1MkRVrClIbGUiVKHMbWJ41ofgBTJfZse8AAAA=[0mPuppet/2puppet_enter_detatils_in_slave_host_file" build number [8mha:////4KjYLZ7f6ae5WSTjzq6B+S5sMNsXjMF1zJdkYZuSa4MvAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBALFFAgahoQAoIiQEsQ47E4WRb9iWCNVgDGoZgHHYAkor85r/i6f/HG3rBwzgv02BNfLQmWMJ4Y1Ok1dWhJ23OW8sITToRwMXDqOX/qdPF/bm4uVcE0Rr6hCbjPIFu6YlhkBSqUoKUycSevTbZ/Ds3bM0tm27/uh8wzEVhD2JXOodc48TVLNEwepkiK9YUpDYykKpQ5jawPGlCMfsA9LimkvAAAAA=[0m7
+ originally caused by:
+  Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4CoP08O8y9qZmyzqBlKXiORiGyAy5C/6lRZIHW1C+rDRAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXf0BwA1WAmgdUAAAA=[0m17
+  originally caused by:
+   Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4CSIoYE/cfGXdtzgDCvJzPaEQG9B4MAmTqi9pJUzt4E2AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMTAElx8HLBAAAA[0m74 in workspace /home/ec2-user/jenkin/workspace/Puppet/4Puppet_reboot
+[4Puppet_reboot] $ /bin/sh -xe /tmp/jenkins307970791254156983.sh
++ sudo reboot
+FATAL: Unable to delete script file /tmp/jenkins307970791254156983.sh
+java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:179)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:795)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused: hudson.remoting.ChannelClosedException: Channel "unknown": Remote call on JNLP4-connect connection from 54.174.90.243/54.174.90.243:46072 failed. The channel is closing down or has closed down
+	at hudson.remoting.Channel.call(Channel.java:948)
+	at hudson.FilePath.act(FilePath.java:1072)
+	at hudson.FilePath.act(FilePath.java:1061)
+	at hudson.FilePath.delete(FilePath.java:1565)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:123)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+[8mha:////4BPtvJGOzCo1mhrA3zNjaT3jEN5JOyTYAY2PLOwLKG0GAAAAkR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLmEQ0E/Ozy0oLUkt0jc30c/JTwcAX+Xe9ZUAAAA=[0mAgent went offline during the build
+ERROR: Connection was broken: java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:179)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:795)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Build step 'Execute shell' marked build as failure
+FATAL: Channel "unknown": Remote call on JNLP4-connect connection from 54.174.90.243/54.174.90.243:46072 failed. The channel is closing down or has closed down
+java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:179)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:795)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused: hudson.remoting.ChannelClosedException: Channel "unknown": Remote call on JNLP4-connect connection from 54.174.90.243/54.174.90.243:46072 failed. The channel is closing down or has closed down
+	at hudson.remoting.Channel.call(Channel.java:948)
+	at hudson.Launcher$RemoteLauncher.kill(Launcher.java:1085)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:510)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE

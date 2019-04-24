@@ -1,0 +1,48 @@
+Started by upstream project "[8mha:////4Bqdho7Mc/IffRkAy2PfiyxP3LqXti9UgKtmXs9bossEAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyVEgY9/az8JP2A0oKC1BIw0wjCjs9NLC5JLYrPzCsuSczJiS9OLsosKNEHAJAwD/7jAAAA[0mPuppet/2Puppet_master_install_script" build number [8mha:////4AHsBjN548Nb7yf43vlf096DdSLhAzYq0bLFlILQJjegAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBn39rPwk/YDSgoLUEjDTCMKOz00sLkktis/MKy5JzMmJL04uyiwo0TcCAA78WqjkAAAA[0m2
+originally caused by:
+ Started by upstream project "[8mha:////4HLu0zDDgJOKh9efpEB92buwM3xguODJabZGUdaBGpYPAAAAqx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyZEgY1/az8JP2A0oKC1BIw09C5KDWxJDUeIhTvm1hcklqkDwDEiJL42wAAAA==[0mPuppet/1Create_Puppet_Master" build number [8mha:////4KAB1BmIFLF0S3CSLaV49EOSlzWifW6sDSE5YKubUZYgAAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYN/az8JP2A0oKC1BIw09C5KDWxJDUeIhTvm1hcklqkb2oOAHu56p7dAAAA[0m57
+ originally caused by:
+  Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4JuVxfrV+QZ8UJz++s4IOSyiYd6nsOkSFWoMYTrRGk/rAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifePcxGIgDQBzFctPxgAAAA==[0m3master in workspace /home/ec2-user/jenkin/workspace/Puppet/4Puppet_reboot
+[4Puppet_reboot] $ /bin/sh -xe /tmp/jenkins997250820430479463.sh
++ sudo reboot
+FATAL: Unable to delete script file /tmp/jenkins997250820430479463.sh
+java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:179)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:795)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused: hudson.remoting.ChannelClosedException: Channel "unknown": Remote call on JNLP4-connect connection from 18.234.80.16/18.234.80.16:44086 failed. The channel is closing down or has closed down
+	at hudson.remoting.Channel.call(Channel.java:948)
+	at hudson.FilePath.act(FilePath.java:1072)
+	at hudson.FilePath.act(FilePath.java:1061)
+	at hudson.FilePath.delete(FilePath.java:1565)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:123)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+[8mha:////4EIq1DZSjjFW2efF2lVYNm7ebPIeC8n4LK/LAdZbViLnAAAAkx+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhQLmEQ1U/Ozy0oLUkt0jfOTSwG0Tn56QAyFapdmgAAAA==[0mAgent went offline during the build
+ERROR: Connection was broken: java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:179)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:795)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

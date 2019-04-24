@@ -1,0 +1,10 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KFH+lXND8BHwBdWOe+JW4Yp07+i5/Z8FHGjTf2zKIs6AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/cT01LwScwMAY/i2HcYAAAA=[0magent70 in workspace /home/ec2-user/jenkin/workspace/Puppet/2puppet_enter_detatils_in_slave_host_file
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - [ERROR] - The given properties file path '/home/ec2-user/jenkin/workspace/Puppet/1Create_slave/propsfile ' doesn't exist.
+[EnvInject] - [ERROR] - Missing file path was resolved from pattern '/home/ec2-user/jenkin/workspace/Puppet/1Create_slave/propsfile ' .
+[EnvInject] - [ERROR] - Problems occurs on injecting env vars as a build step: java.io.IOException: The given properties file path '/home/ec2-user/jenkin/workspace/Puppet/1Create_slave/propsfile ' doesn't exist.
+Build step 'Inject environment variables' changed build result to FAILURE
+Build step 'Inject environment variables' marked build as failure
+Finished: FAILURE

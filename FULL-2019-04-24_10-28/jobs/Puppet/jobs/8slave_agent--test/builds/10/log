@@ -1,0 +1,14 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4NnZ7GX7X2dHNSekCzBsweOWwvDtWnayh3dZKTKrki53AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXNTAN9B9wXBAAAA[0m75 in workspace /home/ec2-user/jenkin/workspace/Puppet/8slave_agent--test
+[8slave_agent--test] $ /bin/sh -xe /tmp/jenkins3433233477957216414.sh
++ sudo /opt/puppetlabs/bin/puppet agent --test
+[0;32mInfo: Using configured environment 'production'[0m
+[0;32mInfo: Retrieving pluginfacts[0m
+[0;32mInfo: Retrieving plugin[0m
+[0;32mInfo: Retrieving locales[0m
+[1;31mError: Could not retrieve catalog from remote server: Error 500 on SERVER: Server Error: Evaluation Error: Error while evaluating a Resource Statement, Could not find declared class docker (file: /etc/puppetlabs/code/environments/production/manifests/site.pp, line: 1, column: 22) on node 75.pulkit.co[0m
+[1;33mWarning: Not using cache on failed catalog[0m
+[1;31mError: Could not retrieve catalog; skipping run[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

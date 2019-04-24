@@ -1,0 +1,14 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KFH+lXND8BHwBdWOe+JW4Yp07+i5/Z8FHGjTf2zKIs6AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/cT01LwScwMAY/i2HcYAAAA=[0magent70 in workspace /home/ec2-user/jenkin/workspace/Puppet/slave_agent--test
+[slave_agent--test] $ /bin/sh -xe /tmp/jenkins1264261398353107854.sh
++ sudo /opt/puppetlabs/bin/puppet agent --test
+[0;32mInfo: Creating a new SSL key for agent70.pulkit.co[0m
+[0;32mInfo: Caching certificate for ca[0m
+[0;32mInfo: csr_attributes file loading from /etc/puppetlabs/puppet/csr_attributes.yaml[0m
+[0;32mInfo: Creating a new SSL certificate request for agent70.pulkit.co[0m
+[0;32mInfo: Certificate Request fingerprint (SHA256): 09:43:DD:E5:F9:FE:8D:63:98:B4:57:D3:87:99:9D:67:AC:F2:3B:D4:1F:D8:72:58:8E:05:74:BB:69:69:EA:55[0m
+[0;32mInfo: Caching certificate for ca[0m
+Exiting; no certificate found and waitforcert is disabled
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,92 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.32">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>region</name>
+          <description></description>
+          <value>us-west-2</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>stack</name>
+          <description></description>
+          <value></value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>region</string>
+        <string>stack</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>487</queueId>
+  <timestamp>1554466609231</timestamp>
+  <startTime>1554466609233</startTime>
+  <result>FAILURE</result>
+  <duration>3971</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node{
+       def reg=&quot;${params.region}&quot; 
+       def stack=&quot;${params.stack}&quot;
+           
+           
+                stage(&apos;delete CFN&apos;) 
+        {       
+               withAWS(credentials:&apos;AWS_CFN&apos;, region:&quot;${reg}&quot;) 
+               { 
+                    cfnDelete(stack:stack)
+
+               
+               } 
+        }      
+           
+    }</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>696062981</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>232229311</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>3005762971</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>346962991</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>292123011</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>16</iota>
+    <head>1:16</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

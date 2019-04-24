@@ -1,0 +1,18 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+[envinject] $ /bin/sh -xe /tmp/jenkins874489640871138337.sh
+++ echo d
++ echo AOEU=d
+++ echo prod
++ echo environment=prod
++ pwd
+/var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path '/var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile'
+[EnvInject] - Variables injected successfully.
+[EnvInject] - Injecting as environment variables the properties content 
+AOEU=d
+
+[EnvInject] - Variables injected successfully.
+Finished: SUCCESS

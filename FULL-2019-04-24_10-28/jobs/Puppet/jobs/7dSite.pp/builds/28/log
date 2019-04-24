@@ -1,0 +1,10 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MycucIv5ODuYm3Fmg1V+Izk1E1xmyLR7+ovjja1uTR+AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifaPcxGIgDQDHHrzpxgAAAA==[0m2master in workspace /home/ec2-user/jenkin/workspace/Puppet/7dSite.pp
+[7dSite.pp] $ /bin/sh -xe /tmp/jenkins1888201863285682091.sh
++ sudo echo node ''\''75.pulkit.co'\''{' class '{' ''\''docker'\'':' use_upstream_package_source '=>' false, service_overrides_template '=>' false, docker_ce_package_name '=>' ''\''docker'\'',' '}' include git class '{' ''\''java'\''' : package '=>' ''\''java-1.8.0-openjdk-devel'\'',' '}' tomcat::install '{' ''\''/opt/tomcat'\'':' source_url '=>' ''\''https://www.apache.org/dist/tomcat/tomcat-9/v9.0.17/bin/apache-tomcat-9.0.17.tar.gz'\'',' '}' tomcat::instance '{' ''\''default'\'':' catalina_home '=>' ''\''/opt/tomcat'\'',' '}' package '{' ''\''httpd'\'':' ensure '=>' '"installed",' '}' service '{' ''\''httpd'\'':' ensure '=>' running, enable '=>' true '}' '}'
+[7dSite.pp] $ /bin/sh -xe /tmp/jenkins8934479702225551570.sh
++ sudo mv /pulkit/workspace/Puppet/7dSite.pp/site.pp /etc/puppetlabs/code/environments/production/manifests/
+mv: cannot stat ‘/pulkit/workspace/Puppet/7dSite.pp/site.pp’: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

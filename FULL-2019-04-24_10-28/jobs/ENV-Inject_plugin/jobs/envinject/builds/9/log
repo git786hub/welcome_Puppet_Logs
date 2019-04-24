@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+[envinject] $ /bin/sh -xe /tmp/jenkins5508879668330281624.sh
+++ echo dem
++ echo AOEU=dem
+++ echo prod
++ echo environment=prod
++ pwd
+/var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+Finished: SUCCESS

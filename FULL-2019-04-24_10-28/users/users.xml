@@ -1,0 +1,42 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.UserIdMapper>
+  <version>1</version>
+  <idToDirectoryNameMap class="concurrent-hash-map">
+    <entry>
+      <string>a</string>
+      <string>a_6742937972135351427</string>
+    </entry>
+    <entry>
+      <string>abc</string>
+      <string>abc_6142823178058773998</string>
+    </entry>
+    <entry>
+      <string>noreply</string>
+      <string>noreply_8012817671685686692</string>
+    </entry>
+    <entry>
+      <string>apulkit21</string>
+      <string>apulkit21_5034236089359409451</string>
+    </entry>
+    <entry>
+      <string>samp</string>
+      <string>samp_2628885530975592700</string>
+    </entry>
+    <entry>
+      <string>admin</string>
+      <string>admin_7803625315582283193</string>
+    </entry>
+    <entry>
+      <string>pulkit_baba</string>
+      <string>pulkitbaba_6746708836387194660</string>
+    </entry>
+    <entry>
+      <string>welcome</string>
+      <string>welcome_6164484170636892769</string>
+    </entry>
+    <entry>
+      <string>roaster</string>
+      <string>roaster_4891068577070889551</string>
+    </entry>
+  </idToDirectoryNameMap>
+</hudson.model.UserIdMapper>

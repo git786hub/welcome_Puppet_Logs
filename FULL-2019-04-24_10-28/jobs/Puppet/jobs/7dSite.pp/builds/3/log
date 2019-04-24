@@ -1,0 +1,64 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/Site.pp
+[Site.pp] $ /bin/sh -xe /tmp/jenkins5353852237702435052.sh
++ sudo cat node ''\''agent.pulkit.co'\''{' class '{' ''\''docker'\'':' use_upstream_package_source '=>' false, service_overrides_template '=>' false, docker_ce_package_name '=>' ''\''docker'\'',' '}' include git class '{' ''\''java'\''' : package '=>' ''\''java-1.8.0-openjdk-devel'\'',' '}' tomcat::install '{' ''\''/opt/tomcat'\'':' source_url '=>' ''\''https://www.apache.org/dist/tomcat/tomcat-9/v9.0.16/bin/apache-tomcat-9.0.16.tar.gz'\'',' '}' tomcat::instance '{' ''\''default'\'':' catalina_home '=>' ''\''/opt/tomcat'\'',' '}' package '{' ''\''httpd'\'':' ensure '=>' '"installed",' '}' service '{' ''\''httpd'\'':' ensure '=>' running, enable '=>' true '}' '}'
+cat: node: No such file or directory
+cat: 'agent.pulkit.co'{: No such file or directory
+cat: class: No such file or directory
+cat: {: No such file or directory
+cat: 'docker':: No such file or directory
+cat: use_upstream_package_source: No such file or directory
+cat: =>: No such file or directory
+cat: false,: No such file or directory
+cat: service_overrides_template: No such file or directory
+cat: =>: No such file or directory
+cat: false,: No such file or directory
+cat: docker_ce_package_name: No such file or directory
+cat: =>: No such file or directory
+cat: 'docker',: No such file or directory
+cat: }: No such file or directory
+cat: include: No such file or directory
+cat: git: No such file or directory
+cat: class: No such file or directory
+cat: {: No such file or directory
+cat: 'java': No such file or directory
+cat: :: No such file or directory
+cat: package: No such file or directory
+cat: =>: No such file or directory
+cat: 'java-1.8.0-openjdk-devel',: No such file or directory
+cat: }: No such file or directory
+cat: tomcat::install: No such file or directory
+cat: {: No such file or directory
+cat: '/opt/tomcat':: No such file or directory
+cat: source_url: No such file or directory
+cat: =>: No such file or directory
+cat: 'https://www.apache.org/dist/tomcat/tomcat-9/v9.0.16/bin/apache-tomcat-9.0.16.tar.gz',: No such file or directory
+cat: }: No such file or directory
+cat: tomcat::instance: No such file or directory
+cat: {: No such file or directory
+cat: 'default':: No such file or directory
+cat: catalina_home: No such file or directory
+cat: =>: No such file or directory
+cat: '/opt/tomcat',: No such file or directory
+cat: }: No such file or directory
+cat: package: No such file or directory
+cat: {: No such file or directory
+cat: 'httpd':: No such file or directory
+cat: ensure: No such file or directory
+cat: =>: No such file or directory
+cat: "installed",: No such file or directory
+cat: }: No such file or directory
+cat: service: No such file or directory
+cat: {: No such file or directory
+cat: 'httpd':: No such file or directory
+cat: ensure: No such file or directory
+cat: =>: No such file or directory
+cat: running,: No such file or directory
+cat: enable: No such file or directory
+cat: =>: No such file or directory
+cat: true: No such file or directory
+cat: }: No such file or directory
+cat: }: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

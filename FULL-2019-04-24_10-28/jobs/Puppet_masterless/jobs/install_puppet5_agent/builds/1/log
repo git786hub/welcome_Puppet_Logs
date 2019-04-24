@@ -1,0 +1,57 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4HJrxuu3jj0/HFmHcWc3E35EX1FKW5BxD4Z5EnrfRRHUAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/fTMEt3i1KKy1CIAqMOiZMkAAAA=[0mgit-server in workspace /home/ec2-user/jenkin/workspace/Puppet_masterless/install_puppet5_agent
+[install_puppet5_agent] $ /bin/sh -xe /tmp/jenkins2875994883008522364.sh
++ sudo rpm -Uvh https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+warning: /var/tmp/rpm-tmp.WddhA5: Header V4 RSA/SHA256 Signature, key ID ef8d349f: NOKEY
+Retrieving https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+Preparing...                          ########################################
+Updating / installing...
+puppet5-release-5.0.0-4.el7           ########################################
++ sudo yum install -y puppet-agent
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package puppet-agent.x86_64 0:5.5.12-1.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package              Arch           Version              Repository       Size
+================================================================================
+Installing:
+ puppet-agent         x86_64         5.5.12-1.el7         puppet5          20 M
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 20 M
+Installed size: 20 M
+Downloading packages:
+warning: /var/cache/yum/x86_64/2/puppet5/packages/puppet-agent-5.5.12-1.el7.x86_64.rpm: Header V4 RSA/SHA256 Signature, key ID ef8d349f: NOKEY
+Public key for puppet-agent-5.5.12-1.el7.x86_64.rpm is not installed
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-puppet5-release
+Importing GPG key 0xEF8D349F:
+ Userid     : "Puppet, Inc. Release Key (Puppet, Inc. Release Key) <release@puppet.com>"
+ Fingerprint: 6f6b 1550 9cf8 e59e 6e46 9f32 7f43 8280 ef8d 349f
+ Package    : puppet5-release-5.0.0-4.el7.noarch (installed)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-puppet5-release
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+Warning: RPMDB altered outside of yum.
+  Installing : puppet-agent-5.5.12-1.el7.x86_64                             1/1 
+  Verifying  : puppet-agent-5.5.12-1.el7.x86_64                             1/1 
+
+Installed:
+  puppet-agent.x86_64 0:5.5.12-1.el7                                            
+
+Complete!
++ /opt/puppetlabs/bin/puppet –-version
+[1;31mError: Unknown Puppet subcommand '–-version'[0m
+See 'puppet help' for help on available puppet subcommands
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

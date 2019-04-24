@@ -1,0 +1,8 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4JuVxfrV+QZ8UJz++s4IOSyiYd6nsOkSFWoMYTrRGk/rAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifePcxGIgDQBzFctPxgAAAA==[0m3master in workspace /home/ec2-user/jenkin/workspace/Puppet/Module_Install
+[Module_Install] $ /bin/sh -xe /tmp/jenkins3150773083402961766.sh
++ puppet module install puppetlabs-java
+/tmp/jenkins3150773083402961766.sh: line 2: puppet: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

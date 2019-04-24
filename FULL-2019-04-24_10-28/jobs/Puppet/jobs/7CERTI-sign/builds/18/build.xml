@@ -1,0 +1,44 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue plugin="nodelabelparameter@1.7.2">
+          <name>Master </name>
+          <description>Select Master Node</description>
+          <label>5master</label>
+          <nextLabels/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Master </string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+    <org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction plugin="nodelabelparameter@1.7.2">
+      <label>5master</label>
+      <tooltip>Run with label [5master] (node: 5master)</tooltip>
+    </org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction>
+  </actions>
+  <queueId>476</queueId>
+  <timestamp>1554285823979</timestamp>
+  <startTime>1554285824020</startTime>
+  <result>SUCCESS</result>
+  <duration>2956</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>5master</builtOn>
+  <workspace>/home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

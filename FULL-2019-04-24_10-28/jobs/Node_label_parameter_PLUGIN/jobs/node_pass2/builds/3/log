@@ -1,0 +1,9 @@
+Started by upstream project "[8mha:////4GHgiX+cwZVl6+dyDhwyoN/sR6gCq74rHcW1qFKQUErnAAAAtR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzVEgZ9/az8JH0/oBPjcxKTUnPiCxKLEnNTS1KL4gN8Qt09/cDyeSD5gsTiYn0AtQh4AOQAAAA=[0mNode_label_parameter_PLUGIN/node_pass" build number [8mha:////4E5nCSsCXCDc7rwtW2qT7mR4Duu7AAQ999dRwziLhfFLAAAAtR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgP9rPwkfT+gE+NzEpNSc+ILEosSc1NLUoviA3xC3T39wPJ5IPmCxOJifSMAwbhbquUAAAA=[0m2
+originally caused by:
+ Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4K/Ovz+xHp11Io6MBVDojmv2xD3wj8kCoIwJRM5W7P4TAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMjAHzUk5vBAAAA[0m72 in workspace /home/ec2-user/jenkin/workspace/Node_label_parameter_PLUGIN/node_pass2
+[node_pass2] $ /bin/sh -xe /tmp/jenkins7816299037700481533.sh
++ pwd
+/home/ec2-user/jenkin/workspace/Node_label_parameter_PLUGIN/node_pass2
+Finished: SUCCESS

@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins2691608727143844035.sh
++ echo Hello
+Hello
++ echo fecfd
+fecfd
++ DNp_Name =fecfd
+/tmp/jenkins2691608727143844035.sh: line 4: DNp_Name: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

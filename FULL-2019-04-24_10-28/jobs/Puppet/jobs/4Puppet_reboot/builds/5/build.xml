@@ -1,0 +1,55 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.plugins.parameterizedtrigger.NodeAction plugin="parameterized-trigger@2.35.2">
+      <nodeLabel class="hudson.model.labels.LabelAtom">73</nodeLabel>
+    </hudson.plugins.parameterizedtrigger.NodeAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters/>
+      <parameterDefinitionNames class="empty-list"/>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>Puppet/3puppet_slave_install_script</upstreamProject>
+            <upstreamUrl>job/Puppet/job/3puppet_slave_install_script/</upstreamUrl>
+            <upstreamBuild>3</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>Puppet/2puppet_enter_detatils_in_slave_host_file</upstreamProject>
+                <upstreamUrl>job/Puppet/job/2puppet_enter_detatils_in_slave_host_file/</upstreamUrl>
+                <upstreamBuild>6</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.model.Cause_-UpstreamCause>
+                    <upstreamProject>Puppet/1Create_slave</upstreamProject>
+                    <upstreamUrl>job/Puppet/job/1Create_slave/</upstreamUrl>
+                    <upstreamBuild>15</upstreamBuild>
+                    <upstreamCauses>
+                      <hudson.model.Cause_-UserIdCause/>
+                    </upstreamCauses>
+                  </hudson.model.Cause_-UpstreamCause>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+  </actions>
+  <queueId>298</queueId>
+  <timestamp>1554106008735</timestamp>
+  <startTime>1554106008737</startTime>
+  <result>FAILURE</result>
+  <duration>35959</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>73</builtOn>
+  <workspace>/home/ec2-user/jenkin/workspace/Puppet/4Puppet_reboot</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

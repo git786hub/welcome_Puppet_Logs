@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins3255371010257001792.sh
++ DNS_Name =xyz
+/tmp/jenkins3255371010257001792.sh: line 2: DNS_Name: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

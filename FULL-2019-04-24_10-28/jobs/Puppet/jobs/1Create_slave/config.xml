@@ -1,0 +1,99 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>Puppet_Master_IP_address</name>
+          <description>Enter Master Private  IP address </description>
+          <defaultValue>x.x.x.x</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>DNS_Name</name>
+          <description>Enter Master DNS </description>
+          <defaultValue>master.pulkit.co</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>runinterval</name>
+          <description></description>
+          <defaultValue>1h</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>environment</name>
+          <description></description>
+          <defaultValue>production</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Puppet_Slave_IP_address</name>
+          <description>Enter Slave Private IP</description>
+          <defaultValue>x.x.x.x</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>Puppet_Slave_IP_DNS</name>
+          <description>Enter Slave DNS</description>
+          <defaultValue>agent.pulkit.co</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition plugin="nodelabelparameter@1.7.2">
+          <name>Slave</name>
+          <description>enter New Slave</description>
+          <allowedSlaves/>
+          <defaultSlaves/>
+          <triggerIfResult>multiSelectionDisallowed</triggerIfResult>
+          <allowMultiNodeSelection>false</allowMultiNodeSelection>
+          <triggerConcurrentBuilds>false</triggerConcurrentBuilds>
+          <ignoreOfflineNodes>false</ignoreOfflineNodes>
+          <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.IgnoreOfflineNodeEligibility"/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo DNS_Name=$(echo ${DNS_Name}) &gt; DNS_Name
+echo runinterval=$(echo ${runinterval}) &gt; runinterval
+echo environment=$(echo ${environment}) &gt; environment
+echo Puppet_Master_IP_address=$(echo ${Puppet_Master_IP_address}) &gt; Puppet_Master_IP_address
+echo Puppet_Slave_IP_address=$(echo ${Puppet_Slave_IP_address}) &gt; Puppet_Slave_IP_address
+echo Puppet_Slave_IP_DNS=$(echo ${Puppet_Slave_IP_DNS}) &gt; Puppet_Slave_IP_DNS
+pwd
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>cat /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/DNS_Name /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/runinterval /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/environment /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/Puppet_Master_IP_address /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/Puppet_Slave_IP_address /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/Puppet_Slave_IP_DNS  &gt; /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/propsfile  
+
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.parameterizedtrigger.BuildTrigger plugin="parameterized-trigger@2.35.2">
+      <configs>
+        <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
+          <configs>
+            <hudson.plugins.parameterizedtrigger.NodeParameters/>
+          </configs>
+          <projects>2puppet_enter_detatils_in_slave_host_file</projects>
+          <condition>SUCCESS</condition>
+          <triggerWithNoParameters>false</triggerWithNoParameters>
+          <triggerFromChildProjects>false</triggerFromChildProjects>
+        </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
+      </configs>
+    </hudson.plugins.parameterizedtrigger.BuildTrigger>
+  </publishers>
+  <buildWrappers/>
+</project>

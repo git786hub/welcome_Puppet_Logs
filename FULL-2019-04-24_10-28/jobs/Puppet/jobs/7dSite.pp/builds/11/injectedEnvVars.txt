@@ -1,0 +1,65 @@
+BUILD_CAUSE=MANUALTRIGGER
+BUILD_CAUSE_MANUALTRIGGER=true
+BUILD_DISPLAY_NAME=#11
+BUILD_ID=11
+BUILD_NUMBER=11
+BUILD_TAG=jenkins-Puppet-Site.pp-11
+BUILD_URL=http://100.27.13.56:8080/job/Puppet/job/Site.pp/11/
+EXECUTOR_NUMBER=0
+HOME=/home/ec2-user
+HUDSON_HOME=/var/lib/jenkins
+HUDSON_SERVER_COOKIE=ed12bc36f8cd531c
+HUDSON_URL=http://100.27.13.56:8080/
+JENKINS_HOME=/var/lib/jenkins
+JENKINS_SERVER_COOKIE=ed12bc36f8cd531c
+JENKINS_URL=http://100.27.13.56:8080/
+JOB_BASE_NAME=Site.pp
+JOB_NAME=Puppet/Site.pp
+JOB_URL=http://100.27.13.56:8080/job/Puppet/job/Site.pp/
+LANG=en_US.UTF-8
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LOGNAME=ec2-user
+MAIL=/var/mail/ec2-user
+MANPATH=:/opt/puppetlabs/puppet/share/man
+NODE_LABELS=Pupet-master puppet-master
+NODE_NAME=Pupet-master
+OLDPWD=/home/ec2-user
+PATH=/usr/local/bin:/usr/bin:/opt/puppetlabs/bin
+PWD=/pulkit
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+RUN_CHANGES_DISPLAY_URL=http://100.27.13.56:8080/job/Puppet/job/Site.pp/11/display/redirect?page=changes
+RUN_DISPLAY_URL=http://100.27.13.56:8080/job/Puppet/job/Site.pp/11/display/redirect
+SHELL=/bin/bash
+SHLVL=1
+SSH_CLIENT=100.25.147.37 39300 22
+SSH_CONNECTION=100.25.147.37 39300 172.30.4.144 22
+USER=ec2-user
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SESSION_ID=241
+_=/usr/bin/java
+sitedata=node 'agent.pulkit.co'{
+class { 'docker':
+  use_upstream_package_source => false,
+  service_overrides_template  => false,
+  docker_ce_package_name      => 'docker',
+}
+include git
+class { 'java' :
+ package => 'java-1.8.0-openjdk-devel',
+ }
+ tomcat::install { '/opt/tomcat':
+   source_url => 'https://www.apache.org/dist/tomcat/tomcat-9/v9.0.16/bin/apache-tomcat-9.0.16.tar.gz',
+ }
+ tomcat::instance { 'default':
+ catalina_home => '/opt/tomcat',
+ }
+     package { 'httpd':
+         ensure  => "installed",
+     }
+     service { 'httpd':
+         ensure => running,
+    enable => true
+   }
+ }
+

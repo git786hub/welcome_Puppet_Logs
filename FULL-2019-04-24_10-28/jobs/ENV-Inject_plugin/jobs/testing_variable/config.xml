@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <EnvInjectBuilder plugin="envinject@2.1.6">
+      <info>
+        <propertiesFilePath>/var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile1</propertiesFilePath>
+      </info>
+    </EnvInjectBuilder>
+    <hudson.tasks.Shell>
+      <command>echo $DNS_Name
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>echo $environment
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>echo $runinterval</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <org.jvnet.hudson.plugins.SSHBuildWrapper plugin="ssh@2.6.1">
+      <siteName>ec2-user@100.27.13.56:22</siteName>
+      <preScript></preScript>
+      <postScript></postScript>
+      <hideCommand>false</hideCommand>
+    </org.jvnet.hudson.plugins.SSHBuildWrapper>
+  </buildWrappers>
+</project>

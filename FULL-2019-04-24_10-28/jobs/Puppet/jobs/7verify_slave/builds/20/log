@@ -1,0 +1,36 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4PzX04R3fuVTcEy6tmtqGnuS4mBpq2itXdwVtoXnw3IrAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLLUPABdurQJxQAAAA==[0mslaven in workspace /home/ec2-user/jenkin/workspace/Puppet/7verify_slave
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins973887813581550364.sh
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins6922549805329630189.sh
++ sudo service puppet start
+Redirecting to /bin/systemctl start puppet.service
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins5583904274119941623.sh
++ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+service { 'puppet':
+  ensure => 'running',
+  enable => 'true',
+}
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins2173736158463540873.sh
++ sudo systemctl restart puppet
++ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+service { 'puppet':
+  ensure => 'running',
+  enable => 'true',
+}
++ sudo systemctl status puppet -l
+● puppet.service - Puppet agent
+   Loaded: loaded (/usr/lib/systemd/system/puppet.service; enabled; vendor preset: disabled)
+   Active: active (running) since Wed 2019-04-10 11:42:34 UTC; 2s ago
+ Main PID: 4073 (puppet)
+   CGroup: /system.slice/puppet.service
+           └─4073 /opt/puppetlabs/puppet/bin/ruby /opt/puppetlabs/puppet/bin/puppet agent --no-daemonize
+
+Apr 10 11:42:34 ip-172-31-12-239.eu-central-1.compute.internal systemd[1]: Started Puppet agent.
+Apr 10 11:42:34 ip-172-31-12-239.eu-central-1.compute.internal systemd[1]: Starting Puppet agent...
++ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+service { 'puppet':
+  ensure => 'running',
+  enable => 'true',
+}
+Finished: SUCCESS

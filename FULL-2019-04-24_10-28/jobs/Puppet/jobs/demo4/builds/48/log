@@ -1,0 +1,12 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins4572818878301713826.sh
++ export DNS_Name
+[demo4] $ groovy /var/lib/jenkins/workspace/Puppet/demo4/hudson3043127053968895212.groovy
+Caught: groovy.lang.MissingMethodException: No signature of method: hudson3043127053968895212.$() is applicable for argument types: (hudson3043127053968895212$_run_closure1) values: [hudson3043127053968895212$_run_closure1@78a2da20]
+Possible solutions: is(java.lang.Object), run(), run(), any(), use([Ljava.lang.Object;), any(groovy.lang.Closure)
+groovy.lang.MissingMethodException: No signature of method: hudson3043127053968895212.$() is applicable for argument types: (hudson3043127053968895212$_run_closure1) values: [hudson3043127053968895212$_run_closure1@78a2da20]
+Possible solutions: is(java.lang.Object), run(), run(), any(), use([Ljava.lang.Object;), any(groovy.lang.Closure)
+	at hudson3043127053968895212.run(hudson3043127053968895212.groovy:1)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

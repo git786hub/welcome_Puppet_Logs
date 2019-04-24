@@ -1,0 +1,10 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MycucIv5ODuYm3Fmg1V+Izk1E1xmyLR7+ovjja1uTR+AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifaPcxGIgDQDHHrzpxgAAAA==[0m2master in workspace /home/ec2-user/jenkin/workspace/Puppet/Module_Install
+[Module_Install] $ /bin/sh -xe /tmp/jenkins3213073015801360094.sh
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/Module_Install
++ sudo cp -r /home/ec2-user/.puppetlabs/etc/code/modules/. /etc/puppetlabs/code/environments/production/modules/
+cp: cannot stat ‘/home/ec2-user/.puppetlabs/etc/code/modules/.’: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

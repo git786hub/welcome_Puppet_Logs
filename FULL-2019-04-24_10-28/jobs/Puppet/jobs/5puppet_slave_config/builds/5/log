@@ -1,0 +1,49 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4NnZ7GX7X2dHNSekCzBsweOWwvDtWnayh3dZKTKrki53AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXNTAN9B9wXBAAAA[0m75 in workspace /home/ec2-user/jenkin/workspace/Puppet/5puppet_slave_config
+[5puppet_slave_config] $ /bin/sh -xe /tmp/jenkins4477514606156604753.sh
++ sudo yum install -y puppet-agent
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package puppet-agent.x86_64 0:5.5.12-1.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package              Arch           Version              Repository       Size
+================================================================================
+Installing:
+ puppet-agent         x86_64         5.5.12-1.el7         puppet5          20 M
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 20 M
+Installed size: 20 M
+Downloading packages:
+warning: /var/cache/yum/x86_64/2/puppet5/packages/puppet-agent-5.5.12-1.el7.x86_64.rpm: Header V4 RSA/SHA256 Signature, key ID ef8d349f: NOKEY
+Public key for puppet-agent-5.5.12-1.el7.x86_64.rpm is not installed
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-puppet5-release
+Importing GPG key 0xEF8D349F:
+ Userid     : "Puppet, Inc. Release Key (Puppet, Inc. Release Key) <release@puppet.com>"
+ Fingerprint: 6f6b 1550 9cf8 e59e 6e46 9f32 7f43 8280 ef8d 349f
+ Package    : puppet5-release-5.0.0-4.el7.noarch (installed)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-puppet5-release
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+Warning: RPMDB altered outside of yum.
+  Installing : puppet-agent-5.5.12-1.el7.x86_64                             1/1 
+  Verifying  : puppet-agent-5.5.12-1.el7.x86_64                             1/1 
+
+Installed:
+  puppet-agent.x86_64 0:5.5.12-1.el7                                            
+
+Complete!
+Returning node parameter for 75
+Triggering a new build of [8mha:////4PlPwk8yRVuC7HGhmJ9J3iUIQjUUSBLv282iQ1uF/N2MAAAAth+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAydEgYT/az8JP2A0oKC1BIw0wyoPi0zvbQosSQzPy8eiIpzEstS4wvASkCmpukDABfsdNTpAAAA[0mPuppet » 6Configuration_on_slave_puppet.conf
+Finished: SUCCESS

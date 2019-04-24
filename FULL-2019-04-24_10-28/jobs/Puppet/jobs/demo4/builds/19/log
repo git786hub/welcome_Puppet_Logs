@@ -1,0 +1,6 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins8774559317751949237.sh
+/tmp/jenkins8774559317751949237.sh: line 2: ${params.DNS_Name}: bad substitution
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,15 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4K/Ovz+xHp11Io6MBVDojmv2xD3wj8kCoIwJRM5W7P4TAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMjAHzUk5vBAAAA[0m72 in workspace /home/ec2-user/jenkin/workspace/Puppet/slave_agent--test
+[slave_agent--test] $ /bin/sh -xe /tmp/jenkins7958522774049589246.sh
++ sudo /opt/puppetlabs/bin/puppet agent --test
+[0;32mInfo: Using configured environment 'production'[0m
+[0;32mInfo: Retrieving pluginfacts[0m
+[0;32mInfo: Retrieving plugin[0m
+[0;32mInfo: Retrieving locales[0m
+[0;32mInfo: Loading facts[0m
+[1;31mError: Could not retrieve catalog from remote server: Error 500 on SERVER: Server Error: Could not find node statement with name 'default' or '72.pulkit.co, 72.pulkit, 72, ip-172-30-4-118.ec2.internal, ip-172-30-4-118.ec2, ip-172-30-4-118' on node 72.pulkit.co[0m
+[1;33mWarning: Not using cache on failed catalog[0m
+[1;31mError: Could not retrieve catalog; skipping run[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

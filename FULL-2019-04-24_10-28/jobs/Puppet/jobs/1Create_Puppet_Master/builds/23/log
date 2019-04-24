@@ -1,0 +1,6 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/1Create Puppet_Master
+[1Create Puppet_Master] $ /bin/sh -xe /tmp/jenkins606633377091995364.sh
++ sudo sed -i ' 3i9.8.7.6  puppet.master.co' /etc/hosts
+Triggering a new build of [8mha:////4PCTH/meN2QXLGYI7Z+8crSLacfIdswd16BhZDfCOqAqAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgYx/az8JP2A0oKC1BIw06wktbhEHwDKwunPywAAAA==[0mPuppet » 6test
+Finished: SUCCESS

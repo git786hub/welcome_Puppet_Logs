@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/ENV-Inject plugin/envinject
+[envinject] $ /bin/sh -xe /tmp/jenkins8145695659016276797.sh
+++ echo aplha
++ echo AOEU=aplha
+++ echo prod
++ echo environment=prod
++ pwd
+/var/lib/jenkins/workspace/ENV-Inject plugin/envinject
+Finished: SUCCESS

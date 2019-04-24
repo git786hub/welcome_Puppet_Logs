@@ -1,0 +1,53 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.plugins.parameterizedtrigger.NodeAction plugin="parameterized-trigger@2.35.2">
+      <nodeLabel class="hudson.model.labels.LabelAtom">76</nodeLabel>
+    </hudson.plugins.parameterizedtrigger.NodeAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue plugin="nodelabelparameter@1.7.2">
+          <name>Slave</name>
+          <label>Job triggered without a valid online node, given where: slave</label>
+          <nextLabels/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Slave</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>Puppet/7verify_slave</upstreamProject>
+            <upstreamUrl>job/Puppet/job/7verify_slave/</upstreamUrl>
+            <upstreamBuild>15</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause/>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+    <org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction plugin="nodelabelparameter@1.7.2">
+      <label>Job triggered without a valid online node, given where: slave</label>
+      <tooltip>Run with label [Job triggered without a valid online node, given where: slave] (node: 76)</tooltip>
+    </org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction>
+  </actions>
+  <queueId>404</queueId>
+  <timestamp>1554203963122</timestamp>
+  <startTime>1554203963123</startTime>
+  <result>FAILURE</result>
+  <duration>2560</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>76</builtOn>
+  <workspace>/home/ec2-user/jenkin/workspace/Puppet/8slave_agent--test</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

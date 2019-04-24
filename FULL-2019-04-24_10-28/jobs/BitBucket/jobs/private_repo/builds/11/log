@@ -1,0 +1,27 @@
+Started by BitBucket push by pulkit786agar
+Started by BitBucket push by pulkit786agar
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/BitBucket/private_repo
+using credential welcomepem
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@bitbucket.org:pulkit786agar/myfirstrepo.git # timeout=10
+Fetching upstream changes from git@bitbucket.org:pulkit786agar/myfirstrepo.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials welcomepem
+ > git fetch --tags --progress git@bitbucket.org:pulkit786agar/myfirstrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 2ba6c8c59ab482699542c82dfd1d591a19d21744 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2ba6c8c59ab482699542c82dfd1d591a19d21744
+Commit message: "jjjjjjjjj"
+ > git rev-list --no-walk 46ff5ba2368e3012dce4ca4376140c5b65d58fd3 # timeout=10
+File Zip Operation:
+Creating Zip file of /var/lib/jenkins/workspace/BitBucket/private_repo
+[private_repo] $ /bin/sh -xe /tmp/jenkins2555295129288699954.sh
++ echo hello
+hello
++ echo 'jai m'
+jai m
+Finished: SUCCESS

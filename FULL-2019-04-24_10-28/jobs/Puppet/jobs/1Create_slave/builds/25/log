@@ -1,0 +1,23 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4PzX04R3fuVTcEy6tmtqGnuS4mBpq2itXdwVtoXnw3IrAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLLUPABdurQJxQAAAA==[0mslaven in workspace /home/ec2-user/jenkin/workspace/Puppet/1Create_slave
+[1Create_slave] $ /bin/sh -xe /tmp/jenkins7304069416036606100.sh
+++ echo master.pulkit.vm
++ echo DNS_Name=master.pulkit.vm
+++ echo 1h
++ echo runinterval=1h
+++ echo production
++ echo environment=production
+++ echo 54.93.50.26
++ echo Puppet_Master_IP_address=54.93.50.26
+++ echo 52.29.220.60
++ echo Puppet_Slave_IP_address=52.29.220.60
+++ echo agent.pulkit.vm
++ echo Puppet_Slave_IP_DNS=agent.pulkit.vm
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/1Create_slave
+[1Create_slave] $ /bin/sh -xe /tmp/jenkins1530809756895152671.sh
++ cat /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/DNS_Name /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/runinterval /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/environment /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/Puppet_Master_IP_address /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/Puppet_Slave_IP_address /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/Puppet_Slave_IP_DNS
+Returning node parameter for slaven
+Triggering a new build of [8mha:////4HmD8DqtMFoiYhd4Idm4L4b3G5DFcmjVlndvpVimdLDsAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBALKWgAKWiASkgJAawDDkSh5Nt2ZcI1mANaBiCcdiBCCrym/+Kp/8fbxgED9OyzoM18dGaYAnjjc2RVleHnrQ5by0j/NKLAC4eJh3/T52l92d6c68IojUMCU3BZQb92hPDKKtUowQpU4g9e22KRTs37swtf939dS0kDHNR2YPY1c4hfzFxX5ZoGL3MkRVrClIbGUg1KEsbWJ40ofgA7VGfBu8AAAA=[0mPuppet » 2puppet_enter_detatils_in_slave_host_file
+Finished: SUCCESS

@@ -1,0 +1,6 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4NnZ7GX7X2dHNSekCzBsweOWwvDtWnayh3dZKTKrki53AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXNTAN9B9wXBAAAA[0m75 in workspace /home/ec2-user/jenkin/workspace/Puppet/1Add_slave_DNS_in_Master_host_file
+[1Add_slave_DNS_in_Master_host_file] $ /bin/sh -xe /tmp/jenkins4819813011988101684.sh
++ sudo sed -i '$i172.30.4.169  75.pulkit.co' /etc/hosts
+Finished: SUCCESS

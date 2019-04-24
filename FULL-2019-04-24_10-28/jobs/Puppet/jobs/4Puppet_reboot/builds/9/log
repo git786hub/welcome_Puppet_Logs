@@ -1,0 +1,67 @@
+Started by upstream project "[8mha:////4NvUIhiQMVWsJ7pW445IuulmIERGg4LQR0iPsw/WnPhnAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzlEgZd/az8JP2A0oKC1BIw07gAzI4vzkksS43PzCsuSczJiS9OLsosKNEHAMFbqz7iAAAA[0mPuppet/3puppet_slave_install_script" build number [8mha:////4P799AJY2gL7jXHfRTwT0QMQcLD5bulRUFcjCMinP4dJAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBj39rPwk/YDSgoLUEjDTuADMji/OSSxLjc/MKy5JzMmJL04uyiwo0TcDAN9vJMXjAAAA[0m6
+originally caused by:
+ Started by upstream project "[8mha:////4J8SliF4FjKPiZy6/ZcprwU/lYQNf9v5JtIGIHIAtaSyAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBAjCgoQFQ0IAWExACWIUdiONmWfYlgDdaAhiEYhx2Ikor85r/i6f/XF3rBwzgv0mBNfLImWMJ4a1Ok9d2hJ22uO8sITToRwM3DqOX/qbPl8718uE8E0Qb6hCbjPIFu4YlhkFxUqQQpk4kDe22yRTU3bM2tmm7/ugomDHNxsUexL5xDrnHqapZoGL1MkRVrClIbGUiVKHMbWJ41ofgBTJfZse8AAAA=[0mPuppet/2puppet_enter_detatils_in_slave_host_file" build number [8mha:////4MiPzoGPCaPbjfPmSLlgFaZ+igp0C+hQ1VgfBf4NWebiAAAAvh+LCAAAAAAAAP9djTEKwkAQRceIHsBSbLxAFiwEESsbhSiCB1hWMyYbh91ldxL0Gl5DGw/hcbyDmlTmN/8Vj/8fb+gFD+O8TIM18dGaYAnjjU2RVleHnrQ5by0jNOlEABcPo5b/p04X9+fi5l4RRGvoE5qM8wS6pSeGQVKoSglSJhN79tpk8+/csDW3bLr9637AMBeFPYhd6RxyjRNXs0TD6GWKrFhTkNrIQKpCmdvA8qQJxewD85UedfAAAAA=[0m9
+ originally caused by:
+  Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4DE/tikzjaJKBA2AS3JA5X+MftXVhrpDDoJAXraRdn3EAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXf0BIA0k2eZtUAAAA=[0m19
+  originally caused by:
+   Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4CfTqVTX+CjJUcc+D9Vw1LEds4Znre8uLQmrRo5Itf8PAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMzAGUQ/pzBAAAA[0m76 in workspace /home/ec2-user/jenkin/workspace/Puppet/4Puppet_reboot
+[4Puppet_reboot] $ /bin/sh -xe /tmp/jenkins6912040824462058404.sh
++ sudo reboot
+FATAL: command execution failed
+java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:179)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:795)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused: java.io.IOException: Backing channel 'JNLP4-connect connection from 35.175.63.140/35.175.63.140:39686' is disconnected.
+	at hudson.remoting.RemoteInvocationHandler.channelOrFail(RemoteInvocationHandler.java:214)
+	at hudson.remoting.RemoteInvocationHandler.invoke(RemoteInvocationHandler.java:283)
+	at com.sun.proxy.$Proxy67.isAlive(Unknown Source)
+	at hudson.Launcher$RemoteLauncher$ProcImpl.isAlive(Launcher.java:1144)
+	at hudson.Launcher$RemoteLauncher$ProcImpl.join(Launcher.java:1136)
+	at hudson.tasks.CommandInterpreter.join(CommandInterpreter.java:155)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:109)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+FATAL: Unable to delete script file /tmp/jenkins6912040824462058404.sh
+java.nio.channels.ClosedChannelException
+	at org.jenkinsci.remoting.protocol.NetworkLayer.onRecvClosed(NetworkLayer.java:154)
+	at org.jenkinsci.remoting.protocol.impl.NIONetworkLayer.ready(NIONetworkLayer.java:179)
+	at org.jenkinsci.remoting.protocol.IOHub$OnReady.run(IOHub.java:795)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused: hudson.remoting.ChannelClosedException: Channel "unknown": Remote call on JNLP4-connect connection from 35.175.63.140/35.175.63.140:39686 failed. The channel is closing down or has closed down
+	at hudson.remoting.Channel.call(Channel.java:948)
+	at hudson.FilePath.act(FilePath.java:1072)
+	at hudson.FilePath.act(FilePath.java:1061)
+	at hudson.FilePath.delete(FilePath.java:1565)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:123)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

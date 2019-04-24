@@ -1,0 +1,20 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4D6f41d2qYFVo09aNJxeY4QEFRLv4OjuzlJfiLs7aADKAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifdPcxGIgDQBJIBssxgAAAA==[0m5master in workspace /home/ec2-user/jenkin/workspace/last_chaange_plugin/last_CHANGE
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/git786hub/welcome_Puppet_Logs.git # timeout=10
+Fetching upstream changes from https://github.com/git786hub/welcome_Puppet_Logs.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/git786hub/welcome_Puppet_Logs.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b5a47daabc3651da8a8209903a3e15dcf820e763 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b5a47daabc3651da8a8209903a3e15dcf820e763
+Commit message: "last change plugin"
+ > git rev-list --no-walk d6e064a0a7066d909d8bb88d04ac95abe9a2a082 # timeout=10
+Publishing build last changes...
+[8mha:////4Ff3Uh3NbKKFD2cmXtt6HSEY5GogISdjplDQkDmKKl7DAAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiIKmEQ1NPTNwIaUVyim5wBNCi1GAD4qjIglgAAAA==[0mLast changes from revision b5a47da (current) to d6e064a (previous) published successfully!
+Finished: SUCCESS

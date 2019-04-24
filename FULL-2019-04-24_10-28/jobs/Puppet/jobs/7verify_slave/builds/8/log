@@ -1,0 +1,48 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4DLMiIZA4zdQMuAtq9D9VvE5vu+iEqro4SygCwezEm3eAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXNjAOrklOzBAAAA[0m73 in workspace /home/ec2-user/jenkin/workspace/Puppet/7verify_slave
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins8943728852202974392.sh
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins5783499927015594195.sh
++ sudo service puppet start
+Redirecting to /bin/systemctl start puppet.service
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins1522980176112847046.sh
++ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+service { 'puppet':
+  ensure => 'running',
+  enable => 'true',
+}
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins7719845272779754033.sh
++ sudo systemctl restart puppet
++ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+service { 'puppet':
+  ensure => 'running',
+  enable => 'true',
+}
++ sudo systemctl status puppet -l
+● puppet.service - Puppet agent
+   Loaded: loaded (/usr/lib/systemd/system/puppet.service; enabled; vendor preset: disabled)
+   Active: active (running) since Mon 2019-04-01 08:13:17 UTC; 1s ago
+ Main PID: 3918 (puppet)
+   CGroup: /system.slice/puppet.service
+           └─3918 /opt/puppetlabs/puppet/bin/ruby /opt/puppetlabs/puppet/bin/puppet agent --no-daemonize
+
+Apr 01 08:13:17 ip-172-30-4-44.ec2.internal systemd[1]: Started Puppet agent.
+Apr 01 08:13:17 ip-172-30-4-44.ec2.internal systemd[1]: Starting Puppet agent...
++ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+service { 'puppet':
+  ensure => 'running',
+  enable => 'true',
+}
++ sudo /opt/puppetlabs/bin/puppet
+See 'puppet help' for help on available puppet subcommands
++ sudo /opt/puppetlabs/bin/puppet agent --test
+[0;32mInfo: Using configured environment 'production'[0m
+[0;32mInfo: Retrieving pluginfacts[0m
+[0;32mInfo: Retrieving plugin[0m
+[0;32mInfo: Retrieving locales[0m
+[0;32mInfo: Loading facts[0m
+[1;31mError: Could not retrieve catalog from remote server: Error 500 on SERVER: Server Error: Could not find node statement with name 'default' or '73.pulkit.co, 73.pulkit, 73, ip-172-30-4-44.ec2.internal, ip-172-30-4-44.ec2, ip-172-30-4-44' on node 73.pulkit.co[0m
+[1;33mWarning: Not using cache on failed catalog[0m
+[1;31mError: Could not retrieve catalog; skipping run[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

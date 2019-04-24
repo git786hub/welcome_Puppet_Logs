@@ -1,0 +1,601 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.3">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.6">
+              <sha1>d6e064a0a7066d909d8bb88d04ac95abe9a2a082</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/git786hub/welcome_Puppet_Logs.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.3">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/ec2-user/jenkin/workspace/last_chaange_plugin/last_CHANGE</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <com.github.jenkins.lastchanges.LastChangesBuildAction plugin="last-changes@2.7.3">
+      <buildChanges>
+        <currentRevision>
+          <commitId>d6e064a0a7066d909d8bb88d04ac95abe9a2a082</commitId>
+          <commitMessage>template</commitMessage>
+          <committerName>GitHub</committerName>
+          <committerEmail>noreply@github.com</committerEmail>
+          <commitDate>Apr 5, 2019 4:26:08 PM GMT+05:30</commitDate>
+        </currentRevision>
+        <previousRevision>
+          <commitId>9b0b7bfc6e192bfd8fd6849e1c1ea56efde6c6f4</commitId>
+          <commitMessage>u</commitMessage>
+          <committerName>GitHub</committerName>
+          <committerEmail>noreply@github.com</committerEmail>
+          <commitDate>Apr 2, 2019 5:13:32 PM GMT+05:30</commitDate>
+        </previousRevision>
+        <diff>diff --git a/ec.json b/ec.json
+new file mode 100644
+index 0000000..6a7626f
+--- /dev/null
++++ b/ec.json
+@@ -0,0 +1,245 @@
++{&#xd;
++  &quot;AWSTemplateFormatVersion&quot; : &quot;2010-09-09&quot;,&#xd;
++  &#xd;
++  &quot;Description&quot; : &quot;AWS CloudFormation Sample Template LAMP_Single_Instance: Create a LAMP stack using a single EC2 instance and a local MySQL database for storage. This template demonstrates using the AWS CloudFormation bootstrap scripts to install the packages and files necessary to deploy the Apache web server, PHP and MySQL at instance launch time. **WARNING** This template creates an Amazon EC2 instance. You will be billed for the AWS resources used if you create a stack from this template.&quot;,&#xd;
++  &#xd;
++  &quot;Parameters&quot; : {&#xd;
++      &#xd;
++    &quot;KeyName&quot;: {&#xd;
++      &quot;Description&quot; : &quot;Name of an existing EC2 KeyPair to enable SSH access to the instance&quot;,&#xd;
++      &quot;Type&quot;: &quot;AWS::EC2::KeyPair::KeyName&quot;,&#xd;
++      &quot;ConstraintDescription&quot; : &quot;must be the name of an existing EC2 KeyPair.&quot;&#xd;
++    },    &#xd;
++&#xd;
++  &#xd;
++&#xd;
++  &#xd;
++&#xd;
++   &#xd;
++&#xd;
++    &#xd;
++&#xd;
++    &quot;InstanceType&quot; : {&#xd;
++      &quot;Description&quot; : &quot;WebServer EC2 instance type&quot;,&#xd;
++      &quot;Type&quot; : &quot;String&quot;,&#xd;
++      &quot;Default&quot; : &quot;t2.micro&quot;,&#xd;
++      &quot;AllowedValues&quot; : [ &quot;t1.micro&quot;, &quot;t2.nano&quot;, &quot;t2.micro&quot;, &quot;t2.small&quot;, &quot;t2.medium&quot;, &quot;t2.large&quot;, &quot;m1.small&quot;, &quot;m1.medium&quot;, &quot;m1.large&quot;, &quot;m1.xlarge&quot;, &quot;m2.xlarge&quot;, &quot;m2.2xlarge&quot;, &quot;m2.4xlarge&quot;, &quot;m3.medium&quot;, &quot;m3.large&quot;, &quot;m3.xlarge&quot;, &quot;m3.2xlarge&quot;, &quot;m4.large&quot;, &quot;m4.xlarge&quot;, &quot;m4.2xlarge&quot;, &quot;m4.4xlarge&quot;, &quot;m4.10xlarge&quot;, &quot;c1.medium&quot;, &quot;c1.xlarge&quot;, &quot;c3.large&quot;, &quot;c3.xlarge&quot;, &quot;c3.2xlarge&quot;, &quot;c3.4xlarge&quot;, &quot;c3.8xlarge&quot;, &quot;c4.large&quot;, &quot;c4.xlarge&quot;, &quot;c4.2xlarge&quot;, &quot;c4.4xlarge&quot;, &quot;c4.8xlarge&quot;, &quot;g2.2xlarge&quot;, &quot;g2.8xlarge&quot;, &quot;r3.large&quot;, &quot;r3.xlarge&quot;, &quot;r3.2xlarge&quot;, &quot;r3.4xlarge&quot;, &quot;r3.8xlarge&quot;, &quot;i2.xlarge&quot;, &quot;i2.2xlarge&quot;, &quot;i2.4xlarge&quot;, &quot;i2.8xlarge&quot;, &quot;d2.xlarge&quot;, &quot;d2.2xlarge&quot;, &quot;d2.4xlarge&quot;, &quot;d2.8xlarge&quot;, &quot;hi1.4xlarge&quot;, &quot;hs1.8xlarge&quot;, &quot;cr1.8xlarge&quot;, &quot;cc2.8xlarge&quot;, &quot;cg1.4xlarge&quot;]&#xd;
++,&#xd;
++      &quot;ConstraintDescription&quot; : &quot;must be a valid EC2 instance type.&quot;&#xd;
++    },&#xd;
++&#xd;
++    &quot;SSHLocation&quot; : {&#xd;
++      &quot;Description&quot; : &quot; The IP address range that can be used to SSH to the EC2 instances&quot;,&#xd;
++      &quot;Type&quot;: &quot;String&quot;,&#xd;
++      &quot;MinLength&quot;: &quot;9&quot;,&#xd;
++      &quot;MaxLength&quot;: &quot;18&quot;,&#xd;
++      &quot;Default&quot;: &quot;0.0.0.0/0&quot;,&#xd;
++      &quot;AllowedPattern&quot;: &quot;(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})&quot;,&#xd;
++      &quot;ConstraintDescription&quot;: &quot;must be a valid IP CIDR range of the form x.x.x.x/x.&quot;&#xd;
++    } &#xd;
++  },&#xd;
++  &#xd;
++  &quot;Mappings&quot; : {&#xd;
++    &quot;AWSInstanceType2Arch&quot; : {&#xd;
++      &quot;t1.micro&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.nano&quot;     : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.micro&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.small&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.medium&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m1.small&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m1.medium&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m1.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m1.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m2.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m3.medium&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m3.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m3.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.10xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c1.medium&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c1.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;g2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVMG2&quot;  },&#xd;
++      &quot;g2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVMG2&quot;  },&#xd;
++      &quot;r3.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;r3.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;r3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;r3.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;r3.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;i2.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;i2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;i2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;i2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;d2.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;d2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;d2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;d2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;hi1.4xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;hs1.8xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;cr1.8xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;cc2.8xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  }&#xd;
++    },&#xd;
++&#xd;
++    &quot;AWSInstanceType2NATArch&quot; : {&#xd;
++      &quot;t1.micro&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.nano&quot;     : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.micro&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.small&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.medium&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m1.small&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m1.medium&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m1.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m1.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m2.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m3.medium&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m3.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m3.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.10xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c1.medium&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c1.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;g2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVMG2&quot;  },&#xd;
++      &quot;g2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVMG2&quot;  },&#xd;
++      &quot;r3.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;r3.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;r3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;r3.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;r3.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;i2.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;i2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;i2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;i2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;d2.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;d2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;d2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;d2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;hi1.4xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;hs1.8xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;cr1.8xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;cc2.8xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  }&#xd;
++    }&#xd;
++,&#xd;
++    &quot;AWSRegionArch2AMI&quot; : {&#xd;
++      &quot;us-east-1&quot;        : {&quot;HVM64&quot; : &quot;ami-0ff8a91507f77f867&quot;, &quot;HVMG2&quot; : &quot;ami-0a584ac55a7631c0c&quot;},&#xd;
++      &quot;us-west-2&quot;        : {&quot;HVM64&quot; : &quot;ami-a0cfeed8&quot;, &quot;HVMG2&quot; : &quot;ami-0e09505bc235aa82d&quot;},&#xd;
++      &quot;us-west-1&quot;        : {&quot;HVM64&quot; : &quot;ami-0f65671a86f061fcd&quot;, &quot;HVMG2&quot; : &quot;ami-0f65671a86f061fcd&quot;},&#xd;
++      &quot;eu-west-1&quot;        : {&quot;HVM64&quot; : &quot;ami-047bb4163c506cd98&quot;, &quot;HVMG2&quot; : &quot;ami-0a7c483d527806435&quot;},&#xd;
++      &quot;eu-west-2&quot;        : {&quot;HVM64&quot; : &quot;ami-f976839e&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;eu-west-3&quot;        : {&quot;HVM64&quot; : &quot;ami-0ebc281c20e89ba4b&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;eu-central-1&quot;     : {&quot;HVM64&quot; : &quot;ami-0233214e13e500f77&quot;, &quot;HVMG2&quot; : &quot;ami-06223d46a6d0661c7&quot;},&#xd;
++      &quot;ap-northeast-1&quot;   : {&quot;HVM64&quot; : &quot;ami-06cd52961ce9f0d85&quot;, &quot;HVMG2&quot; : &quot;ami-053cdd503598e4a9d&quot;},&#xd;
++      &quot;ap-northeast-2&quot;   : {&quot;HVM64&quot; : &quot;ami-0a10b2721688ce9d2&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;ap-northeast-3&quot;   : {&quot;HVM64&quot; : &quot;ami-0d98120a9fb693f07&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;ap-southeast-1&quot;   : {&quot;HVM64&quot; : &quot;ami-08569b978cc4dfa10&quot;, &quot;HVMG2&quot; : &quot;ami-0be9df32ae9f92309&quot;},&#xd;
++      &quot;ap-southeast-2&quot;   : {&quot;HVM64&quot; : &quot;ami-09b42976632b27e9b&quot;, &quot;HVMG2&quot; : &quot;ami-0a9ce9fecc3d1daf8&quot;},&#xd;
++      &quot;ap-south-1&quot;       : {&quot;HVM64&quot; : &quot;ami-0912f71e06545ad88&quot;, &quot;HVMG2&quot; : &quot;ami-097b15e89dbdcfcf4&quot;},&#xd;
++      &quot;us-east-2&quot;        : {&quot;HVM64&quot; : &quot;ami-0b59bfac6be064b78&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;ca-central-1&quot;     : {&quot;HVM64&quot; : &quot;ami-0b18956f&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;sa-east-1&quot;        : {&quot;HVM64&quot; : &quot;ami-07b14488da8ea02a0&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;cn-north-1&quot;       : {&quot;HVM64&quot; : &quot;ami-0a4eaf6c4454eda75&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;cn-northwest-1&quot;   : {&quot;HVM64&quot; : &quot;ami-6b6a7d09&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;}&#xd;
++    }&#xd;
++&#xd;
++  },&#xd;
++    &#xd;
++  &quot;Resources&quot; : {     &#xd;
++      &#xd;
++    &quot;WebServerInstance&quot;: {  &#xd;
++      &quot;Type&quot;: &quot;AWS::EC2::Instance&quot;,&#xd;
++     &#xd;
++    &quot;Metadata&quot;: {&#xd;
++      &quot;AWS::CloudFormation::Init&quot;: {    &#xd;
++      &quot;configSets&quot; : {&#xd;
++            &quot;InstallAndRun&quot; : [  &quot;Configure&quot; ]&#xd;
++          },&#xd;
++       &#xd;
++        &quot;Configure&quot;: {&#xd;
++          &quot;commands&quot;: {&#xd;
++            &quot;a_get_certificates&quot;: {&#xd;
++              &quot;command&quot;: &quot;#sudo yum install -y git &amp;&amp; git clone https://github.com/git786hub/Script &amp;&amp; cd Script/ &amp;&amp; sudo chmod +x script.sh &amp;&amp; ./script.sh &quot;&#xd;
++            }&#xd;
++          &#xd;
++          }&#xd;
++        }&#xd;
++      }&#xd;
++    },&#xd;
++&#xd;
++      &quot;Properties&quot;: {&#xd;
++        &quot;ImageId&quot; : { &quot;Fn::FindInMap&quot; : [ &quot;AWSRegionArch2AMI&quot;, { &quot;Ref&quot; : &quot;AWS::Region&quot; },&#xd;
++                          { &quot;Fn::FindInMap&quot; : [ &quot;AWSInstanceType2Arch&quot;, { &quot;Ref&quot; : &quot;InstanceType&quot; }, &quot;Arch&quot; ] } ] },&#xd;
++        &quot;InstanceType&quot;   : { &quot;Ref&quot; : &quot;InstanceType&quot; },&#xd;
++        &quot;SecurityGroups&quot; : [ {&quot;Ref&quot; : &quot;WebServerSecurityGroup&quot;} ],&#xd;
++        &quot;KeyName&quot;        : { &quot;Ref&quot; : &quot;KeyName&quot; },&#xd;
++        &quot;UserData&quot;       : { &quot;Fn::Base64&quot; : { &quot;Fn::Join&quot; : [&quot;&quot;, [&#xd;
++             &quot;#!/bin/bash -xe\n&quot;,&#xd;
++             &quot;yum update -y aws-cfn-bootstrap\n&quot;,&#xd;
++&#xd;
++             &quot;# Install the files and packages from the metadata\n&quot;,&#xd;
++             &quot;/opt/aws/bin/cfn-init -v &quot;,&#xd;
++             &quot;         --stack &quot;, { &quot;Ref&quot; : &quot;AWS::StackName&quot; },&#xd;
++             &quot;         --resource WebServerInstance &quot;,&#xd;
++             &quot;         --configsets InstallAndRun &quot;,&#xd;
++             &quot;         --region &quot;, { &quot;Ref&quot; : &quot;AWS::Region&quot; }, &quot;\n&quot;,&#xd;
++&#xd;
++             &quot;# Signal the status from cfn-init\n&quot;,&#xd;
++             &quot;/opt/aws/bin/cfn-signal -e $? &quot;,&#xd;
++             &quot;         --stack &quot;, { &quot;Ref&quot; : &quot;AWS::StackName&quot; },&#xd;
++             &quot;         --resource WebServerInstance &quot;,&#xd;
++             &quot;         --region &quot;, { &quot;Ref&quot; : &quot;AWS::Region&quot; }, &quot;\n&quot;&#xd;
++        ]]}}        &#xd;
++      },&#xd;
++     &#xd;
++    },&#xd;
++    &#xd;
++    &quot;WebServerSecurityGroup&quot; : {&#xd;
++      &quot;Type&quot; : &quot;AWS::EC2::SecurityGroup&quot;,&#xd;
++      &quot;Properties&quot; : {&#xd;
++        &quot;GroupDescription&quot; : &quot;Enable HTTP access via port 80&quot;,&#xd;
++        &quot;SecurityGroupIngress&quot; : [&#xd;
++          {&quot;IpProtocol&quot; : &quot;tcp&quot;, &quot;FromPort&quot; : &quot;80&quot;, &quot;ToPort&quot; : &quot;80&quot;, &quot;CidrIp&quot; : &quot;0.0.0.0/0&quot;},&#xd;
++          {&quot;IpProtocol&quot; : &quot;tcp&quot;, &quot;FromPort&quot; : &quot;22&quot;, &quot;ToPort&quot; : &quot;22&quot;, &quot;CidrIp&quot; : { &quot;Ref&quot; : &quot;SSHLocation&quot;}}&#xd;
++        ]&#xd;
++      }      &#xd;
++    }          &#xd;
++  },&#xd;
++  &#xd;
++  &quot;Outputs&quot; : {&#xd;
++    &quot;WebsiteURL&quot; : {&#xd;
++      &quot;Description&quot; : &quot;URL for newly created LAMP stack&quot;,&#xd;
++      &quot;Value&quot; : { &quot;Fn::Join&quot; : [&quot;&quot;, [&quot;http://&quot;, { &quot;Fn::GetAtt&quot; : [ &quot;WebServerInstance&quot;, &quot;PublicDnsName&quot; ]}]] }&#xd;
++    }&#xd;
++  }&#xd;
++}
+\ No newline at end of file
+</diff>
+        <commits>
+          <com.github.jenkins.lastchanges.model.CommitChanges>
+            <commitInfo reference="../../../currentRevision"/>
+            <changes>diff --git a/ec.json b/ec.json
+new file mode 100644
+index 0000000..6a7626f
+--- /dev/null
++++ b/ec.json
+@@ -0,0 +1,245 @@
++{&#xd;
++  &quot;AWSTemplateFormatVersion&quot; : &quot;2010-09-09&quot;,&#xd;
++  &#xd;
++  &quot;Description&quot; : &quot;AWS CloudFormation Sample Template LAMP_Single_Instance: Create a LAMP stack using a single EC2 instance and a local MySQL database for storage. This template demonstrates using the AWS CloudFormation bootstrap scripts to install the packages and files necessary to deploy the Apache web server, PHP and MySQL at instance launch time. **WARNING** This template creates an Amazon EC2 instance. You will be billed for the AWS resources used if you create a stack from this template.&quot;,&#xd;
++  &#xd;
++  &quot;Parameters&quot; : {&#xd;
++      &#xd;
++    &quot;KeyName&quot;: {&#xd;
++      &quot;Description&quot; : &quot;Name of an existing EC2 KeyPair to enable SSH access to the instance&quot;,&#xd;
++      &quot;Type&quot;: &quot;AWS::EC2::KeyPair::KeyName&quot;,&#xd;
++      &quot;ConstraintDescription&quot; : &quot;must be the name of an existing EC2 KeyPair.&quot;&#xd;
++    },    &#xd;
++&#xd;
++  &#xd;
++&#xd;
++  &#xd;
++&#xd;
++   &#xd;
++&#xd;
++    &#xd;
++&#xd;
++    &quot;InstanceType&quot; : {&#xd;
++      &quot;Description&quot; : &quot;WebServer EC2 instance type&quot;,&#xd;
++      &quot;Type&quot; : &quot;String&quot;,&#xd;
++      &quot;Default&quot; : &quot;t2.micro&quot;,&#xd;
++      &quot;AllowedValues&quot; : [ &quot;t1.micro&quot;, &quot;t2.nano&quot;, &quot;t2.micro&quot;, &quot;t2.small&quot;, &quot;t2.medium&quot;, &quot;t2.large&quot;, &quot;m1.small&quot;, &quot;m1.medium&quot;, &quot;m1.large&quot;, &quot;m1.xlarge&quot;, &quot;m2.xlarge&quot;, &quot;m2.2xlarge&quot;, &quot;m2.4xlarge&quot;, &quot;m3.medium&quot;, &quot;m3.large&quot;, &quot;m3.xlarge&quot;, &quot;m3.2xlarge&quot;, &quot;m4.large&quot;, &quot;m4.xlarge&quot;, &quot;m4.2xlarge&quot;, &quot;m4.4xlarge&quot;, &quot;m4.10xlarge&quot;, &quot;c1.medium&quot;, &quot;c1.xlarge&quot;, &quot;c3.large&quot;, &quot;c3.xlarge&quot;, &quot;c3.2xlarge&quot;, &quot;c3.4xlarge&quot;, &quot;c3.8xlarge&quot;, &quot;c4.large&quot;, &quot;c4.xlarge&quot;, &quot;c4.2xlarge&quot;, &quot;c4.4xlarge&quot;, &quot;c4.8xlarge&quot;, &quot;g2.2xlarge&quot;, &quot;g2.8xlarge&quot;, &quot;r3.large&quot;, &quot;r3.xlarge&quot;, &quot;r3.2xlarge&quot;, &quot;r3.4xlarge&quot;, &quot;r3.8xlarge&quot;, &quot;i2.xlarge&quot;, &quot;i2.2xlarge&quot;, &quot;i2.4xlarge&quot;, &quot;i2.8xlarge&quot;, &quot;d2.xlarge&quot;, &quot;d2.2xlarge&quot;, &quot;d2.4xlarge&quot;, &quot;d2.8xlarge&quot;, &quot;hi1.4xlarge&quot;, &quot;hs1.8xlarge&quot;, &quot;cr1.8xlarge&quot;, &quot;cc2.8xlarge&quot;, &quot;cg1.4xlarge&quot;]&#xd;
++,&#xd;
++      &quot;ConstraintDescription&quot; : &quot;must be a valid EC2 instance type.&quot;&#xd;
++    },&#xd;
++&#xd;
++    &quot;SSHLocation&quot; : {&#xd;
++      &quot;Description&quot; : &quot; The IP address range that can be used to SSH to the EC2 instances&quot;,&#xd;
++      &quot;Type&quot;: &quot;String&quot;,&#xd;
++      &quot;MinLength&quot;: &quot;9&quot;,&#xd;
++      &quot;MaxLength&quot;: &quot;18&quot;,&#xd;
++      &quot;Default&quot;: &quot;0.0.0.0/0&quot;,&#xd;
++      &quot;AllowedPattern&quot;: &quot;(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})\\.(\\d{1,3})/(\\d{1,2})&quot;,&#xd;
++      &quot;ConstraintDescription&quot;: &quot;must be a valid IP CIDR range of the form x.x.x.x/x.&quot;&#xd;
++    } &#xd;
++  },&#xd;
++  &#xd;
++  &quot;Mappings&quot; : {&#xd;
++    &quot;AWSInstanceType2Arch&quot; : {&#xd;
++      &quot;t1.micro&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.nano&quot;     : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.micro&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.small&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.medium&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;t2.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m1.small&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m1.medium&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m1.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m1.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m2.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m3.medium&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m3.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m3.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;m4.10xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c1.medium&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c1.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c3.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;c4.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;g2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVMG2&quot;  },&#xd;
++      &quot;g2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVMG2&quot;  },&#xd;
++      &quot;r3.large&quot;    : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;r3.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;r3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;r3.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;r3.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;i2.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;i2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;i2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;i2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;d2.xlarge&quot;   : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;d2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;d2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;d2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;hi1.4xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;hs1.8xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;cr1.8xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  },&#xd;
++      &quot;cc2.8xlarge&quot; : { &quot;Arch&quot; : &quot;HVM64&quot;  }&#xd;
++    },&#xd;
++&#xd;
++    &quot;AWSInstanceType2NATArch&quot; : {&#xd;
++      &quot;t1.micro&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.nano&quot;     : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.micro&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.small&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.medium&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;t2.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m1.small&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m1.medium&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m1.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m1.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m2.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m3.medium&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m3.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m3.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;m4.10xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c1.medium&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c1.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c3.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;c4.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;g2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVMG2&quot;  },&#xd;
++      &quot;g2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVMG2&quot;  },&#xd;
++      &quot;r3.large&quot;    : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;r3.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;r3.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;r3.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;r3.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;i2.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;i2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;i2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;i2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;d2.xlarge&quot;   : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;d2.2xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;d2.4xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;d2.8xlarge&quot;  : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;hi1.4xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;hs1.8xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;cr1.8xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  },&#xd;
++      &quot;cc2.8xlarge&quot; : { &quot;Arch&quot; : &quot;NATHVM64&quot;  }&#xd;
++    }&#xd;
++,&#xd;
++    &quot;AWSRegionArch2AMI&quot; : {&#xd;
++      &quot;us-east-1&quot;        : {&quot;HVM64&quot; : &quot;ami-0ff8a91507f77f867&quot;, &quot;HVMG2&quot; : &quot;ami-0a584ac55a7631c0c&quot;},&#xd;
++      &quot;us-west-2&quot;        : {&quot;HVM64&quot; : &quot;ami-a0cfeed8&quot;, &quot;HVMG2&quot; : &quot;ami-0e09505bc235aa82d&quot;},&#xd;
++      &quot;us-west-1&quot;        : {&quot;HVM64&quot; : &quot;ami-0f65671a86f061fcd&quot;, &quot;HVMG2&quot; : &quot;ami-0f65671a86f061fcd&quot;},&#xd;
++      &quot;eu-west-1&quot;        : {&quot;HVM64&quot; : &quot;ami-047bb4163c506cd98&quot;, &quot;HVMG2&quot; : &quot;ami-0a7c483d527806435&quot;},&#xd;
++      &quot;eu-west-2&quot;        : {&quot;HVM64&quot; : &quot;ami-f976839e&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;eu-west-3&quot;        : {&quot;HVM64&quot; : &quot;ami-0ebc281c20e89ba4b&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;eu-central-1&quot;     : {&quot;HVM64&quot; : &quot;ami-0233214e13e500f77&quot;, &quot;HVMG2&quot; : &quot;ami-06223d46a6d0661c7&quot;},&#xd;
++      &quot;ap-northeast-1&quot;   : {&quot;HVM64&quot; : &quot;ami-06cd52961ce9f0d85&quot;, &quot;HVMG2&quot; : &quot;ami-053cdd503598e4a9d&quot;},&#xd;
++      &quot;ap-northeast-2&quot;   : {&quot;HVM64&quot; : &quot;ami-0a10b2721688ce9d2&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;ap-northeast-3&quot;   : {&quot;HVM64&quot; : &quot;ami-0d98120a9fb693f07&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;ap-southeast-1&quot;   : {&quot;HVM64&quot; : &quot;ami-08569b978cc4dfa10&quot;, &quot;HVMG2&quot; : &quot;ami-0be9df32ae9f92309&quot;},&#xd;
++      &quot;ap-southeast-2&quot;   : {&quot;HVM64&quot; : &quot;ami-09b42976632b27e9b&quot;, &quot;HVMG2&quot; : &quot;ami-0a9ce9fecc3d1daf8&quot;},&#xd;
++      &quot;ap-south-1&quot;       : {&quot;HVM64&quot; : &quot;ami-0912f71e06545ad88&quot;, &quot;HVMG2&quot; : &quot;ami-097b15e89dbdcfcf4&quot;},&#xd;
++      &quot;us-east-2&quot;        : {&quot;HVM64&quot; : &quot;ami-0b59bfac6be064b78&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;ca-central-1&quot;     : {&quot;HVM64&quot; : &quot;ami-0b18956f&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;sa-east-1&quot;        : {&quot;HVM64&quot; : &quot;ami-07b14488da8ea02a0&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;cn-north-1&quot;       : {&quot;HVM64&quot; : &quot;ami-0a4eaf6c4454eda75&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;},&#xd;
++      &quot;cn-northwest-1&quot;   : {&quot;HVM64&quot; : &quot;ami-6b6a7d09&quot;, &quot;HVMG2&quot; : &quot;NOT_SUPPORTED&quot;}&#xd;
++    }&#xd;
++&#xd;
++  },&#xd;
++    &#xd;
++  &quot;Resources&quot; : {     &#xd;
++      &#xd;
++    &quot;WebServerInstance&quot;: {  &#xd;
++      &quot;Type&quot;: &quot;AWS::EC2::Instance&quot;,&#xd;
++     &#xd;
++    &quot;Metadata&quot;: {&#xd;
++      &quot;AWS::CloudFormation::Init&quot;: {    &#xd;
++      &quot;configSets&quot; : {&#xd;
++            &quot;InstallAndRun&quot; : [  &quot;Configure&quot; ]&#xd;
++          },&#xd;
++       &#xd;
++        &quot;Configure&quot;: {&#xd;
++          &quot;commands&quot;: {&#xd;
++            &quot;a_get_certificates&quot;: {&#xd;
++              &quot;command&quot;: &quot;#sudo yum install -y git &amp;&amp; git clone https://github.com/git786hub/Script &amp;&amp; cd Script/ &amp;&amp; sudo chmod +x script.sh &amp;&amp; ./script.sh &quot;&#xd;
++            }&#xd;
++          &#xd;
++          }&#xd;
++        }&#xd;
++      }&#xd;
++    },&#xd;
++&#xd;
++      &quot;Properties&quot;: {&#xd;
++        &quot;ImageId&quot; : { &quot;Fn::FindInMap&quot; : [ &quot;AWSRegionArch2AMI&quot;, { &quot;Ref&quot; : &quot;AWS::Region&quot; },&#xd;
++                          { &quot;Fn::FindInMap&quot; : [ &quot;AWSInstanceType2Arch&quot;, { &quot;Ref&quot; : &quot;InstanceType&quot; }, &quot;Arch&quot; ] } ] },&#xd;
++        &quot;InstanceType&quot;   : { &quot;Ref&quot; : &quot;InstanceType&quot; },&#xd;
++        &quot;SecurityGroups&quot; : [ {&quot;Ref&quot; : &quot;WebServerSecurityGroup&quot;} ],&#xd;
++        &quot;KeyName&quot;        : { &quot;Ref&quot; : &quot;KeyName&quot; },&#xd;
++        &quot;UserData&quot;       : { &quot;Fn::Base64&quot; : { &quot;Fn::Join&quot; : [&quot;&quot;, [&#xd;
++             &quot;#!/bin/bash -xe\n&quot;,&#xd;
++             &quot;yum update -y aws-cfn-bootstrap\n&quot;,&#xd;
++&#xd;
++             &quot;# Install the files and packages from the metadata\n&quot;,&#xd;
++             &quot;/opt/aws/bin/cfn-init -v &quot;,&#xd;
++             &quot;         --stack &quot;, { &quot;Ref&quot; : &quot;AWS::StackName&quot; },&#xd;
++             &quot;         --resource WebServerInstance &quot;,&#xd;
++             &quot;         --configsets InstallAndRun &quot;,&#xd;
++             &quot;         --region &quot;, { &quot;Ref&quot; : &quot;AWS::Region&quot; }, &quot;\n&quot;,&#xd;
++&#xd;
++             &quot;# Signal the status from cfn-init\n&quot;,&#xd;
++             &quot;/opt/aws/bin/cfn-signal -e $? &quot;,&#xd;
++             &quot;         --stack &quot;, { &quot;Ref&quot; : &quot;AWS::StackName&quot; },&#xd;
++             &quot;         --resource WebServerInstance &quot;,&#xd;
++             &quot;         --region &quot;, { &quot;Ref&quot; : &quot;AWS::Region&quot; }, &quot;\n&quot;&#xd;
++        ]]}}        &#xd;
++      },&#xd;
++     &#xd;
++    },&#xd;
++    &#xd;
++    &quot;WebServerSecurityGroup&quot; : {&#xd;
++      &quot;Type&quot; : &quot;AWS::EC2::SecurityGroup&quot;,&#xd;
++      &quot;Properties&quot; : {&#xd;
++        &quot;GroupDescription&quot; : &quot;Enable HTTP access via port 80&quot;,&#xd;
++        &quot;SecurityGroupIngress&quot; : [&#xd;
++          {&quot;IpProtocol&quot; : &quot;tcp&quot;, &quot;FromPort&quot; : &quot;80&quot;, &quot;ToPort&quot; : &quot;80&quot;, &quot;CidrIp&quot; : &quot;0.0.0.0/0&quot;},&#xd;
++          {&quot;IpProtocol&quot; : &quot;tcp&quot;, &quot;FromPort&quot; : &quot;22&quot;, &quot;ToPort&quot; : &quot;22&quot;, &quot;CidrIp&quot; : { &quot;Ref&quot; : &quot;SSHLocation&quot;}}&#xd;
++        ]&#xd;
++      }      &#xd;
++    }          &#xd;
++  },&#xd;
++  &#xd;
++  &quot;Outputs&quot; : {&#xd;
++    &quot;WebsiteURL&quot; : {&#xd;
++      &quot;Description&quot; : &quot;URL for newly created LAMP stack&quot;,&#xd;
++      &quot;Value&quot; : { &quot;Fn::Join&quot; : [&quot;&quot;, [&quot;http://&quot;, { &quot;Fn::GetAtt&quot; : [ &quot;WebServerInstance&quot;, &quot;PublicDnsName&quot; ]}]] }&#xd;
++    }&#xd;
++  }&#xd;
++}
+\ No newline at end of file
+</changes>
+          </com.github.jenkins.lastchanges.model.CommitChanges>
+        </commits>
+      </buildChanges>
+      <config>
+        <format>LINE</format>
+        <matching>NONE</matching>
+        <matchWordsThreshold>0.25</matchWordsThreshold>
+        <matchingMaxComparisons>1000.0</matchingMaxComparisons>
+        <showFiles>true</showFiles>
+        <synchronisedScroll>true</synchronisedScroll>
+        <since>PREVIOUS_REVISION</since>
+        <specificRevision></specificRevision>
+      </config>
+    </com.github.jenkins.lastchanges.LastChangesBuildAction>
+  </actions>
+  <queueId>513</queueId>
+  <timestamp>1554539595532</timestamp>
+  <startTime>1554539595533</startTime>
+  <result>SUCCESS</result>
+  <duration>10654</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>5master</builtOn>
+  <workspace>/home/ec2-user/jenkin/workspace/last_chaange_plugin/last_CHANGE</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.9.3">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

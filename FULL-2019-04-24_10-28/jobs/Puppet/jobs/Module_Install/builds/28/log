@@ -1,0 +1,14 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4D6f41d2qYFVo09aNJxeY4QEFRLv4OjuzlJfiLs7aADKAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifdPcxGIgDQBJIBssxgAAAA==[0m5master in workspace /home/ec2-user/jenkin/workspace/Puppet/Module_Install
+[Module_Install] $ /bin/sh -xe /tmp/jenkins6076234062429061004.sh
++ sudo /opt/puppetlabs/bin/puppet module install puppetlabs-java
+[mNotice: Preparing to install into /etc/puppetlabs/code/environments/production/modules ...[0m
+[mNotice: Module puppetlabs-java 3.3.0 is already installed.[0m
+[Module_Install] $ /bin/sh -xe /tmp/jenkins1287340450854354437.sh
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/Module_Install
++ sudo cp -r /home/ec2-user/.puppetlabs/etc/code/modules/. /etc/puppetlabs/code/environments/production/modules/
+cp: cannot stat ‘/home/ec2-user/.puppetlabs/etc/code/modules/.’: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

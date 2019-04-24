@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.plugins.parameterizedtrigger.NodeAction plugin="parameterized-trigger@2.35.2">
+      <nodeLabel class="hudson.model.labels.LabelAtom">2master</nodeLabel>
+    </hudson.plugins.parameterizedtrigger.NodeAction>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters/>
+      <parameterDefinitionNames class="empty-list"/>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>Puppet/1Create_Puppet_Master</upstreamProject>
+            <upstreamUrl>job/Puppet/job/1Create_Puppet_Master/</upstreamUrl>
+            <upstreamBuild>52</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UserIdCause/>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+  </actions>
+  <queueId>327</queueId>
+  <timestamp>1554124207900</timestamp>
+  <startTime>1554124207902</startTime>
+  <result>SUCCESS</result>
+  <duration>9204</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>2master</builtOn>
+  <workspace>/home/ec2-user/jenkin/workspace/Puppet/2Puppet_master_install_script</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

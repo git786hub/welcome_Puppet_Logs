@@ -1,0 +1,19 @@
+Started by BitBucket push by pulkit786agar
+Started by BitBucket push by pulkit786agar
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/BitBucket/Public_repo
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git # timeout=10
+Fetching upstream changes from https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 86261a114d5e8f3e39798ff95eb3524bbb5d977a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 86261a114d5e8f3e39798ff95eb3524bbb5d977a
+Commit message: "sdssdsdss"
+First time build. Skipping changelog.
+Finished: SUCCESS

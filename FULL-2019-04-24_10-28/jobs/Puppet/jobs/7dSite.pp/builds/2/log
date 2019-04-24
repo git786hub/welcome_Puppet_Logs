@@ -1,0 +1,8 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/Site.pp
+[Site.pp] $ /bin/sh -xe /tmp/jenkins3659440574225151377.sh
++ sudo cat node ''\''agent.pulkit.co'\''{' class '{' ''\''docker'\'':' use_upstream_package_source '=>' false, service_overrides_template '=>' false, docker_ce_package_name '=>' ''\''docker'\'',' '}' include git class '{' ''\''java'\''' : package '=>' ''\''java-1.8.0-openjdk-devel'\'',' '}' tomcat::install '{' ''\''/opt/tomcat'\'':' source_url '=>' ''\''https://www.apache.org/dist/tomcat/tomcat-9/v9.0.16/bin/apache-tomcat-9.0.16.tar.gz'\'',' '}' tomcat::instance '{' ''\''default'\'':' catalina_home '=>' ''\''/opt/tomcat'\'',' '}' package '{' ''\''httpd'\'':' ensure '=>' '"installed",' '}' service '{' ''\''httpd'\'':' ensure '=>' running, enable '=>' true '}' '}'
+/tmp/jenkins3659440574225151377.sh: line 2: /etc/puppetlabs/code/environments/production/manifests/we.pp: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

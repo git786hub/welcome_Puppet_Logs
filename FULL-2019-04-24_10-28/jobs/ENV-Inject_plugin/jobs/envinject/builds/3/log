@@ -1,0 +1,9 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/envinject
+[envinject] $ /bin/sh -xe /tmp/jenkins69087789064728702.sh
+++ echo heelo
++ echo AOEU=heelo
++ pwd
+/var/lib/jenkins/workspace/envinject
+Finished: SUCCESS

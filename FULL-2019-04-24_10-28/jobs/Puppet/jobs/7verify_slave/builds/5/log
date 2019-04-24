@@ -1,0 +1,33 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4K/Ovz+xHp11Io6MBVDojmv2xD3wj8kCoIwJRM5W7P4TAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMjAHzUk5vBAAAA[0m72 in workspace /home/ec2-user/jenkin/workspace/Puppet/7verify_slave
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins2671913732473221284.sh
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins285898904589445846.sh
++ sudo service puppet start
+Redirecting to /bin/systemctl start puppet.service
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins1476850151131350355.sh
++ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+service { 'puppet':
+  ensure => 'running',
+  enable => 'true',
+}
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins1631842137834065459.sh
++ sudo systemctl status puppet -l
+● puppet.service - Puppet agent
+   Loaded: loaded (/usr/lib/systemd/system/puppet.service; enabled; vendor preset: disabled)
+   Active: active (running) since Sun 2019-03-31 10:13:51 UTC; 4min 1s ago
+ Main PID: 3636 (puppet)
+   CGroup: /system.slice/puppet.service
+           └─3636 /opt/puppetlabs/puppet/bin/ruby /opt/puppetlabs/puppet/bin/puppet agent --no-daemonize
+
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/daemon.rb:193:in `run_event_loop'
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/daemon.rb:149:in `start'
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application/agent.rb:390:in `main'
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application/agent.rb:352:in `run_command'
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:375:in `block in run'
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/util.rb:667:in `exit_on_fail'
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:375:in `run'
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/util/command_line.rb:139:in `run'
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/util/command_line.rb:77:in `execute'
+Mar 31 10:16:03 ip-172-30-4-118.ec2.internal puppet[3636]: from /opt/puppetlabs/puppet/bin/puppet:5:in `<main>'
+Finished: SUCCESS

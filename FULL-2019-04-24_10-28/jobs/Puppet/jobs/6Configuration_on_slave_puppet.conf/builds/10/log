@@ -1,0 +1,33 @@
+Started by upstream project "[8mha:////4MPplvbKSwxtNM+bR6WOEHZhFagsrj/mPhUop5AzjIKQAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzpEgZV/az8JP2A0oKC1BIw07QAzI4vzkksS40HGpKWma4PAP9YIA/aAAAA[0mPuppet/5puppet_slave_config" build number [8mha:////4IseThDiP43hAJr7mEW9VltXIGrMQ1jYPnYNyYhG96odAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjX9rPwk/YDSgoLUEjDTtADMji/OSSxLjQcakpaZrm8BAHnWOYfbAAAA[0m8
+originally caused by:
+ Started by upstream project "[8mha:////4DFCWl4NKnxs9DzK7HxhnXkOPc0Jq4ZcCJAl1L1xb96xAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZ5/az8JP2A0oKC1BIw0wTCji9KTcrPL9EHADtM6D7UAAAA[0mPuppet/4Puppet_reboot" build number [8mha:////4CKhPT+nokzAGTMV2twwrxdYfkhoRauOoPmn4rcGeIEhAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZF/az8JP2A0oKC1BIw0wTCji9KTcrPL9E3NAYA8t42Z9YAAAA=[0m13
+ originally caused by:
+  Started by upstream project "[8mha:////4NvUIhiQMVWsJ7pW445IuulmIERGg4LQR0iPsw/WnPhnAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzlEgZd/az8JP2A0oKC1BIw07gAzI4vzkksS43PzCsuSczJiS9OLsosKNEHAMFbqz7iAAAA[0mPuppet/3puppet_slave_install_script" build number [8mha:////4EkHCTTIDxo7ZnyDgeElTvip+0hNMMwor8cMJytb38wwAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBj39rPwk/YDSgoLUEjDTuADMji/OSSxLjc/MKy5JzMmJL04uyiwo0bcEAE5ym1XjAAAA[0m9
+  originally caused by:
+   Started by upstream project "[8mha:////4J8SliF4FjKPiZy6/ZcprwU/lYQNf9v5JtIGIHIAtaSyAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBAjCgoQFQ0IAWExACWIUdiONmWfYlgDdaAhiEYhx2Ikor85r/i6f/XF3rBwzgv0mBNfLImWMJ4a1Ok9d2hJ22uO8sITToRwM3DqOX/qbPl8718uE8E0Qb6hCbjPIFu4YlhkFxUqQQpk4kDe22yRTU3bM2tmm7/ugomDHNxsUexL5xDrnHqapZoGL1MkRVrClIbGUiVKHMbWJ41ofgBTJfZse8AAAA=[0mPuppet/2puppet_enter_detatils_in_slave_host_file" build number [8mha:////4Fe7vUSH8ja5SgI62v8FaDFP8YMVCJeXRJw1oJ+KKLp2AAAAvx+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBALChoIBUNSICQGMAy5EgcTrZlXxCswRrQMATjsANRUpHf/Fc8/f/6Qi94GOdlGqyJT9YESxhvbYq0ujv0pM1lZxmhSScCuHkYtfw/dZY838nDfSKI1tAnNBnnG+iWnhgGm0JdlSBlMnFgr002r+aGrbll0+1fV0HEsBCFPYp96RxyjVNXs0TD6GWKrFhTkNrIQOqKMreB5VkTisn0BzQc8BbxAAAA[0m12
+   originally caused by:
+    Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4FGGt52tokjCl7jQADAa9GKRZO2Md/Px5/v7XiDtxiJ3AAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXfyAgAmcdh2tUAAAA=[0m22
+    originally caused by:
+     Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Hra6a3XwZ0tmlvp9zu1e/v5XAH8a4OUkHe773jQTF0tAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMLAGI9RnvBAAAA[0m78 in workspace /home/ec2-user/jenkin/workspace/Puppet/6Configuration_on_slave_puppet.conf
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path '/home/ec2-user/jenkin/workspace/Puppet/1Create_slave/propsfile'
+[EnvInject] - Variables injected successfully.
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins7205914662384424273.sh
++ sudo sed -i '$ a [main]' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins7756015726023551409.sh
++ sudo sed -i '/\[main\]/a  runinterval = 1h' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins6270214070240359764.sh
++ sudo sed -i '/\[main\]/a  environment = production' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins4772271415003435462.sh
++ sudo sed -i '/\[main\]/a  server = 5master.pulkit.co' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins5466257018866985537.sh
++ sudo sed -i '/\[main\]/a  certname = 78.pulkit.co' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins4291829535616085536.sh
++ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+service { 'puppet':
+  ensure => 'running',
+  enable => 'true',
+}
+Finished: SUCCESS

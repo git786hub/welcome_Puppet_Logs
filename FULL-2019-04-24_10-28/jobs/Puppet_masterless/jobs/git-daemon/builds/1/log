@@ -1,0 +1,217 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4HJrxuu3jj0/HFmHcWc3E35EX1FKW5BxD4Z5EnrfRRHUAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/fTMEt3i1KKy1CIAqMOiZMkAAAA=[0mgit-server in workspace /home/ec2-user/jenkin/workspace/Puppet_masterless/git-daemon
+[git-daemon] $ /bin/sh -xe /tmp/jenkins8371243254198549647.sh
++ sudo yum install git -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package git.x86_64 0:2.17.2-2.amzn2 will be installed
+--> Processing Dependency: perl-Git = 2.17.2-2.amzn2 for package: git-2.17.2-2.amzn2.x86_64
+--> Processing Dependency: git-core-doc = 2.17.2-2.amzn2 for package: git-2.17.2-2.amzn2.x86_64
+--> Processing Dependency: git-core = 2.17.2-2.amzn2 for package: git-2.17.2-2.amzn2.x86_64
+--> Processing Dependency: emacs-filesystem >= 25.3 for package: git-2.17.2-2.amzn2.x86_64
+--> Processing Dependency: perl(Term::ReadKey) for package: git-2.17.2-2.amzn2.x86_64
+--> Processing Dependency: perl(Git::I18N) for package: git-2.17.2-2.amzn2.x86_64
+--> Processing Dependency: perl(Git) for package: git-2.17.2-2.amzn2.x86_64
+--> Processing Dependency: libsecret-1.so.0()(64bit) for package: git-2.17.2-2.amzn2.x86_64
+--> Running transaction check
+---> Package emacs-filesystem.noarch 1:25.3-3.amzn2.0.1 will be installed
+---> Package git-core.x86_64 0:2.17.2-2.amzn2 will be installed
+---> Package git-core-doc.noarch 0:2.17.2-2.amzn2 will be installed
+---> Package libsecret.x86_64 0:0.18.5-2.amzn2.0.2 will be installed
+---> Package perl-Git.noarch 0:2.17.2-2.amzn2 will be installed
+--> Processing Dependency: perl(Error) for package: perl-Git-2.17.2-2.amzn2.noarch
+---> Package perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2 will be installed
+--> Running transaction check
+---> Package perl-Error.noarch 1:0.17020-2.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package              Arch       Version                   Repository      Size
+================================================================================
+Installing:
+ git                  x86_64     2.17.2-2.amzn2            amzn2-core     217 k
+Installing for dependencies:
+ emacs-filesystem     noarch     1:25.3-3.amzn2.0.1        amzn2-core      64 k
+ git-core             x86_64     2.17.2-2.amzn2            amzn2-core     4.0 M
+ git-core-doc         noarch     2.17.2-2.amzn2            amzn2-core     2.3 M
+ libsecret            x86_64     0.18.5-2.amzn2.0.2        amzn2-core     153 k
+ perl-Error           noarch     1:0.17020-2.amzn2         amzn2-core      32 k
+ perl-Git             noarch     2.17.2-2.amzn2            amzn2-core      70 k
+ perl-TermReadKey     x86_64     2.30-20.amzn2.0.2         amzn2-core      31 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+7 Dependent packages)
+
+Total download size: 6.8 M
+Installed size: 36 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                               20 MB/s | 6.8 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : git-core-2.17.2-2.amzn2.x86_64                               1/8 
+  Installing : git-core-doc-2.17.2-2.amzn2.noarch                           2/8 
+  Installing : libsecret-0.18.5-2.amzn2.0.2.x86_64                          3/8 
+  Installing : 1:perl-Error-0.17020-2.amzn2.noarch                          4/8 
+  Installing : perl-TermReadKey-2.30-20.amzn2.0.2.x86_64                    5/8 
+  Installing : 1:emacs-filesystem-25.3-3.amzn2.0.1.noarch                   6/8 
+  Installing : perl-Git-2.17.2-2.amzn2.noarch                               7/8 
+  Installing : git-2.17.2-2.amzn2.x86_64                                    8/8 
+  Verifying  : 1:emacs-filesystem-25.3-3.amzn2.0.1.noarch                   1/8 
+  Verifying  : perl-TermReadKey-2.30-20.amzn2.0.2.x86_64                    2/8 
+  Verifying  : 1:perl-Error-0.17020-2.amzn2.noarch                          3/8 
+  Verifying  : libsecret-0.18.5-2.amzn2.0.2.x86_64                          4/8 
+  Verifying  : git-core-2.17.2-2.amzn2.x86_64                               5/8 
+  Verifying  : git-2.17.2-2.amzn2.x86_64                                    6/8 
+  Verifying  : perl-Git-2.17.2-2.amzn2.noarch                               7/8 
+  Verifying  : git-core-doc-2.17.2-2.amzn2.noarch                           8/8 
+
+Installed:
+  git.x86_64 0:2.17.2-2.amzn2                                                   
+
+Dependency Installed:
+  emacs-filesystem.noarch 1:25.3-3.amzn2.0.1                                    
+  git-core.x86_64 0:2.17.2-2.amzn2                                              
+  git-core-doc.noarch 0:2.17.2-2.amzn2                                          
+  libsecret.x86_64 0:0.18.5-2.amzn2.0.2                                         
+  perl-Error.noarch 1:0.17020-2.amzn2                                           
+  perl-Git.noarch 0:2.17.2-2.amzn2                                              
+  perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2                                   
+
+Complete!
++ cd /opt
++ sudo mkdir puppet-repo
++ sudo chown ec2-user:ec2-user puppet-repo/
++ cd puppet-repo/
++ git init --bare –shared
+Initialized empty Git repository in /opt/puppet-repo/–shared/
++ sudo yum install git-daemon -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package git-daemon.x86_64 0:2.17.2-2.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package           Arch          Version                Repository         Size
+================================================================================
+Installing:
+ git-daemon        x86_64        2.17.2-2.amzn2         amzn2-core        671 k
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 671 k
+Installed size: 1.3 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : git-daemon-2.17.2-2.amzn2.x86_64                             1/1 
+  Verifying  : git-daemon-2.17.2-2.amzn2.x86_64                             1/1 
+
+Installed:
+  git-daemon.x86_64 0:2.17.2-2.amzn2                                            
+
+Complete!
++ sudo yum install PolicyKit -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package polkit.x86_64 0:0.112-18.amzn2.1 will be installed
+--> Processing Dependency: polkit-pkla-compat for package: polkit-0.112-18.amzn2.1.x86_64
+--> Processing Dependency: libmozjs-17.0.so(mozjs_17.0)(64bit) for package: polkit-0.112-18.amzn2.1.x86_64
+--> Processing Dependency: libmozjs-17.0.so()(64bit) for package: polkit-0.112-18.amzn2.1.x86_64
+--> Running transaction check
+---> Package mozjs17.x86_64 0:17.0.0-20.amzn2.0.1 will be installed
+---> Package polkit-pkla-compat.x86_64 0:0.1-4.amzn2.0.2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                Arch       Version                 Repository      Size
+================================================================================
+Installing:
+ polkit                 x86_64     0.112-18.amzn2.1        amzn2-core     169 k
+Installing for dependencies:
+ mozjs17                x86_64     17.0.0-20.amzn2.0.1     amzn2-core     1.4 M
+ polkit-pkla-compat     x86_64     0.1-4.amzn2.0.2         amzn2-core      39 k
+
+Transaction Summary
+================================================================================
+Install  1 Package (+2 Dependent packages)
+
+Total download size: 1.6 M
+Installed size: 4.5 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                               11 MB/s | 1.6 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : mozjs17-17.0.0-20.amzn2.0.1.x86_64                           1/3 
+  Installing : polkit-0.112-18.amzn2.1.x86_64                               2/3 
+  Installing : polkit-pkla-compat-0.1-4.amzn2.0.2.x86_64                    3/3 
+  Verifying  : polkit-pkla-compat-0.1-4.amzn2.0.2.x86_64                    1/3 
+  Verifying  : polkit-0.112-18.amzn2.1.x86_64                               2/3 
+  Verifying  : mozjs17-17.0.0-20.amzn2.0.1.x86_64                           3/3 
+
+Installed:
+  polkit.x86_64 0:0.112-18.amzn2.1                                              
+
+Dependency Installed:
+  mozjs17.x86_64 0:17.0.0-20.amzn2.0.1                                          
+  polkit-pkla-compat.x86_64 0:0.1-4.amzn2.0.2                                   
+
+Complete!
++ cd /home/ec2-user
++ git clone https://github.com/git786hub/welcome_Puppet_Logs.git
+Cloning into 'welcome_Puppet_Logs'...
++ sudo cp /home/ec2-user/welcome_Puppet_Logs/gitd.service /etc/systemd/system/
++ cd /etc/systemd/system
++ ls
+cloud-init.target.wants
+default.target
+default.target.wants
+getty.target.wants
+gitd.service
+multi-user.target.wants
+remote-fs.target.wants
+sockets.target.wants
+sysinit.target.wants
+system-update.target.wants
++ sudo systemctl start gitd.service
++ sudo systemctl daemon-reload
++ sudo systemctl restart gitd.service
++ sudo systemctl status gitd.service
+● gitd.service - Start Git Daemon
+   Loaded: loaded (/etc/systemd/system/gitd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Sun 2019-04-07 08:57:05 UTC; 22ms ago
+ Main PID: 3997 (git)
+   CGroup: /system.slice/gitd.service
+           ├─3997 /usr/bin/git daemon --reuseaddr --base-path=/opt --export-all --enable=receive-pack
+           └─3999 /usr/libexec/git-core/git-daemon --reuseaddr --base-path=/opt --export-all --enable=receive-pack
+
+Apr 07 08:57:05 ip-172-30-4-15.ec2.internal systemd[1]: Started Start Git Daemon.
+Apr 07 08:57:05 ip-172-30-4-15.ec2.internal systemd[1]: Starting Start Git Daemon...
+++ curl http://169.254.169.254/latest/meta-data/public-ipv4
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    13  100    13    0     0    650      0 --:--:-- --:--:-- --:--:--   650
++ variable_name=54.237.105.50
++ echo 'git clone git://54.237.105.50/puppet-repo'
+git clone git://54.237.105.50/puppet-repo
+Finished: SUCCESS

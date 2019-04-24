@@ -1,0 +1,28 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/Site.pp
+[Site.pp] $ /bin/sh -xe /tmp/jenkins5561979541024008152.sh
++ sudo echo node ''\''70.pulkit.co'\''{' class '{' ''\''docker'\'':' use_upstream_package_source '=>' false, service_overrides_template '=>' false, docker_ce_package_name '=>' ''\''docker'\'',' '}' include git class '{' ''\''java'\''' : package '=>' ''\''java-1.8.0-openjdk-devel'\'',' '}' tomcat::install '{' ''\''/opt/tomcat'\'':' source_url '=>' ''\''https://www.apache.org/dist/tomcat/tomcat-9/v9.0.17/bin/apache-tomcat-9.0.17.tar.gz'\'',' '}' tomcat::instance '{' ''\''default'\'':' catalina_home '=>' ''\''/opt/tomcat'\'',' '}' package '{' ''\''httpd'\'':' ensure '=>' '"installed",' '}' service '{' ''\''httpd'\'':' ensure '=>' running, enable '=>' true '}' '}'
+[Site.pp] $ /bin/sh -xe /tmp/jenkins7391589735402267059.sh
++ sudo mv /pulkit/workspace/Puppet/Site.pp/site.pp /etc/puppetlabs/code/environments/production/manifests/
+[Site.pp] $ /bin/sh -xe /tmp/jenkins7941378189273872347.sh
++ echo
+
++ echo
+
++ echo -------------------------------------------------------
+-------------------------------------------------------
++ echo PARSER VALIDATE RESULTS
+PARSER VALIDATE RESULTS
++ echo
+
++ echo
+
++ echo -------------------------------------------------------
+-------------------------------------------------------
++ echo
+
++ echo
+
++ puppet parser validate /etc/puppetlabs/code/environments/production/manifests/site.pp
+Finished: SUCCESS

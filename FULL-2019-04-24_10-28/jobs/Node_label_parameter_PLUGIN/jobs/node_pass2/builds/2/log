@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Node_label_parameter_PLUGIN/node_pass2
+[node_pass2] $ /bin/sh -xe /tmp/jenkins8484777518517797715.sh
++ pwd
+/var/lib/jenkins/workspace/Node_label_parameter_PLUGIN/node_pass2
+Finished: SUCCESS

@@ -1,0 +1,17 @@
+HOME=/home/ec2-user
+LANG=en_US.UTF-8
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LOGNAME=ec2-user
+MAIL=/var/mail/ec2-user
+MANPATH=:/opt/puppetlabs/puppet/share/man
+OLDPWD=/home/ec2-user
+PATH=/usr/local/bin:/usr/bin:/opt/puppetlabs/bin
+PWD=/pulkit
+SHELL=/bin/bash
+SHLVL=1
+SSH_CLIENT=52.72.19.139 44568 22
+SSH_CONNECTION=52.72.19.139 44568 172.30.4.144 22
+USER=ec2-user
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SESSION_ID=2
+_=/usr/bin/java

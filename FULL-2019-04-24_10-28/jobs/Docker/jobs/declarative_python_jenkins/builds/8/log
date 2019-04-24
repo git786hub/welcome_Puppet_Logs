@@ -1,0 +1,141 @@
+Started by user unknown or anonymous
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4EKPfpIi/Is1xzvg6INFSFB9LusYwBjNfC9Egyg+Ax5tAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4IIDC7aPo1yIFjBXV2m3pVBrKUW4kbGq1T0Ps0lE6tZWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4JjUmvdQM9IGM6nb7UWEE0s0d6UqsKsx9zAPIwJ+qd7XAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/Docker/declarative_python_jenkins
+[8mha:////4PNBMF5ZijHT4pOzGcP0wY6WLkA3VXD8ncfNo1PRacHYAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4OCiQ6KPi2oA1eG4JVKNfaMagzL3g1EHqEqDRAwWoOu8AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4OlDbMOIsdemGubF05pkd8yrSXngzVczBXRF8oldsSZpAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (install python_pacakgees)
+[8mha:////4HwhcScmx0NTLrnTf5iXkWVQ/AF6aqF3ymUF7rU4OqXzAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] sh
++ pip install pytest
+Requirement already satisfied: pytest in /usr/lib/python2.7/site-packages
+Requirement already satisfied: funcsigs>=1.0; python_version < "3.0" in /usr/lib/python2.7/site-packages (from pytest)
+Requirement already satisfied: atomicwrites>=1.0 in /usr/lib/python2.7/site-packages (from pytest)
+Requirement already satisfied: py>=1.5.0 in /usr/lib/python2.7/site-packages (from pytest)
+Requirement already satisfied: pathlib2>=2.2.0; python_version < "3.6" in /usr/lib/python2.7/site-packages (from pytest)
+Requirement already satisfied: setuptools in /usr/lib/python2.7/site-packages (from pytest)
+Requirement already satisfied: attrs>=17.4.0 in /usr/lib/python2.7/site-packages (from pytest)
+Requirement already satisfied: six>=1.10.0 in /usr/lib/python2.7/site-packages (from pytest)
+Requirement already satisfied: pluggy>=0.9 in /usr/lib/python2.7/site-packages (from pytest)
+Requirement already satisfied: more-itertools<6.0.0,>=4.0.0; python_version <= "2.7" in /usr/lib/python2.7/site-packages (from pytest)
+Requirement already satisfied: scandir; python_version < "3.5" in /usr/lib64/python2.7/site-packages (from pathlib2>=2.2.0; python_version < "3.6"->pytest)
+[8mha:////4MHzC01OoKs/eLn+QRpiS4WnjW4Rj1t6SOEU0xFaZmgTAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED8v8DEJvAAAAA==[0m[Pipeline] sh
++ pip install pyinstaller
+Requirement already satisfied: pyinstaller in /usr/lib/python2.7/site-packages
+Requirement already satisfied: setuptools in /usr/lib/python2.7/site-packages (from pyinstaller)
+Requirement already satisfied: pefile>=2017.8.1 in /usr/lib/python2.7/site-packages (from pyinstaller)
+Requirement already satisfied: macholib>=1.8 in /usr/lib/python2.7/site-packages (from pyinstaller)
+Requirement already satisfied: altgraph in /usr/lib/python2.7/site-packages (from pyinstaller)
+Requirement already satisfied: dis3 in /usr/lib/python2.7/site-packages (from pyinstaller)
+Requirement already satisfied: future in /usr/lib/python2.7/site-packages (from pefile>=2017.8.1->pyinstaller)
+[8mha:////4JR+67sa2A/oZyO9go07DeORYfbbqFP+I/Z2ZJ32MchXAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j/zqggXvAAAAA==[0m[Pipeline] }
+[8mha:////4JgIdHDx47jMflze5aBJbnMSw2zu7Vu4lmW7unSvhcuvAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoYeVY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId1tBtv8AExtCpb0AAAA=[0m[Pipeline] // stage
+[8mha:////4IBIxANdpqn7tHhFyOjSMPcgNqMEIFA29B9GVKbkqDNwAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYSjSHSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oNEzd2msEAAAA=[0m[Pipeline] stage
+[8mha:////4JhGBr1+Ot4JNlwnBJHC1snFpIaxvrJFwBh2GzXo0S+cAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] { (code_checkout)
+[8mha:////4Ftsag1oFN4E1reW9hgUMqaKDQoUzRKvapyQJYS+iQT8AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFDud19ah/eeSmYHb4AAAA=[0m[Pipeline] git
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/git786hub/simple-python-pyinstaller-app.git
+ > git init /var/lib/jenkins/workspace/Docker/declarative_python_jenkins # timeout=10
+Fetching upstream changes from https://github.com/git786hub/simple-python-pyinstaller-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/git786hub/simple-python-pyinstaller-app.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/git786hub/simple-python-pyinstaller-app.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/git786hub/simple-python-pyinstaller-app.git # timeout=10
+Fetching upstream changes from https://github.com/git786hub/simple-python-pyinstaller-app.git
+ > git fetch --tags --progress https://github.com/git786hub/simple-python-pyinstaller-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bde7e05fb7ed394e5718c7cce04e170369ea153e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bde7e05fb7ed394e5718c7cce04e170369ea153e
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b master bde7e05fb7ed394e5718c7cce04e170369ea153e
+Commit message: "ading label for each node"
+ > git rev-list --no-walk bde7e05fb7ed394e5718c7cce04e170369ea153e # timeout=10
+[8mha:////4P9qYgr4tJUrVqjB5OVrQnhOvWQ72eZFX6R38ZFSHTv4AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr6/2VK+AAAA[0m[Pipeline] sh
++ python --version
+Python 2.7.14
+[8mha:////4MBiqP2Ayjc58ozsST3YqFgWZPEDveC9SluyWYsz9sFXAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7NyZXKai+AAAA[0m[Pipeline] }
+[8mha:////4HHaN26gOVmYxbAjydRdUJ2d7H02dLUjD3hka/f7s22yAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyaWwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfMnS0t74AAAA=[0m[Pipeline] // stage
+[8mha:////4LkYkituEvMuqHH4nxRthU3d4yNZ6mwMV85NJ+ixUuciAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJCQKREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgtQ7HZfY7lGw7UL0zBAAAA[0m[Pipeline] stage
+[8mha:////4F6eKjv19rqx/JJ45asine8nLay3fv6nVtsi7123jtQtAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Build)
+[8mha:////4L7V+8pmaZ2yrvq1RlrFvmcSpq42E2UoJV28caJKhqleAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] sh
++ python -m py_compile sources/add2vals.py sources/calc.py
+[8mha:////4J9bue4fujT1OOZUjSwdEQ++j9p/NY95MJ8qR/LhQ+ceAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICVEgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AEWNdkpvgAAAA==[0m[Pipeline] }
+[8mha:////4O1e9o01VXALdbOseqaATG5HukVrOX5A1rmfKCs7di/IAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0FAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEi+zpyvgAAAA==[0m[Pipeline] // stage
+[8mha:////4FD5P7PFGC56LUJPB9633q6S4yOxXweDytnofPB2mztuAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BKWgpeYQjRXSIitZywwtMbIwT6y7YF5KKF/E1/oAhEhVb7ay0mucLqhThQNGJzmLvMbVeDGF0uYmJYn8JNImOzqIlTBSsUHZSZOxxQUVsYUlRwkrC2mIbKHl0DBvZ6buug0ZXnzjmbS+h9OYGDyhkNrOO/IU5wvY6mkT48/wVwDwwFDuGsmk+x+oNIF8KLcEAAAA=[0m[Pipeline] stage
+[8mha:////4GQsIyTSWQS6xTR8pUsKaBjP+xgkhVZkv+JpJzC5T4F3AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUKiNiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPpnFij8IAAAA=[0m[Pipeline] { (test)
+[8mha:////4KW3f5Xq+54qdYeoISgaCZ+mSUNGoNWkRsCf7L93mq45AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBrANZ3i+AAAA[0m[Pipeline] sh
++ py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.14, pytest-4.4.0, py-1.8.0, pluggy-0.9.0 -- /usr/bin/python2
+cachedir: .pytest_cache
+rootdir: /var/lib/jenkins/workspace/Docker/declarative_python_jenkins
+collecting ... collected 5 items
+
+sources/test_calc.py::TestCalc::test_add_floats PASSED                   [ 20%]
+sources/test_calc.py::TestCalc::test_add_integers PASSED                 [ 40%]
+sources/test_calc.py::TestCalc::test_add_string_and_integer PASSED       [ 60%]
+sources/test_calc.py::TestCalc::test_add_string_and_number PASSED        [ 80%]
+sources/test_calc.py::TestCalc::test_add_strings PASSED                  [100%]
+
+- generated xml file: /var/lib/jenkins/workspace/Docker/declarative_python_jenkins/test-reports/results.xml -
+=========================== 5 passed in 0.16 seconds ===========================
+Post stage
+[8mha:////4LrzT4kU4U0Uls3cytp2/DBzKma+vuXSsvqskCgkN3meAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN/E8fGG+AAAA[0m[Pipeline] junit
+Recording test results
+[8mha:////4BMSJp5OxVeFNxX3NPt4Hm8pIq+Sn7foxEO+4vbbghlzAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQFAXH9DvgAAAA==[0m[Pipeline] }
+[8mha:////4Potq6sCp2y0bLKaXExueENGZcjp7fnqAhtQTCZ8ZiykAAAApB+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyk8bCsbJlaDwBJogQ5n8CRFJ5Iq/mHUQzY+UWO/u2ec8XrGOAIwXNrMLBYOwM827SZbFMYbg6yszShXWEkZxiQmVBvTotKCgpWFLVsOKwUdg5igZ1gi238i4bJ1E35xTKd+BQm36EB1S8mJMM6QtzgN1t6iPhz/NXALP3Cep2/6n2DXO/JP++AAAA[0m[Pipeline] // stage
+[8mha:////4NKstZVY5/HCW8OmebHn1/rilo16FaPaWho/l2Wd3M+jAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjIQokREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgtQ7HZfY7lG0Z8kYzBAAAA[0m[Pipeline] stage
+[8mha:////4Ghb4mWGGsbGEHL8X7LHYI5OKE4y9fMVXxEFwMKbvREAAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUYgIhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0QKVszCAAAA[0m[Pipeline] { (Deliver)
+[8mha:////4CSDLH3Cud4EdXg6uzGLCn9NL836Wy0HhMtIp0xHd/hbAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCoEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AHN/bm5vgAAAA==[0m[Pipeline] sh
++ pyinstaller --onefile sources/add2vals.py
+138 INFO: PyInstaller: 3.4
+138 INFO: Python: 2.7.14
+139 INFO: Platform: Linux-4.14.104-95.84.amzn2.x86_64-x86_64-with-glibc2.2.5
+140 INFO: wrote /var/lib/jenkins/workspace/Docker/declarative_python_jenkins/add2vals.spec
+164 INFO: UPX is not available.
+165 INFO: Extending PYTHONPATH with paths
+['/var/lib/jenkins/workspace/Docker/declarative_python_jenkins/sources',
+ '/var/lib/jenkins/workspace/Docker/declarative_python_jenkins']
+165 INFO: checking Analysis
+165 INFO: Building Analysis because Analysis-00.toc is non existent
+165 INFO: Initializing module dependency graph...
+183 INFO: Initializing module graph hooks...
+592 INFO: running Analysis Analysis-00.toc
+731 INFO: Caching module hooks...
+775 INFO: Analyzing /var/lib/jenkins/workspace/Docker/declarative_python_jenkins/sources/add2vals.py
+795 INFO: Loading module hooks...
+796 INFO: Loading module hook "hook-encodings.py"...
+11525 INFO: Looking for ctypes DLLs
+11525 INFO: Analyzing run-time hooks ...
+11546 INFO: Looking for dynamic libraries
+16036 INFO: Looking for eggs
+16037 INFO: Using Python library /lib64/libpython2.7.so.1.0
+16038 INFO: Warnings written to /var/lib/jenkins/workspace/Docker/declarative_python_jenkins/build/add2vals/warn-add2vals.txt
+16213 INFO: Graph cross-reference written to /var/lib/jenkins/workspace/Docker/declarative_python_jenkins/build/add2vals/xref-add2vals.html
+16488 INFO: checking PYZ
+16488 INFO: Building PYZ because PYZ-00.toc is non existent
+16488 INFO: Building PYZ (ZlibArchive) /var/lib/jenkins/workspace/Docker/declarative_python_jenkins/build/add2vals/PYZ-00.pyz
+17547 INFO: Building PYZ (ZlibArchive) /var/lib/jenkins/workspace/Docker/declarative_python_jenkins/build/add2vals/PYZ-00.pyz completed successfully.
+17693 INFO: checking PKG
+17693 INFO: Building PKG because PKG-00.toc is non existent
+17693 INFO: Building PKG (CArchive) PKG-00.pkg
+31704 INFO: Building PKG (CArchive) PKG-00.pkg completed successfully.
+31745 INFO: Bootloader /usr/lib/python2.7/site-packages/PyInstaller/bootloader/Linux-64bit/run
+31746 INFO: checking EXE
+31746 INFO: Building EXE because EXE-00.toc is non existent
+31746 INFO: Building EXE from EXE-00.toc
+31746 INFO: Appending archive to ELF section in EXE /var/lib/jenkins/workspace/Docker/declarative_python_jenkins/dist/add2vals
+31788 INFO: Building EXE from EXE-00.toc completed successfully.
+Post stage
+[8mha:////4JIRTurfTwH2ZaDjOEjGWCeA9aq03ljdG1HaHb9Q2a7PAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDREKHeHXPvt8AGMzKKgvgAAAA==[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4EmG/Ls4su4I90L5XYguiLT/MQr5j+D8BphqOAI2DEF3AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihQohqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AH8/EyevgAAAA==[0m[Pipeline] }
+[8mha:////4D4o4SSB91tl46IACXiidWikwbz3cdpaz4scDUFu1KdxAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMKRSIOEqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZ17n2hw/PHxcivgAAAA==[0m[Pipeline] // stage
+[8mha:////4PvIfWQkWuqWJsCx2Vx8ROymjJ3hGQlG7xWSjzDeNZnGAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIU0jlWthkaTxAhxkBmF5NFqDyRV/MOMjJj5a/+e817vbFOEUeOTrWWOk+p9qoPg5ufGjl218CjavmiaqbEwarKjhU39rRgxWKxLMux0thYqgMnT06w1a15mCIYcsVZ4uwOGrlv7ngi03NZTJQvTBG729Akpl/nbwBT3wvyfSnIyg9OLA1qvQAAAA==[0m[Pipeline] }
+[8mha:////4BGqhBtaepvq+TZg17+moV1MkHB9eDTcFox8pK1UrtE6AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIUjJVjZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwAXZAJyb0AAAA=[0m[Pipeline] // node
+[8mha:////4Fb/ma0mjFESZH+ofwCx5/mWAPfRKi8Pr7wL6tWzAaYzAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+ABvarvm9AAAA[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

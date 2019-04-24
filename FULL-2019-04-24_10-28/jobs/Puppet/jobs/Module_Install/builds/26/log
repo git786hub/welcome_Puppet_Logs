@@ -1,0 +1,12 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4JuVxfrV+QZ8UJz++s4IOSyiYd6nsOkSFWoMYTrRGk/rAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifePcxGIgDQBzFctPxgAAAA==[0m3master in workspace /home/ec2-user/jenkin/workspace/Puppet/Module_Install
+[Module_Install] $ /bin/sh -xe /tmp/jenkins1406794556911322467.sh
++ sudo /opt/puppetlabs/bin/puppet module install puppetlabs-java
+[mNotice: Preparing to install into /etc/puppetlabs/code/environments/production/modules ...[0m
+[mNotice: Module puppetlabs-java 3.3.0 is already installed.[0m
+[Module_Install] $ /bin/sh -xe /tmp/jenkins2795629125024598481.sh
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/Module_Install
++ sudo cp -r /home/ec2-user/.puppetlabs/etc/code/modules/. /etc/puppetlabs/code/environments/production/modules/
+Finished: SUCCESS

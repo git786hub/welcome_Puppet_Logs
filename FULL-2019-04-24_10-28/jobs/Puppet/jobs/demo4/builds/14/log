@@ -1,0 +1,11 @@
+Started by upstream project "[8mha:////4L0uRlaBigT/sAHrAZ/hKqiqpo+VNhCTNW7YBQuy8lQrAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/az8JP2A0oKC1BIwMyU1N18fAEJ82IXKAAAA[0mPuppet/demo" build number [8mha:////4Hy3Sa67oQ5XhgWQU5WnTx82y2GRTYvY1VSJqGC5BM9dAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZx/az8JP2A0oKC1BIwMyU1N1/fyBwADXfd+swAAAA=[0m27
+originally caused by:
+ Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins2083912465353395471.sh
++ echo qa
+qa
++ echo 4
+4
+Finished: SUCCESS

@@ -1,0 +1,57 @@
+Started by upstream project "[8mha:////4DFCWl4NKnxs9DzK7HxhnXkOPc0Jq4ZcCJAl1L1xb96xAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZ5/az8JP2A0oKC1BIw0wTCji9KTcrPL9EHADtM6D7UAAAA[0mPuppet/4Puppet_reboot" build number [8mha:////4DYiso+NyoyZGIZtSykC9D8O0qf2RNLxPWQu9GjntxAmAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZF/az8JP2A0oKC1BIw0wTCji9KTcrPL9E3NAUAx3tVjtYAAAA=[0m15
+originally caused by:
+ Started by upstream project "[8mha:////4NvUIhiQMVWsJ7pW445IuulmIERGg4LQR0iPsw/WnPhnAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzlEgZd/az8JP2A0oKC1BIw07gAzI4vzkksS43PzCsuSczJiS9OLsosKNEHAMFbqz7iAAAA[0mPuppet/3puppet_slave_install_script" build number [8mha:////4ERQQHytCYqwL/4JUr2PI+m7LA9hTTVNVHX5kGjCzf3nAAAAtR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZ9/az8JP2A0oKC1BIw07gAzI4vzkksS43PzCsuSczJiS9OLsosKNE3NAQAcmy3YuQAAAA=[0m11
+ originally caused by:
+  Started by upstream project "[8mha:////4J8SliF4FjKPiZy6/ZcprwU/lYQNf9v5JtIGIHIAtaSyAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBAjCgoQFQ0IAWExACWIUdiONmWfYlgDdaAhiEYhx2Ikor85r/i6f/XF3rBwzgv0mBNfLImWMJ4a1Ok9d2hJ22uO8sITToRwM3DqOX/qbPl8718uE8E0Qb6hCbjPIFu4YlhkFxUqQQpk4kDe22yRTU3bM2tmm7/ugomDHNxsUexL5xDrnHqapZoGL1MkRVrClIbGUiVKHMbWJ41ofgBTJfZse8AAAA=[0mPuppet/2puppet_enter_detatils_in_slave_host_file" build number [8mha:////4JTIq+9gVwPUGP/u28o3AkWOvSiW7o6r5jKMdu6+LGQQAAAAvh+LCAAAAAAAAP9djUEOAUEQRUsLB7AUGxfQIWKDlQ0JInGATjNlpkelu9NdI1zDNdg4hOO4g8lYmb/5b/Hy//MDrRignxVJdHZwdDY6wsHGJUjLm8dAxp63jhF+aQiAa4Bezf9TJ/PHa373bwFiBW1Cm3K2hmYRiKGzzvVFS9I2lXsOxqbTcq5bm1v8uv7rSxAMM5m7g9wV3iNXOPIVK7SMQSXImg1FZayKpC+oMhdZnQyhHI6/AbmT//EAAAA=[0m14
+  originally caused by:
+   Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4FWJMvxusGNqwJbKFDGag4g56YeRTDElRes4MhnQuJjcAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXfyAQArGICM9UAAAA=[0m24
+   originally caused by:
+    Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AZ+z2BfKQAqfAUXiN1AlNHDmhswcnmT8kvy0eNJ6IP/AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXNLAPQNQQzBAAAA[0m79 in workspace /home/ec2-user/jenkin/workspace/Puppet/5puppet_slave_config
+[5puppet_slave_config] $ /bin/sh -xe /tmp/jenkins5656406126577426387.sh
++ sudo yum install -y puppet-agent
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package puppet-agent.x86_64 0:5.5.12-1.el7 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package              Arch           Version              Repository       Size
+================================================================================
+Installing:
+ puppet-agent         x86_64         5.5.12-1.el7         puppet5          20 M
+
+Transaction Summary
+================================================================================
+Install  1 Package
+
+Total download size: 20 M
+Installed size: 20 M
+Downloading packages:
+warning: /var/cache/yum/x86_64/2/puppet5/packages/puppet-agent-5.5.12-1.el7.x86_64.rpm: Header V4 RSA/SHA256 Signature, key ID ef8d349f: NOKEY
+Public key for puppet-agent-5.5.12-1.el7.x86_64.rpm is not installed
+Retrieving key from file:///etc/pki/rpm-gpg/RPM-GPG-KEY-puppet5-release
+Importing GPG key 0xEF8D349F:
+ Userid     : "Puppet, Inc. Release Key (Puppet, Inc. Release Key) <release@puppet.com>"
+ Fingerprint: 6f6b 1550 9cf8 e59e 6e46 9f32 7f43 8280 ef8d 349f
+ Package    : puppet5-release-5.0.0-4.el7.noarch (installed)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-puppet5-release
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+Warning: RPMDB altered outside of yum.
+  Installing : puppet-agent-5.5.12-1.el7.x86_64                             1/1 
+  Verifying  : puppet-agent-5.5.12-1.el7.x86_64                             1/1 
+
+Installed:
+  puppet-agent.x86_64 0:5.5.12-1.el7                                            
+
+Complete!
+Returning node parameter for 79
+Triggering a new build of [8mha:////4PlPwk8yRVuC7HGhmJ9J3iUIQjUUSBLv282iQ1uF/N2MAAAAth+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAydEgYT/az8JP2A0oKC1BIw0wyoPi0zvbQosSQzPy8eiIpzEstS4wvASkCmpukDABfsdNTpAAAA[0mPuppet » 6Configuration_on_slave_puppet.conf
+Finished: SUCCESS

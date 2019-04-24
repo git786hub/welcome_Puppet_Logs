@@ -1,0 +1,27 @@
+Started by BitBucket push by pulkit786agar
+Started by BitBucket push by pulkit786agar
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git
+ > git init /var/lib/jenkins/workspace/Puppet/demo4 # timeout=10
+Fetching upstream changes from https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git # timeout=10
+Fetching upstream changes from https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git
+ > git fetch --tags --progress https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 61555aed331e91bc727dae591587fc7b2c772d79 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 61555aed331e91bc727dae591587fc7b2c772d79
+Commit message: "trigger jenkins"
+First time build. Skipping changelog.
+[demo4] $ /bin/sh -xe /tmp/jenkins6236119593185069211.sh
++ echo hello
+hello
+Finished: SUCCESS

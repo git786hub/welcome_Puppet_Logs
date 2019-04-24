@@ -1,0 +1,63 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.TextParameterValue>
+          <name>sitedata</name>
+          <description></description>
+          <value>node &apos;agent.pulkit.co&apos;{
+class { &apos;docker&apos;:
+  use_upstream_package_source =&gt; false,
+  service_overrides_template  =&gt; false,
+  docker_ce_package_name      =&gt; &apos;docker&apos;,
+}
+include git
+class { &apos;java&apos; :
+ package =&gt; &apos;java-1.8.0-openjdk-devel&apos;,
+ }
+ tomcat::install { &apos;/opt/tomcat&apos;:
+   source_url =&gt; &apos;https://www.apache.org/dist/tomcat/tomcat-9/v9.0.16/bin/apache-tomcat-9.0.16.tar.gz&apos;,
+ }
+ tomcat::instance { &apos;default&apos;:
+ catalina_home =&gt; &apos;/opt/tomcat&apos;,
+ }
+     package { &apos;httpd&apos;:
+         ensure  =&gt; &quot;installed&quot;,
+     }
+     service { &apos;httpd&apos;:
+         ensure =&gt; running,
+    enable =&gt; true
+   }
+ }
+</value>
+        </hudson.model.TextParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>sitedata</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+  </actions>
+  <queueId>217</queueId>
+  <timestamp>1553753184023</timestamp>
+  <startTime>1553753184025</startTime>
+  <result>FAILURE</result>
+  <duration>305</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Pupet-master</builtOn>
+  <workspace>/pulkit/workspace/Puppet/Site.pp</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

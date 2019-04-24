@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4D6f41d2qYFVo09aNJxeY4QEFRLv4OjuzlJfiLs7aADKAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifdPcxGIgDQBJIBssxgAAAA==[0m5master in workspace /home/ec2-user/jenkin/workspace/Puppet/Module_Install
+[Module_Install] $ /bin/sh -xe /tmp/jenkins8666554045156543112.sh
++ sudo /opt/puppetlabs/bin/puppet module install puppetlabs-docker --version 3.5.0
+[mNotice: Preparing to install into /etc/puppetlabs/code/environments/production/modules ...[0m
+[mNotice: Module puppetlabs-docker 3.5.0 is already installed.[0m
+[Module_Install] $ /bin/sh -xe /tmp/jenkins3134117695249830656.sh
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/Module_Install
+Finished: SUCCESS

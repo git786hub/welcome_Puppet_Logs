@@ -1,0 +1,19 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/1Create_Puppet_Master
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins7163997851295906575.sh
++ pwd
+/var/lib/jenkins/workspace/Puppet/1Create_Puppet_Master
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins5645382358117300016.sh
++ sudo sed -i '3i9.8.7.6  master.pulkit.co' /etc/hosts
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

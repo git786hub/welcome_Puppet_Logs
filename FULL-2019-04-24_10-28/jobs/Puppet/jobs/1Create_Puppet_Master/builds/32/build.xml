@@ -1,0 +1,159 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.TextParameterValue>
+          <name>Puppet_Master_IP_address</name>
+          <description></description>
+          <value>9.8.7.6</value>
+        </hudson.model.TextParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>DNS_Name</name>
+          <description></description>
+          <value>puppet.master.co</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name> runinterval</name>
+          <description></description>
+          <value>1h</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>environment</name>
+          <description></description>
+          <value>production</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Puppet_Master_IP_address</string>
+        <string>DNS_Name</string>
+        <string> runinterval</string>
+        <string>environment</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+    <hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction plugin="parameterized-trigger@2.35.2">
+      <env serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>43</int>
+          <string> runinterval</string>
+          <string>1h</string>
+          <string>_</string>
+          <string>/usr/bin/java</string>
+          <string>BUILD_CAUSE</string>
+          <string>MANUALTRIGGER</string>
+          <string>BUILD_CAUSE_MANUALTRIGGER</string>
+          <string>true</string>
+          <string>BUILD_DISPLAY_NAME</string>
+          <string>#32</string>
+          <string>BUILD_ID</string>
+          <string>32</string>
+          <string>BUILD_NUMBER</string>
+          <string>32</string>
+          <string>BUILD_TAG</string>
+          <string>jenkins-Puppet-1Create_Puppet_Master-32</string>
+          <string>CLASSPATH</string>
+          <string></string>
+          <string>DNS_Name</string>
+          <string>puppet.master.co</string>
+          <string>environment</string>
+          <string>production</string>
+          <string>EXECUTOR_NUMBER</string>
+          <string>0</string>
+          <string>HOME</string>
+          <string>/home/ec2-user</string>
+          <string>HUDSON_HOME</string>
+          <string>/var/lib/jenkins</string>
+          <string>HUDSON_SERVER_COOKIE</string>
+          <string>ed12bc36f8cd531c</string>
+          <string>JENKINS_HOME</string>
+          <string>/var/lib/jenkins</string>
+          <string>JENKINS_SERVER_COOKIE</string>
+          <string>ed12bc36f8cd531c</string>
+          <string>JOB_BASE_NAME</string>
+          <string>1Create_Puppet_Master</string>
+          <string>JOB_DISPLAY_URL</string>
+          <string>http://unconfigured-jenkins-location/job/Puppet/job/1Create_Puppet_Master/display/redirect</string>
+          <string>JOB_NAME</string>
+          <string>Puppet/1Create_Puppet_Master</string>
+          <string>LANG</string>
+          <string>en_US.UTF-8</string>
+          <string>LESSOPEN</string>
+          <string>||/usr/bin/lesspipe.sh %s</string>
+          <string>LOGNAME</string>
+          <string>ec2-user</string>
+          <string>MAIL</string>
+          <string>/var/mail/ec2-user</string>
+          <string>MANPATH</string>
+          <string>:/opt/puppetlabs/puppet/share/man</string>
+          <string>NODE_LABELS</string>
+          <string>Pupet-master puppet-master</string>
+          <string>NODE_NAME</string>
+          <string>Pupet-master</string>
+          <string>OLDPWD</string>
+          <string>/home/ec2-user</string>
+          <string>PATH</string>
+          <string>/usr/local/bin:/usr/bin:/opt/puppetlabs/bin</string>
+          <string>Puppet_Master_IP_address</string>
+          <string>9.8.7.6</string>
+          <string>PWD</string>
+          <string>/pulkit</string>
+          <string>ROOT_BUILD_CAUSE</string>
+          <string>MANUALTRIGGER</string>
+          <string>ROOT_BUILD_CAUSE_MANUALTRIGGER</string>
+          <string>true</string>
+          <string>RUN_CHANGES_DISPLAY_URL</string>
+          <string>http://unconfigured-jenkins-location/job/Puppet/job/1Create_Puppet_Master/32/display/redirect?page=changes</string>
+          <string>RUN_DISPLAY_URL</string>
+          <string>http://unconfigured-jenkins-location/job/Puppet/job/1Create_Puppet_Master/32/display/redirect</string>
+          <string>SHELL</string>
+          <string>/bin/bash</string>
+          <string>SHLVL</string>
+          <string>1</string>
+          <string>SSH_CLIENT</string>
+          <string>52.72.19.139 44568 22</string>
+          <string>SSH_CONNECTION</string>
+          <string>52.72.19.139 44568 172.30.4.144 22</string>
+          <string>USER</string>
+          <string>ec2-user</string>
+          <string>WORKSPACE</string>
+          <string>/pulkit/workspace/Puppet/1Create_Puppet_Master</string>
+          <string>XDG_RUNTIME_DIR</string>
+          <string>/run/user/1000</string>
+          <string>XDG_SESSION_ID</string>
+          <string>2</string>
+        </tree-map>
+        <hudson.EnvVars>
+          <default>
+            <platform>UNIX</platform>
+          </default>
+        </hudson.EnvVars>
+      </env>
+    </hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction>
+  </actions>
+  <queueId>62</queueId>
+  <timestamp>1552638030640</timestamp>
+  <startTime>1552638030643</startTime>
+  <result>FAILURE</result>
+  <duration>41</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Pupet-master</builtOn>
+  <workspace>/pulkit/workspace/Puppet/1Create_Puppet_Master</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

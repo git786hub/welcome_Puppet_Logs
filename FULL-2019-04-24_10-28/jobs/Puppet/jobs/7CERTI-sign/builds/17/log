@@ -1,0 +1,18 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4D6f41d2qYFVo09aNJxeY4QEFRLv4OjuzlJfiLs7aADKAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifdPcxGIgDQBJIBssxgAAAA==[0m5master in workspace /home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign
+[7CERTI-sign] $ /bin/sh -xe /tmp/jenkins3390033237942097413.sh
++ sudo /opt/puppetlabs/bin/puppet cert list
+[1;33mWarning: `puppet cert` is deprecated and will be removed in a future release.
+   (location: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:370:in `run')[0m
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign
+[7CERTI-sign] $ /bin/sh -xe /tmp/jenkins2480341227274095801.sh
+++ sed 's/"//g'
+++ grep -o '".*"' /home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign/certificate_file
++ sudo /opt/puppetlabs/bin/puppet cert sign
+[1;33mWarning: `puppet cert` is deprecated and will be removed in a future release.
+   (location: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:370:in `run')[0m
+[1;31mError: You must provide hosts or --all when using sign[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,17 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/testing_variable
+[SSH] executing pre build script:
+DNS_Name="hello"
+
+AOEU=$(echo DNS_Name)
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[testing_variable] $ /bin/sh -xe /tmp/jenkins7099815451688536401.sh
+++ echo DNS_Name
++ AOEU=DNS_Name
+[SSH] executing post build script:
+
+
+Finished: SUCCESS

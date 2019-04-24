@@ -1,0 +1,6 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/1Create Puppet_Master
+[1Create Puppet_Master] $ /bin/sh -xe /tmp/jenkins1237169054083020703.sh
++ sudo sed -i ' 3i9.8.7.6  pupkhhkjkpet.master.co' /etc/hosts
+Triggering a new build of [8mha:////4DwIZvlnSB2fTBTvlZPxrUaY309NiTyEFcrYG14Slsf5AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZR/az8JP2A0oKC1BIwMyU1N18fAOQQA+7KAAAA[0mPuppet » demo
+Finished: SUCCESS

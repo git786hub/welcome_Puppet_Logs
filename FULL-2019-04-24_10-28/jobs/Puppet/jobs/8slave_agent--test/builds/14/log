@@ -1,0 +1,360 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4NnZ7GX7X2dHNSekCzBsweOWwvDtWnayh3dZKTKrki53AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXNTAN9B9wXBAAAA[0m75 in workspace /home/ec2-user/jenkin/workspace/Puppet/8slave_agent--test
+[8slave_agent--test] $ /bin/sh -xe /tmp/jenkins277992397887317891.sh
++ sudo /opt/puppetlabs/bin/puppet agent --test
+[0;32mInfo: Using configured environment 'production'[0m
+[0;32mInfo: Retrieving pluginfacts[0m
+[0;32mInfo: Retrieving plugin[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/apt_reboot_required.rb]/ensure: defined content as '{md5}e7dbcd3849c380cdd08dbc866079c211'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/apt_update_last_success.rb]/ensure: defined content as '{md5}f259aac4abdf82c1c6f13e0031bf551a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/apt_updates.rb]/ensure: defined content as '{md5}11be6c6ace6c11cef55127564ecc6d91'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/archive_windir.rb]/ensure: defined content as '{md5}a646f8234e87041223c97dd919801ad8'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/docker.rb]/ensure: defined content as '{md5}8b2138a73e9fcee7ba8d0f289ff65edd'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/facter_dot_d.rb]/ensure: defined content as '{md5}9f65108ecd7b8c5ce9c90ab4cd9d45be'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/git_exec_path.rb]/ensure: defined content as '{md5}ece20669f69721bc541c3092fb3d7d25'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/git_html_path.rb]/ensure: defined content as '{md5}fef3ddbf4630842f29cf5174cfa37897'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/git_version.rb]/ensure: defined content as '{md5}1eb64b19f1ddc6bb953490e230a8de3a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/java_default_home.rb]/ensure: defined content as '{md5}199b70e41a8e743e83c43f97dd516d01'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/java_libjvm_path.rb]/ensure: defined content as '{md5}2de4699dac4416f5b339e676d13b735a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/java_major_version.rb]/ensure: defined content as '{md5}2d506d80904c8e85089e2f3436e366fd'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/java_patch_level.rb]/ensure: defined content as '{md5}46e00ac5103df040ac5f3f1dfde3b212'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/java_version.rb]/ensure: defined content as '{md5}dbc2b76e0b3c1799b8d48214278e6930'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/package_provider.rb]/ensure: defined content as '{md5}12d57e65f9b90c13e7808c347fbdc0b0'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/pe_version.rb]/ensure: defined content as '{md5}245bb8ea121e8a55e1a38668cc480530'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/puppet_settings.rb]/ensure: defined content as '{md5}d86bacf2b962a4744b701868cda31729'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/root_home.rb]/ensure: defined content as '{md5}b384092f0470b9e2177edaf546de2ec1'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/service_provider.rb]/ensure: defined content as '{md5}66cc42526eae631e306b397391f1f01c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/util]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/facter/util/puppet_settings.rb]/ensure: defined content as '{md5}f69007bcc02031cd772fa7f2dffa3c0c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/archive]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/archive/artifactory_checksum.rb]/ensure: defined content as '{md5}69924db7c6b1a3fecea1a8820b6f9a48'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/archive/artifactory_latest_url.rb]/ensure: defined content as '{md5}cca81b7782bf47091ddf609d46887840'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/archive/parse_artifactory_url.rb]/ensure: defined content as '{md5}0e12552ba58381b72b031e32a88f540c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/deprecation.rb]/ensure: defined content as '{md5}705115a036e0235840db59cf9f4c17fe'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/fact.rb]/ensure: defined content as '{md5}5879006198f1f4106acfe13422087d56'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_a.rb]/ensure: defined content as '{md5}5a61d6a34ef45d7a5490455f334ef48a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_absolute_path.rb]/ensure: defined content as '{md5}0806756fc12b1fc752d1b54e81b15832'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_array.rb]/ensure: defined content as '{md5}4d5c8d6af4e481ebb42f73b6504685c8'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_bool.rb]/ensure: defined content as '{md5}9ae803c605c5ed057508c6501ef1a47f'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_float.rb]/ensure: defined content as '{md5}ebe18dc0096233fcd555423761fc29f2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_ip_address.rb]/ensure: defined content as '{md5}ab9a1c6172db59cc15023f220853e2f2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_ipv4_address.rb]/ensure: defined content as '{md5}dec325b5911ce409b16c643697a13822'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_ipv6_address.rb]/ensure: defined content as '{md5}f4864fee72c42bd3e40914768fb10f8e'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_numeric.rb]/ensure: defined content as '{md5}970d785070eaa02bcac3e0589a8d5e7f'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/is_string.rb]/ensure: defined content as '{md5}5aa459896fda1782f74752a1d324f048'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/length.rb]/ensure: defined content as '{md5}3320c90f7685178c11937174fcf3119c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/os_version_gte.rb]/ensure: defined content as '{md5}120da86bc93fb4ccb1a45e13d5603560'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/reboot]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/reboot/sleep.rb]/ensure: defined content as '{md5}219a73e5c94c20d3e071a6ba781c2eb0'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/seeded_rand_string.rb]/ensure: defined content as '{md5}24e657c88e9b2a4a77a6cf1310758568'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/sprintf_hash.rb]/ensure: defined content as '{md5}19bee19c55865e3240be3567741ba347'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/stdlib]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/stdlib/extname.rb]/ensure: defined content as '{md5}a8df502dce6d3020f5ff32322b68045d'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/to_json.rb]/ensure: defined content as '{md5}bb6893a3e9eb6c48064c5a3c0bd4a41a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/to_json_pretty.rb]/ensure: defined content as '{md5}61ff20121b4c09987eadf3242b6231cf'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/to_yaml.rb]/ensure: defined content as '{md5}0358dfd97b9a051e15046c6842b327be'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/translate.rb]/ensure: defined content as '{md5}12716869ae42de67e58eadcb726db854'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/type_of.rb]/ensure: defined content as '{md5}4ee9c082047c08b8b1a82bc0bef8fd78'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_absolute_path.rb]/ensure: defined content as '{md5}556b0e3de450f03d724747d7d3825309'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_array.rb]/ensure: defined content as '{md5}efe329c6c8f65fce1ae2560fa5751530'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_bool.rb]/ensure: defined content as '{md5}5516a0f2efb48eeb4460fc713c6f9521'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_hash.rb]/ensure: defined content as '{md5}ce99bea6e1ee4da1a67b53b3ce06ce96'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_integer.rb]/ensure: defined content as '{md5}c028b299f194c221002ba442077e9209'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_ip_address.rb]/ensure: defined content as '{md5}278f3e0ea96b4b31e7b85c13887079b6'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_ipv4_address.rb]/ensure: defined content as '{md5}bd015492af1f3c4bef7ac780ae1c7e61'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_ipv6_address.rb]/ensure: defined content as '{md5}5144a327b6850ed5b7fb26fa37113353'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_legacy.rb]/ensure: defined content as '{md5}789bdef436873b6fcc8205c6d2270e43'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_numeric.rb]/ensure: defined content as '{md5}2bd2733f44749e0e56940ceaf5d8e2f8'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_re.rb]/ensure: defined content as '{md5}12c3412a7383b1d258dba5d4307e9464'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_slength.rb]/ensure: defined content as '{md5}1fc441736085bd0b5c7862f5dc9f839a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/functions/validate_string.rb]/ensure: defined content as '{md5}c0fe867d3b5f8fbcaa3641f0f393a669'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/abs.rb]/ensure: defined content as '{md5}f36ef597641f56b400bf5425f329b52c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/any2array.rb]/ensure: defined content as '{md5}bb45c181f51b6cb124de9ab44ff74ae5'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/any2bool.rb]/ensure: defined content as '{md5}12535df795966eadcf27e05413c691cc'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/assemble_nexus_url.rb]/ensure: defined content as '{md5}d37ee34c8b63728eefeca30ee3965509'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/assert_private.rb]/ensure: defined content as '{md5}c61884d43ebdb5ee5a5aa1507165084a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/base64.rb]/ensure: defined content as '{md5}5c044321bc37fecd54e06a0ec5a067ba'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/basename.rb]/ensure: defined content as '{md5}6b0dc955024352c8007d175f900dba36'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/bool2num.rb]/ensure: defined content as '{md5}0d0a75d743e099eafada405f57ead3ea'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/bool2str.rb]/ensure: defined content as '{md5}ab45ec6cbcd35194d478c2da0527ab74'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/camelcase.rb]/ensure: defined content as '{md5}b46cd7766f7f500142fedaae6e81eb47'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/capitalize.rb]/ensure: defined content as '{md5}45d3ba2d02056b5dd0bc7f69ab046817'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/ceiling.rb]/ensure: defined content as '{md5}7cc2fba2933190774468035d24778f51'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/chomp.rb]/ensure: defined content as '{md5}393c7ea2399b531b1528cbbac6948f3c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/chop.rb]/ensure: defined content as '{md5}b8d88826795cf13f803f264ce42e1cdf'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/clamp.rb]/ensure: defined content as '{md5}5c2c8f3f048ed1afd0c34c0eb475b076'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/concat.rb]/ensure: defined content as '{md5}107cf03fb8343dbf20f69bd4a07a7bb1'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/convert_base.rb]/ensure: defined content as '{md5}a34a1172f158c4780f6387df082aade0'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/count.rb]/ensure: defined content as '{md5}b3bcfa1fc10df6f2635c10804cfb567c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/deep_merge.rb]/ensure: defined content as '{md5}fae771cff4fc1d6c639bea1672e05c9c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/defined_with_params.rb]/ensure: defined content as '{md5}bd2564fe13dd46e4afac1e7f7db45eee'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete.rb]/ensure: defined content as '{md5}875f64cf060e00bb6f187875a4bc5e88'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete_at.rb]/ensure: defined content as '{md5}d909ad4779276559cb05b09193b047e0'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete_regex.rb]/ensure: defined content as '{md5}509b6526b9dea21321c6d7a0f2de591a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete_undef_values.rb]/ensure: defined content as '{md5}01e6547fcd9ff93bb5294be3c0761a49'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/delete_values.rb]/ensure: defined content as '{md5}7cc9f122bc7ddfb6359146cd68e5f27a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/deprecation.rb]/ensure: defined content as '{md5}9f935fec2f9f0d01394292eb6f21bd7d'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/difference.rb]/ensure: defined content as '{md5}419c1179460a2878d99b577dfb41977d'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/dig.rb]/ensure: defined content as '{md5}d315de1659a037430fea9623bff323a6'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/dig44.rb]/ensure: defined content as '{md5}433ae008eed28fa3f99dbdd64926bfd8'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/dirname.rb]/ensure: defined content as '{md5}eaafc8268d35709f8d460a48e918ee4c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_exec_flags.rb]/ensure: defined content as '{md5}3a130c7a1c3b04ccaedd6afb3bb960d1'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_plugin_enable_flags.rb]/ensure: defined content as '{md5}9443bc418ce0c55872ed316acedd2172'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_plugin_install_flags.rb]/ensure: defined content as '{md5}52bd4b634ed93c8f49167df54e599f23'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_plugin_remove_flags.rb]/ensure: defined content as '{md5}f4608a63a018f092514f9dc53907848f'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_run_flags.rb]/ensure: defined content as '{md5}7f68ecb4709a3537b613277e4df4b5a7'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_secrets_flags.rb]/ensure: defined content as '{md5}8bd40a7de6e60e8acb88ff874379f635'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_service_flags.rb]/ensure: defined content as '{md5}b48f59aaeba543ec65b87c451702de9f'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_stack_flags.rb]/ensure: defined content as '{md5}b024e8b32110f245a292c80828fb2585'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_swarm_init_flags.rb]/ensure: defined content as '{md5}fe3c423ccb593de3c7a8d57ecc889c9e'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/docker_swarm_join_flags.rb]/ensure: defined content as '{md5}68b75183db152f7f663316ed69d4ab20'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/dos2unix.rb]/ensure: defined content as '{md5}ab2f9f280c616be55f58903948e226a2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/downcase.rb]/ensure: defined content as '{md5}384d5ad77ac70bd199fcd63fa31ede38'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/empty.rb]/ensure: defined content as '{md5}455ab7360e7d15f78ff8f359e6da432a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/enclose_ipv6.rb]/ensure: defined content as '{md5}89c728eb11f71ed9390664bad9732328'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/ensure_packages.rb]/ensure: defined content as '{md5}8f72ca68f1d93fc7042552fef8fdb2b2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/ensure_resource.rb]/ensure: defined content as '{md5}2915c77baa0d45531912613dd1cac902'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/ensure_resources.rb]/ensure: defined content as '{md5}805d56e894c9dcca2595464fa87a7c56'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/flatten.rb]/ensure: defined content as '{md5}8558874ff069ba6cbaecac47c4836ca9'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/floor.rb]/ensure: defined content as '{md5}1fdd8c7a0d1350c4e67578209cbfd937'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/fqdn_rand_string.rb]/ensure: defined content as '{md5}731365381b6a28a196e108329e16c6c2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/fqdn_rotate.rb]/ensure: defined content as '{md5}3925369078084f98f9b527d25cc9e4d2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/fqdn_uuid.rb]/ensure: defined content as '{md5}adbd60dbcc561c8586567a6e58abec82'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/get_module_path.rb]/ensure: defined content as '{md5}91b47019658cb4f438a8f96c6e12213b'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/getparam.rb]/ensure: defined content as '{md5}b8f4a75c6e0d9732c5f937bd35b00923'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/getvar.rb]/ensure: defined content as '{md5}60ee5451005017bd3234113354f68765'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/git_config_hash.rb]/ensure: defined content as '{md5}fd5624665584cc3a749a59715995cff9'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/glob.rb]/ensure: defined content as '{md5}f8177554be6da357b0822edaa7eb8d14'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/go_md5.rb]/ensure: defined content as '{md5}7d185a1c58e49b716d594f0c825f2623'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/grep.rb]/ensure: defined content as '{md5}f8a965a28326f7cde962a13d8273d617'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/has_interface_with.rb]/ensure: defined content as '{md5}422015811c5b7c0656b83eaea3b8fdcc'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/has_ip_address.rb]/ensure: defined content as '{md5}fc76c9a87145560f58a4ae9a6d9df444'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/has_ip_network.rb]/ensure: defined content as '{md5}b1bb1868e6fef95f8ae840d420ab0816'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/has_key.rb]/ensure: defined content as '{md5}2831eb02496ac82c790e49d4538bd983'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/hash.rb]/ensure: defined content as '{md5}a986ba1253550e868d61e777dbda0890'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/intersection.rb]/ensure: defined content as '{md5}6436444eb8585ee71cfd5bd1e0802026'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_absolute_path.rb]/ensure: defined content as '{md5}268600b66670a29690be009d45013d42'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_array.rb]/ensure: defined content as '{md5}0e425e55c8ce9cc5e327d53d114391ba'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_bool.rb]/ensure: defined content as '{md5}4e021a5143c2c98b31344acceda5fbe2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_domain_name.rb]/ensure: defined content as '{md5}1abf04d1d57de6f7f630045c0efe5e4c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_email_address.rb]/ensure: defined content as '{md5}d11c644fa1bd73f8e1d36c4f9e67272e'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_float.rb]/ensure: defined content as '{md5}b95a00f15242e3f26a5cf129db7d31e5'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_function_available.rb]/ensure: defined content as '{md5}3bb60da5789493da017f84d48ac46f08'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_hash.rb]/ensure: defined content as '{md5}3f74a7e9b6e47b834c4ad58939c27eab'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_integer.rb]/ensure: defined content as '{md5}e3480725fccac1c7eba28162dc62393d'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_ip_address.rb]/ensure: defined content as '{md5}3616dacf58febcd4944945d3c2647efe'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_ipv4_address.rb]/ensure: defined content as '{md5}7930d25d23d92f0e5cb81f93315cea16'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_ipv6_address.rb]/ensure: defined content as '{md5}c206564af3a738e504afca2284497d3c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_mac_address.rb]/ensure: defined content as '{md5}ce813427e763d0405931dc216e51bca2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_numeric.rb]/ensure: defined content as '{md5}4bd1a47192ce4040810819789fbf3147'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/is_string.rb]/ensure: defined content as '{md5}cf06fecd6147bea77d406a189b649f81'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/join.rb]/ensure: defined content as '{md5}338cfe4797a5b41d34d0dcdceb4cff2f'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/join_keys_to_values.rb]/ensure: defined content as '{md5}86e4211f195c4c9d92c5e3806789a561'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/keys.rb]/ensure: defined content as '{md5}1702d1c00a24ca4e9ba6a4f36c4ec808'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/load_module_metadata.rb]/ensure: defined content as '{md5}4972bafc84e5b7ce4a00cbee21aece18'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/loadjson.rb]/ensure: defined content as '{md5}442e1250912a44965637782998776ef6'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/loadyaml.rb]/ensure: defined content as '{md5}8ad8f48f3649b39bdeca825a61d68e9e'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/lstrip.rb]/ensure: defined content as '{md5}078230c59baa5ebb433d1ddc2ebd808b'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/max.rb]/ensure: defined content as '{md5}c9acf0c8bd3902ec613844fac4eb0201'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/member.rb]/ensure: defined content as '{md5}ddd3572cb73353e4cfd95bcea423030b'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/merge.rb]/ensure: defined content as '{md5}fecd4133ce85334adf93332fdc9f65f1'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/min.rb]/ensure: defined content as '{md5}9016deb88938647bd52faf8cdea6f83c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/num2bool.rb]/ensure: defined content as '{md5}60e725ab19cffcd745a0b904a7a59d6b'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/parsejson.rb]/ensure: defined content as '{md5}fee0dc33cd6e18b0d9a5fe8befb66cd2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/parseyaml.rb]/ensure: defined content as '{md5}f4b67d011970c1799bc6fb36a3caf1f2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/pick.rb]/ensure: defined content as '{md5}502384aedc46dd5987fe31c494f48e61'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/pick_default.rb]/ensure: defined content as '{md5}acf85e30452afb8a1811a4ca8557f188'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/prefix.rb]/ensure: defined content as '{md5}6912509e79ebdff5f9b4e7d630442157'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/private.rb]/ensure: defined content as '{md5}a1f44a1c32da00aa14f474f4f303be87'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/pry.rb]/ensure: defined content as '{md5}970544bf6308b7b6902b936063a45109'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/pw_hash.rb]/ensure: defined content as '{md5}07fea662493e5b2ffcf37dbb4c4e74b9'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/range.rb]/ensure: defined content as '{md5}38f7ebcf5a66954f9127756d32291534'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/regexpescape.rb]/ensure: defined content as '{md5}d7d22f987d616f2b5ec9d967f1528f53'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/reject.rb]/ensure: defined content as '{md5}9847dac360af182c4880dece7b4bc034'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/reverse.rb]/ensure: defined content as '{md5}2d1045255bbe50fc6d4cd97ad4a6eec3'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/round.rb]/ensure: defined content as '{md5}aaf276b15f731cf44da7a69621cd3b96'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/rstrip.rb]/ensure: defined content as '{md5}1be3bf1eff074c784e980cda2c146683'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/seeded_rand.rb]/ensure: defined content as '{md5}4f45ef0723411ff8281aaf093f0fabc2'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/shell_escape.rb]/ensure: defined content as '{md5}6e51793b8483eb6bfc4be98b438fd47e'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/shell_join.rb]/ensure: defined content as '{md5}4fbe23ff73932f65db696f106517887e'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/shell_split.rb]/ensure: defined content as '{md5}cb851119ee167ccb12930c53e94333cc'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/shuffle.rb]/ensure: defined content as '{md5}6b16497151e961fbdb6e00ec70d6bbe9'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/size.rb]/ensure: defined content as '{md5}e3a0aa89c776b592ed24c1dd27773e33'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/sort.rb]/ensure: defined content as '{md5}ea24d1e27954b6ee69d30f3fce391b65'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/squeeze.rb]/ensure: defined content as '{md5}e42e1d5ec9a23443d14ff07512fd695f'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/str2bool.rb]/ensure: defined content as '{md5}9fac94e3e949b2a4406ac2d22510b06e'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/str2saltedsha512.rb]/ensure: defined content as '{md5}d4443e8985b4ce6f6e925c6f46d8456c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/strftime.rb]/ensure: defined content as '{md5}d17fc58b649eb6b7315752b853cd7f3b'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/strip.rb]/ensure: defined content as '{md5}011469a450ae484f199c09f55f3ab809'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/suffix.rb]/ensure: defined content as '{md5}1893244c6bb354a6b1093f65041c643c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/swapcase.rb]/ensure: defined content as '{md5}d1a53787b35ae9a5a643c49f4e0975a8'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/time.rb]/ensure: defined content as '{md5}4a0ec2a06a1361dbf3cd11a07aa57a71'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/to_bytes.rb]/ensure: defined content as '{md5}55a65ad70ea78983e7c1d6d565094c1f'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/try_get_value.rb]/ensure: defined content as '{md5}b039b960b07a21b935baf6c78fb94612'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/type.rb]/ensure: defined content as '{md5}3115a269dc87e6cdb586d6cf4c2b0529'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/type3x.rb]/ensure: defined content as '{md5}7a72502f0291c66b0e4ce76e33e481c7'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/union.rb]/ensure: defined content as '{md5}690e5c15a1e7b95ab4b90ee18eb48f81'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/unique.rb]/ensure: defined content as '{md5}e448da2c183c0e19bd6e64bc423a749f'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/unix2dos.rb]/ensure: defined content as '{md5}0aa6e66d1c47ca0bb417e248b01f6f1b'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/upcase.rb]/ensure: defined content as '{md5}55ef15d383673d44a1848833a46cfd11'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/uriescape.rb]/ensure: defined content as '{md5}f2facfe201658a65a7e81199cdd1bef7'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_absolute_path.rb]/ensure: defined content as '{md5}892faf0e74b99b11190ec7fc4b78a893'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_array.rb]/ensure: defined content as '{md5}9518be91bab77e56be711d1498d119b9'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_augeas.rb]/ensure: defined content as '{md5}c5bbf1bc42b7ea024e48ab12b46f55e9'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_bool.rb]/ensure: defined content as '{md5}bea67f1a0f5fc23ee8b632000cfa63db'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_cmd.rb]/ensure: defined content as '{md5}dbb22e68eca3f6be63fb49b465b1d611'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_domain_name.rb]/ensure: defined content as '{md5}04f4b1d0be9a8a12d278f0b044f78427'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_email_address.rb]/ensure: defined content as '{md5}6dc01f14c43fdff19106a2388d01b51a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_hash.rb]/ensure: defined content as '{md5}80f7cfb430818e1497d3b12769d8f9c4'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_integer.rb]/ensure: defined content as '{md5}edb176a717c4af6cd50d2d26e4da149d'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_ip_address.rb]/ensure: defined content as '{md5}55d0f019803d687bf95bcc64e8751ba5'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_ipv4_address.rb]/ensure: defined content as '{md5}94843b876cc92414b29223f7ac3cc3b6'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_ipv6_address.rb]/ensure: defined content as '{md5}6c10396f466f64a6f897d1be4291dd4a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_numeric.rb]/ensure: defined content as '{md5}092cce5ed9d3a73319c48cdf9a2a822e'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_re.rb]/ensure: defined content as '{md5}df6a2cc342dad63d008ef257fde9038a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_slength.rb]/ensure: defined content as '{md5}b20959e080f36bf320eacb472d125741'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_string.rb]/ensure: defined content as '{md5}0239e1697134605a6385ff8c9bdc066b'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/validate_x509_rsa_key_pair.rb]/ensure: defined content as '{md5}b16e5ebaeb497e1639c7bf78d61c2b45'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/values.rb]/ensure: defined content as '{md5}793ec0d600822461829eda4abcd89f9c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/values_at.rb]/ensure: defined content as '{md5}d03bb02de4bf80ecd1846a4e6dc99ce8'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/parser/functions/zip.rb]/ensure: defined content as '{md5}aef1ee868716d07b01e605ae6c4741cc'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/apt_key]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/apt_key/apt_key.rb]/ensure: defined content as '{md5}ef3a893338f628f974bb59c36c7756c7'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/archive]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/archive/curl.rb]/ensure: defined content as '{md5}deda90d62289fdb443606135211dd54c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/archive/ruby.rb]/ensure: defined content as '{md5}859aa5575fca62a7ea13d26bcfcaff01'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/archive/wget.rb]/ensure: defined content as '{md5}9e26372f0f3d31e3482b5a318a3cb347'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/docker_compose]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/docker_compose/ruby.rb]/ensure: defined content as '{md5}fd465073cafd57afa36cf3c86e4a6715'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/docker_network]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/docker_network/ruby.rb]/ensure: defined content as '{md5}dcfe9db00bb0cb34e979cfb1fb440ead'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/docker_stack]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/docker_stack/ruby.rb]/ensure: defined content as '{md5}d580e21f7237c4f00b2fb7f7665a3cc4'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/docker_volume]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/docker_volume/ruby.rb]/ensure: defined content as '{md5}c867312ebc6a75eb32cbbf8c3c4633ce'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/exec]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/exec/powershell.rb]/ensure: defined content as '{md5}e655a39dd78351d12577a8bda3961235'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/file_line]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/file_line/ruby.rb]/ensure: defined content as '{md5}06dd4b2bd0037fcdc8382fcd4214dda3'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/git_config]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/git_config/git_config.rb]/ensure: defined content as '{md5}2db114bda74daf9de1bac405d606508b'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/reboot]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/reboot/linux.rb]/ensure: defined content as '{md5}a9409aa9cbbeafaab5628a867bb35630'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/reboot/posix.rb]/ensure: defined content as '{md5}b32379346ac518d6b0482265e3190964'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/provider/reboot/windows.rb]/ensure: defined content as '{md5}426c5e8843dfe7bd09c601fa24f1d373'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/anchor.rb]/ensure: defined content as '{md5}95867e600863019b08990277c4254cac'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/apt_key.rb]/ensure: defined content as '{md5}16b9fc7bbea65c1cd626b65cf3ea7167'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/archive.rb]/ensure: defined content as '{md5}a510f5b95b5ea766a3b8f4a098b72ea1'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/concat_file.rb]/ensure: defined content as '{md5}97ba8daf776c77d81f4077e94989d514'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/concat_fragment.rb]/ensure: defined content as '{md5}c3eb08d9825c22bb6a2f5355cdb82265'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/docker_compose.rb]/ensure: defined content as '{md5}ca1d495a8b9b5a32fc613984cc54db9e'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/docker_network.rb]/ensure: defined content as '{md5}4f1edaced0bafffe9c3854842b9fddf9'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/docker_stack.rb]/ensure: defined content as '{md5}7f5f762600f5e5f0f11477be9c66cc06'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/docker_volume.rb]/ensure: defined content as '{md5}d568b8e130132c4fd6094d963cac505b'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/file_line.rb]/ensure: defined content as '{md5}208655541a332e54e2d9abac0e328d33'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/git_config.rb]/ensure: defined content as '{md5}db895516466f062a1870ff11abb9fa82'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet/type/reboot.rb]/ensure: defined content as '{md5}54fb2fa0984ecf6b3d1612fca689e96c'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/bodeco]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/bodeco/archive.rb]/ensure: defined content as '{md5}56be811f4ce886f8e1d88f97ef2c6a81'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/bodeco/cacert.pem]/ensure: defined content as '{md5}9d8c2e9a93881cdf1f2a7fc3d01a6318'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/bodeco/util.rb]/ensure: defined content as '{md5}6961514aebe81450e9c50363b32dae55'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/puppetlabs]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/puppetlabs/powershell]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/puppetlabs/powershell/compatible_powershell_version.rb]/ensure: defined content as '{md5}d85ac07f9b23964804f400737c846fb8'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/puppetlabs/powershell/powershell_manager.rb]/ensure: defined content as '{md5}da3c67798ed04173b45e4961d043ecd1'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/puppetlabs/powershell/powershell_version.rb]/ensure: defined content as '{md5}0c8298e41ff0216f1f6ad32d2a5ce010'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/templates]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/templates/powershell]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/lib/puppet_x/templates/powershell/init_ps.ps1]/ensure: defined content as '{md5}afa7397ca63c05a6fd35425191cc2d90'[0m
+[0;32mInfo: Retrieving locales[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/locales/ja]/ensure: created[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/locales/ja/puppetlabs-apt.po]/ensure: defined content as '{md5}2ba4d5f45b3cccb958b78322f03e4de4'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/locales/ja/puppetlabs-concat.po]/ensure: defined content as '{md5}c9dad056a76901974ded7b150267573a'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/locales/ja/puppetlabs-stdlib.po]/ensure: defined content as '{md5}805e5d893d2025ad57da8ec0614a6753'[0m
+[mNotice: /File[/opt/puppetlabs/puppet/cache/locales/ja/puppetlabs-tomcat.po]/ensure: defined content as '{md5}e35c7927ccb27df41f371af1ddeea99e'[0m
+[0;32mInfo: Loading facts[0m
+[0;32mInfo: Caching catalog for 75.pulkit.co[0m
+[0;32mInfo: Applying configuration version '1554185723'[0m
+[mNotice: /Stage[main]/Docker::Install/Package[docker]/ensure: created[0m
+[mNotice: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker-storage-setup]/ensure: defined content as '{md5}506aef96bd8f918482f6ccb3ebbee4b7'[0m
+[0;32mInfo: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker-storage-setup]: Scheduling refresh of Service[docker][0m
+[mNotice: /Stage[main]/Docker::Service/File[/etc/systemd/system/docker.service.d]/ensure: created[0m
+[mNotice: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker-storage]/content: 
+--- /etc/sysconfig/docker-storage	2019-03-04 21:24:22.000000000 +0000
++++ /tmp/puppet-file20190402-2863-1mxykma	2019-04-02 06:15:35.446343954 +0000
+@@ -1,3 +1,6 @@
++# This file is managed by Puppet and local changes
++# may be overwritten
++
+ # This file may be automatically generated by an installation program.
+ 
+ # By default, Docker uses a loopback-mounted sparse file in
+@@ -9,6 +12,6 @@
+ 
+ # Example: Use a custom pair of raw logical volumes (one for metadata,
+ # one for data).
+-# DOCKER_STORAGE_OPTIONS="--storage-opt dm.metadatadev=/dev/myvg/my-docker-metadata --storage-opt dm.datadev=/dev/myvg/my-docker-data"
++# DOCKER_STORAGE_OPTIONS = --storage-opt dm.metadatadev=/dev/mylogvol/my-docker-metadata --storage-opt dm.datadev=/dev/mylogvol/my-docker-data
+ 
+-DOCKER_STORAGE_OPTIONS=
++DOCKER_STORAGE_OPTIONS=""
+[0m
+[0;32mInfo: Computing checksum on file /etc/sysconfig/docker-storage[0m
+[0;32mInfo: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker-storage]: Filebucketed /etc/sysconfig/docker-storage to puppet with sum c5b2e0068ccf6e1cd7042eec2c96be01[0m
+[mNotice: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker-storage]/content: content changed '{md5}c5b2e0068ccf6e1cd7042eec2c96be01' to '{md5}0f427b02d0882d0df4de752f77402f3e'[0m
+[0;32mInfo: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker-storage]: Scheduling refresh of Service[docker][0m
+[mNotice: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker]/content: 
+--- /etc/sysconfig/docker	2019-03-04 21:24:22.000000000 +0000
++++ /tmp/puppet-file20190402-2863-1l791au	2019-04-02 06:15:35.522343728 +0000
+@@ -1,13 +1,9 @@
+-# The max number of open files for the daemon itself, and all
+-# running containers.  The default value of 1048576 mirrors the value
+-# used by the systemd service unit.
+-DAEMON_MAXFILES=1048576
++# This file is managed by Puppet and local changes
++# may be overwritten
+ 
+-# Additional startup options for the Docker daemon, for example:
+-# OPTIONS="--ip-forward=true --iptables=true"
+-# By default we limit the number of open files per container
+-OPTIONS="--default-ulimit nofile=1024:4096"
++OPTIONS=" -H unix:///var/run/docker.sock --ip-forward=true --iptables=true --ip-masq=true -G docker"
+ 
+-# How many seconds the sysvinit script waits for the pidfile to appear
+-# when starting the daemon.
+-DAEMON_PIDFILE_TIMEOUT=10
++
++
++# This is also a handy place to tweak where Docker's temporary files go.
++TMPDIR="/tmp/"
+[0m
+[0;32mInfo: Computing checksum on file /etc/sysconfig/docker[0m
+[0;32mInfo: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker]: Filebucketed /etc/sysconfig/docker to puppet with sum ae58d736eac82d4103a0eff4d68d187d[0m
+[mNotice: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker]/content: content changed '{md5}ae58d736eac82d4103a0eff4d68d187d' to '{md5}81700906b44f9d5ac50375ca10522a52'[0m
+[0;32mInfo: /Stage[main]/Docker::Service/File[/etc/sysconfig/docker]: Scheduling refresh of Service[docker][0m
+[mNotice: /Stage[main]/Docker::Service/Service[docker]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;32mInfo: /Stage[main]/Docker::Service/Service[docker]: Unscheduling refresh on Service[docker][0m
+[mNotice: /Stage[main]/Java/Package[java]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Node[75.pulkit.co]/Tomcat::Install[/opt/tomcat]/Group[tomcat]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Node[75.pulkit.co]/Tomcat::Install[/opt/tomcat]/User[tomcat]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Node[75.pulkit.co]/Tomcat::Install[/opt/tomcat]/Tomcat::Install::Source[/opt/tomcat]/File[/opt/tomcat]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Node[75.pulkit.co]/Tomcat::Install[/opt/tomcat]/Tomcat::Install::Source[/opt/tomcat]/Archive[/opt/tomcat-/opt/tomcat/apache-tomcat-9.0.17.tar.gz]/ensure: download archive from https://www.apache.org/dist/tomcat/tomcat-9/v9.0.17/bin/apache-tomcat-9.0.17.tar.gz to /opt/tomcat/apache-tomcat-9.0.17.tar.gz and extracted in /opt/tomcat with cleanup[0m
+[0;32mInfo: Tomcat::Install[/opt/tomcat]: Scheduling refresh of Tomcat::Service[default][0m
+[0;32mInfo: Tomcat::Install[/opt/tomcat]: Scheduling refresh of Tomcat::Service[default][0m
+[0;32mInfo: Tomcat::Install[/opt/tomcat]: Scheduling refresh of Tomcat::Service[default][0m
+[0;32mInfo: Tomcat::Service[default]: Scheduling refresh of Service[tomcat-default][0m
+[mNotice: /Stage[main]/Main/Node[75.pulkit.co]/Tomcat::Instance[default]/Tomcat::Service[default]/Service[tomcat-default]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;32mInfo: /Stage[main]/Main/Node[75.pulkit.co]/Tomcat::Instance[default]/Tomcat::Service[default]/Service[tomcat-default]: Unscheduling refresh on Service[tomcat-default][0m
+[mNotice: /Stage[main]/Main/Node[75.pulkit.co]/Tomcat::Instance[default]/Tomcat::Config::Properties[/opt/tomcat catalina.properties]/Concat[/opt/tomcat/conf/catalina.properties]/File[/opt/tomcat/conf/catalina.properties]/mode: mode changed '0600' to '0640'[0m
+[mNotice: Applied catalog in 18.09 seconds[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

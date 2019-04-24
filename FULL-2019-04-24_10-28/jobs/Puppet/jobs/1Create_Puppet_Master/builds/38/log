@@ -1,0 +1,17 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/1Create_Puppet_Master
+[EnvInject] - Executing scripts and injecting environment variables after the SCM step.
+[EnvInject] - Injecting as environment variables the properties file path '/pulkit.properties'
+[EnvInject] - Variables injected successfully.
+[EnvInject] - Injecting as environment variables the properties content 
+DNS_Name=puppet.master.co
+
+[EnvInject] - Variables injected successfully.
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins6847385486140060876.sh
++ pwd
+/pulkit/workspace/Puppet/1Create_Puppet_Master
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins3206264641188089294.sh
++ sudo sed -i ' 3i9.8.7.6  puppet.master.co' /etc/hosts
+Triggering a new build of [8mha:////4DwIZvlnSB2fTBTvlZPxrUaY309NiTyEFcrYG14Slsf5AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzeEgZR/az8JP2A0oKC1BIwMyU1N18fAOQQA+7KAAAA[0mPuppet » demo
+Finished: SUCCESS

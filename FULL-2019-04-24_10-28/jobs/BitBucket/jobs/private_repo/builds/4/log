@@ -1,0 +1,24 @@
+Started by user [8mha:////4NLhXnD5JFlpU0tHIRvI4Cdiw3uWMuEU78NPci5KsDGpAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZB/dLi1CL9gtKc7MyS+KTEpEQA8SXzHsYAAAA=[0mPulkit_Agarwal
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AZ+z2BfKQAqfAUXiN1AlNHDmhswcnmT8kvy0eNJ6IP/AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXNLAPQNQQzBAAAA[0m79 in workspace /home/ec2-user/jenkin/workspace/BitBucket/private_repo
+using credential welcomepem
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@bitbucket.org:pulkit786agar/myfirstrepo.git # timeout=10
+Fetching upstream changes from git@bitbucket.org:pulkit786agar/myfirstrepo.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials welcomepem
+ > git fetch --tags --progress git@bitbucket.org:pulkit786agar/myfirstrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 46ff5ba2368e3012dce4ca4376140c5b65d58fd3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 46ff5ba2368e3012dce4ca4376140c5b65d58fd3
+Commit message: "sddddfdfdfd"
+ > git rev-list --no-walk 46ff5ba2368e3012dce4ca4376140c5b65d58fd3 # timeout=10
+File Zip Operation:
+Creating Zip file of /home/ec2-user/jenkin/workspace/BitBucket/private_repo/abc.zip
+[private_repo] $ /bin/sh -xe /tmp/jenkins23787625604735473.sh
++ echo hello
+hello
+Finished: SUCCESS

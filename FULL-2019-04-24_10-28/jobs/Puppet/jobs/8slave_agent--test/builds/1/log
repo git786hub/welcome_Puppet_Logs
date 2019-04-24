@@ -1,0 +1,8 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AzgnYCZXns5Rm66SWuZns1IAsC0kevZDIvVSVeKChsFAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/eKcxLJUAEnZB8bEAAAA[0mslave in workspace /root/jenkin/workspace/Puppet/slave_agent--test
+[slave_agent--test] $ /bin/sh -xe /tmp/jenkins4305557727791107684.sh
++ sudo /opt/puppetlabs/bin/puppet agent –test
+[1;31mError: Could not prepare for execution: The puppet agent command does not take parameters[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

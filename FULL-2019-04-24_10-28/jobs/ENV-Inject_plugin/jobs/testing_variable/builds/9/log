@@ -1,0 +1,32 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/testing_variable
+[SSH] executing pre build script:
+
+sudo yum install git -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package git-2.17.2-2.amzn2.x86_64 already installed and latest version
+Nothing to do
+
+[SSH] completed
+[SSH] exit-status: 0
+
+[testing_variable] $ /bin/sh -xe /tmp/jenkins1984327400629752963.sh
+++ echo DNS_Name
++ AOEU=DNS_Name
+[SSH] executing post build script:
+DNS_Name="hello"
+
+sudo  AOEU=DNS_Name
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+            [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-u user] file ...
+
+[SSH] completed
+[SSH] exit-status: 1
+
+Finished: FAILURE

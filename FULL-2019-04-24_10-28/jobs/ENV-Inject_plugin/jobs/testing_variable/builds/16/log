@@ -1,0 +1,16 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/ENV-Inject_plugin/testing_variable
+[SSH] executing pre build script:
+
+
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path '/var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile1'
+[EnvInject] - Variables injected successfully.
+[testing_variable] $ /bin/sh -xe /tmp/jenkins3867693870674275254.sh
++ echo a
+a
+[SSH] executing post build script:
+
+
+Finished: SUCCESS

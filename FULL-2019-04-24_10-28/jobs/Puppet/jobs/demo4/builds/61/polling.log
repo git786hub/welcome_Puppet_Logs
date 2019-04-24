@@ -1,0 +1,10 @@
+Started on Apr 15, 2019 5:51:13 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision c25102dddfc117290f01931e38ec3f098d3a1bec (refs/remotes/origin/master)
+No credentials specified
+ > git --version # timeout=10
+ > git ls-remote -h https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git # timeout=10
+Found 1 remote heads on https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git
+[poll] Latest remote head revision on refs/heads/master is: 99d519cb50ff5b79916d1c36cffcbbdd15408cc7
+Done. Took 0.81 sec
+Changes found

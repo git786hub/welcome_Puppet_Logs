@@ -1,0 +1,14 @@
+Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4AMnBxi76mUb/D5JpicVosntQ2wKO5n3nQnK55aLxlKIAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXfyBQAOlIFRNUAAAA=[0m25
+originally caused by:
+ Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4PzX04R3fuVTcEy6tmtqGnuS4mBpq2itXdwVtoXnw3IrAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLLUPABdurQJxQAAAA==[0mslaven in workspace /home/ec2-user/jenkin/workspace/Puppet/2puppet_enter_detatils_in_slave_host_file
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path '/home/ec2-user/jenkin/workspace/Puppet/1Create_slave/propsfile'
+[EnvInject] - Variables injected successfully.
+[2puppet_enter_detatils_in_slave_host_file] $ /bin/sh -xe /tmp/jenkins4183900469044605663.sh
++ sudo sed -i '$i54.93.50.26  master.pulkit.vm' /etc/hosts
++ sudo sed -i '$i52.29.220.60  agent.pulkit.vm' /etc/hosts
+Returning node parameter for slaven
+Triggering a new build of [8mha:////4Pk4znF+AFs8xIcIRv2GXql2dPOGyCrFTOrUXo+rtz6XAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzVEgZd/az8JP2A0oKC1BIw07gAzI4vzkksS43PzCsuSczJiS9OLsosKNEHACm1maviAAAA[0mPuppet » 3puppet_slave_install_script
+Finished: SUCCESS

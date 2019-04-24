@@ -1,0 +1,9 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins8496732437712708423.sh
++ echo h
+h
++ set DNp_Name =h
++ echo
+
+Finished: SUCCESS

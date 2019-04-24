@@ -1,0 +1,38 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.32">
+  <actions/>
+  <description>vi /etc/sysconfig/jenkins&#xd;
+&#xd;
+2. Find this $JENKINS_USER and change to “root”:&#xd;
+&#xd;
+$JENKINS_USER=&quot;root&quot;&#xd;
+&#xd;
+untick sandbox option</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.65">
+    <script>node(&apos;master&apos;){
+    def d = &quot;None&quot;
+stage(&quot;input&quot;){
+   while(d!=&quot;exit&quot;){
+    def userInput = input(
+ id: &apos;userInput&apos;, message: &apos;Let\&apos;s promote?&apos;, parameters: [
+ [$class: &apos;TextParameterDefinition&apos;, defaultValue: &apos;pwd&apos;, description: &apos;Command&apos;, name: &apos;Command&apos;],
+ [$class: &apos;TextParameterDefinition&apos;, defaultValue: &apos;dont enter&apos;, description: &apos;Test&apos;, name: &apos;test&apos;]
+])
+d= userInput[&apos;Command&apos;]
+d1=userInput[&apos;target&apos;]
+echo &quot;${d}&quot;
+stage(&quot;${d}&quot;){
+def currentip= sh (script:&quot;${d} &quot;, returnStdout:true)
+echo &quot;${currentip}&quot;
+}
+}
+
+}
+}</script>
+    <sandbox>false</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

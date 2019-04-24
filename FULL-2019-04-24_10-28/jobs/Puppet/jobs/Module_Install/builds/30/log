@@ -1,0 +1,18 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4D6f41d2qYFVo09aNJxeY4QEFRLv4OjuzlJfiLs7aADKAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifdPcxGIgDQBJIBssxgAAAA==[0m5master in workspace /home/ec2-user/jenkin/workspace/Puppet/Module_Install
+[Module_Install] $ /bin/sh -xe /tmp/jenkins2465217707842070103.sh
++ sudo /opt/puppetlabs/bin/puppet module install puppetlabs-tomcat
+[mNotice: Preparing to install into /etc/puppetlabs/code/environments/production/modules ...[0m
+[mNotice: Downloading from https://forgeapi.puppet.com ...[0m
+[mNotice: Installing -- do not interrupt ...[0m
+/etc/puppetlabs/code/environments/production/modules
+└─┬ puppetlabs-tomcat ([0;36mv2.5.0[0m)
+  ├── puppet-archive ([0;36mv3.2.1[0m)
+  ├─┬ puppetlabs-concat ([0;36mv5.3.0[0m)
+  │ └── puppetlabs-translate ([0;36mv1.2.0[0m)
+  └── puppetlabs-stdlib ([0;36mv5.2.0[0m)
+[Module_Install] $ /bin/sh -xe /tmp/jenkins8131505247335347720.sh
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/Module_Install
+Finished: SUCCESS

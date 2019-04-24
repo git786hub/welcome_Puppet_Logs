@@ -1,0 +1,27 @@
+Started by upstream project "[8mha:////4J8SliF4FjKPiZy6/ZcprwU/lYQNf9v5JtIGIHIAtaSyAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBAjCgoQFQ0IAWExACWIUdiONmWfYlgDdaAhiEYhx2Ikor85r/i6f/XF3rBwzgv0mBNfLImWMJ4a1Ok9d2hJ22uO8sITToRwM3DqOX/qbPl8718uE8E0Qb6hCbjPIFu4YlhkFxUqQQpk4kDe22yRTU3bM2tmm7/ugomDHNxsUexL5xDrnHqapZoGL1MkRVrClIbGUiVKHMbWJ41ofgBTJfZse8AAAA=[0mPuppet/2puppet_enter_detatils_in_slave_host_file" build number [8mha:////4IvdSqtpaYCtjFeqKNn78R+I760gxONESf4jLcKkbEGiAAAAvx+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBArFDQABUNSAEhMYBlyJEYTrZlXyJYgzWgYQjGYQeiUJHf/Fc8/f/8QC94GBdlFqyJj9YESxhvbIa0ujn0pM1laxnhl04EcPUwavl/6nTxeC3u7h1BtIY+ocm5SKFbemIYpGdVKUHK5GLPXpt8Vs8NW3PLX7d/XQ0Rw1yc7UHsSueQG5y4hiUaRi8zZMWagtRGBlIVysIGlidNKJLkC45N+Y/xAAAA[0m11
+originally caused by:
+ Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4Na18HXY38v5o8ojByrmHFKAgLP9gXmziTgZeJW8Wo8YAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXfyBAAI5ZoQ9UAAAA=[0m21
+ originally caused by:
+  Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Hra6a3XwZ0tmlvp9zu1e/v5XAH8a4OUkHe773jQTF0tAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMLAGI9RnvBAAAA[0m78 in workspace /home/ec2-user/jenkin/workspace/Puppet/3puppet_slave_install_script
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins6117816026359481562.sh
++ sudo yum -y install ntp ntpdate
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package ntp-4.2.6p5-28.amzn2.2.2.x86_64 already installed and latest version
+Package ntpdate-4.2.6p5-28.amzn2.2.2.x86_64 already installed and latest version
+Nothing to do
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins7417556460620505246.sh
++ sudo ntpdate 0.centos.pool.ntp.org
+ 3 Apr 08:16:56 ntpdate[5557]: adjust time server 206.55.191.142 offset -0.001040 sec
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins1962782290342041156.sh
++ sudo systemctl start ntpd
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins4597871227493295398.sh
++ sudo systemctl enable ntpd
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins3070291985460724040.sh
++ sudo rpm -Uvh https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+Retrieving https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+Preparing...                          ########################################
+	package puppet5-release-5.0.0-4.el7.noarch is already installed
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

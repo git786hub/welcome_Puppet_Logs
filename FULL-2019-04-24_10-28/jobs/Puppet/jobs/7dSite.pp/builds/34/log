@@ -1,0 +1,27 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4JuVxfrV+QZ8UJz++s4IOSyiYd6nsOkSFWoMYTrRGk/rAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifePcxGIgDQBzFctPxgAAAA==[0m3master in workspace /home/ec2-user/jenkin/workspace/Puppet/7dSite.pp
+[7dSite.pp] $ /bin/sh -xe /tmp/jenkins2459286330438974927.sh
++ sudo echo node ''\''70.pulkit.co'\''{' package '{' ''\''httpd'\'':' ensure '=>' '"installed",' '}' service '{' ''\''httpd'\'':' ensure '=>' running, enable '=>' true '}' '}'
+[7dSite.pp] $ /bin/sh -xe /tmp/jenkins2403730052511247689.sh
++ sudo mv /home/ec2-user/jenkin/workspace/Puppet/7dSite.pp/site.pp /etc/puppetlabs/code/environments/production/manifests/
+[7dSite.pp] $ /bin/sh -xe /tmp/jenkins2327658165030535457.sh
++ echo
+
++ echo
+
++ echo -------------------------------------------------------
+-------------------------------------------------------
++ echo PARSER VALIDATE RESULTS
+PARSER VALIDATE RESULTS
++ echo
+
++ echo
+
++ echo -------------------------------------------------------
+-------------------------------------------------------
++ echo
+
++ echo
+
+Finished: SUCCESS

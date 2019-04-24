@@ -1,0 +1,74 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.32">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>region</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>us-west-2</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>key_Name</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>abcd</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>Instance_type</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>t2.micro</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>stack</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.65">
+    <script>node {
+    stage(&quot;git&quot;){
+       // git &apos;https://github.com/git786hub/welcome_Puppet_Logs.git&apos;
+    } 
+       def  stack=&quot;${params.stack}&quot;
+       def url;
+		def IT=&quot;${params.Instance_type}&quot;
+		def KeyName =&quot;${params.key_Name}&quot;
+		def reg=&quot;${params.region}&quot;
+		echo &quot;${stack}&quot;
+		
+    stage(&quot;CFN&quot;){
+       
+      
+        withAWS(credentials: &apos;AWS_CFN&apos;, region:&quot;${reg}&quot; ) {
+         def outputs = cfnUpdate(stack:&quot;${stack}&quot;,params:[&quot;KeyName=${KeyName}&quot;,&quot;InstanceType=${IT}&quot;], url:&apos;https://s3-us-west-2.amazonaws.com/aws-cfn-pulkit/ec.json&apos;)
+           outputs.each{ k, v -&gt; println &quot;${k}:${v}&quot; } 
+        	url = outputs.find{ it.key == &quot;WebsiteURL&quot;}.value
+        }
+            
+}
+	echo &quot;${url}&quot;
+    
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

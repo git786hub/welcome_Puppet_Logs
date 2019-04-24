@@ -1,0 +1,46 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue plugin="nodelabelparameter@1.7.2">
+          <name>masterless_agent</name>
+          <description></description>
+          <label>masterless2</label>
+          <nextLabels/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>masterless_agent</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>pulkit_baba</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+    <org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction plugin="nodelabelparameter@1.7.2">
+      <label>masterless2</label>
+      <tooltip>Run with label [masterless2] (node: masterless2)</tooltip>
+    </org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction>
+  </actions>
+  <queueId>8</queueId>
+  <timestamp>1554707244880</timestamp>
+  <startTime>1554707244921</startTime>
+  <result>SUCCESS</result>
+  <duration>658</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>masterless2</builtOn>
+  <workspace>/home/ec2-user/jenkin/workspace/Puppet_masterless/git_pull</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

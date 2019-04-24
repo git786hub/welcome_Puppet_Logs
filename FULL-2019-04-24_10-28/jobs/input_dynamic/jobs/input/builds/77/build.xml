@@ -1,0 +1,94 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.32">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.support.steps.input.InputAction plugin="pipeline-input-step@2.10">
+      <ids class="java.util.concurrent.CopyOnWriteArrayList"/>
+    </org.jenkinsci.plugins.workflow.support.steps.input.InputAction>
+  </actions>
+  <queueId>219</queueId>
+  <timestamp>1555107431191</timestamp>
+  <startTime>1555107431252</startTime>
+  <result>FAILURE</result>
+  <duration>21099</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node(&apos;master&apos;){
+    def d
+stage(&quot;input&quot;){
+    
+    def userInput = input(
+ id: &apos;userInput&apos;, message: &apos;Let\&apos;s promote?&apos;, parameters: [
+ [$class: &apos;TextParameterDefinition&apos;, defaultValue: &apos;uat&apos;, description: &apos;Environment&apos;, name: &apos;env&apos;],
+ [$class: &apos;TextParameterDefinition&apos;, defaultValue: &apos;uat1&apos;, description: &apos;Target&apos;, name: &apos;target&apos;]
+])
+
+d= userInput[&apos;env&apos;]
+d1=userInput[&apos;target&apos;]
+echo &quot;${d}&quot;
+
+stage(&quot;shell&quot;){
+    
+     /*
+     sh &quot;#!/bin/sh \n&quot; +
+       &quot;echo \&quot;Hello from \$SHELL\&quot; &quot;+
+       &quot;$d&quot;
+    */
+//    sh &apos;&apos;&apos; bash cd /home &amp;&amp; touch /var/lib/jenkins/workspace/abcde.sh  &amp;&amp; chmod 777 /var/lib/jenkins/workspace/abcde.sh &amp;&amp; echo $&apos;$1&apos; &gt; /var/lib/jenkins/workspace/abcde.sh &amp;&amp; /var/lib/jenkins/workspace/abcde.sh pwd&apos;&apos;&apos;
+      
+  // def currentip= sh (script:&quot;cd /var/ &amp;&amp; ls -la &quot;, returnStdout:true)
+  //echo &quot;${currentip}&quot;
+def currentip= sh (script:&quot;${d} &quot;, returnStdout:true)
+echo &quot;${currentip}&quot;
+def currentip1= sh (script:&quot;${d1} &quot;, returnStdout:true)
+echo &quot;${currentip1}&quot;
+
+}
+}
+
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>945197995</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>98020805</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>1564052623</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>133128960</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>114374953</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>18</iota>
+    <head>1:18</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

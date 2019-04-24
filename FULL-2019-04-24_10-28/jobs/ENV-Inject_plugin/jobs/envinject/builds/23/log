@@ -1,0 +1,9 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+[EnvInject] - Executing scripts and injecting environment variables after the SCM step.
+[EnvInject] - Injecting as environment variables the properties content 
+AOEU=abcd
+
+[EnvInject] - Variables injected successfully.
+Finished: SUCCESS

@@ -1,0 +1,91 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.7">
+  <actions/>
+  <properties/>
+  <folderViews class="com.cloudbees.hudson.plugins.folder.views.DefaultFolderViewHolder">
+    <views>
+      <hudson.model.AllView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>All</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+      </hudson.model.AllView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>git-server_creation</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          <string>git-daemon</string>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+          <io.jenkins.plugins.analysis.core.columns.IssuesTotalColumn plugin="warnings-ng@4.0.0">
+            <selectTools>false</selectTools>
+            <tools>
+              <io.jenkins.plugins.analysis.core.model.ToolSelection>
+                <id></id>
+              </io.jenkins.plugins.analysis.core.model.ToolSelection>
+            </tools>
+            <name># Issues</name>
+            <labelProviderFactory>
+              <jenkins/>
+            </labelProviderFactory>
+          </io.jenkins.plugins.analysis.core.columns.IssuesTotalColumn>
+        </columns>
+        <recurse>false</recurse>
+      </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>Install_masterless_puppet_agent</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView/jobNames/comparator"/>
+          <string>install_puppet5_agent</string>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+          <io.jenkins.plugins.analysis.core.columns.IssuesTotalColumn plugin="warnings-ng@4.0.0">
+            <selectTools>false</selectTools>
+            <tools>
+              <io.jenkins.plugins.analysis.core.model.ToolSelection>
+                <id></id>
+              </io.jenkins.plugins.analysis.core.model.ToolSelection>
+            </tools>
+            <name># Issues</name>
+            <labelProviderFactory>
+              <jenkins/>
+            </labelProviderFactory>
+          </io.jenkins.plugins.analysis.core.columns.IssuesTotalColumn>
+        </columns>
+        <recurse>false</recurse>
+      </hudson.model.ListView>
+    </views>
+    <tabBar class="hudson.views.DefaultViewsTabBar"/>
+  </folderViews>
+  <healthMetrics>
+    <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
+      <nonRecursive>false</nonRecursive>
+    </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
+  </healthMetrics>
+  <icon class="com.cloudbees.hudson.plugins.folder.icons.StockFolderIcon"/>
+</com.cloudbees.hudson.plugins.folder.Folder>

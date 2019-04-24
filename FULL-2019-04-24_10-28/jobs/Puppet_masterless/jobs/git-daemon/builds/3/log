@@ -1,0 +1,61 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4HJrxuu3jj0/HFmHcWc3E35EX1FKW5BxD4Z5EnrfRRHUAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYR/eT83ILSktQi/fTMEt3i1KKy1CIAqMOiZMkAAAA=[0mgit-server in workspace /home/ec2-user/jenkin/workspace/Puppet_masterless/git-daemon
+[git-daemon] $ /bin/sh -xe /tmp/jenkins6578654834309129990.sh
++ sudo yum install git -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package git-2.17.2-2.amzn2.x86_64 already installed and latest version
+Nothing to do
++ cd /opt
++ sudo mkdir puppet-repo
++ sudo chown ec2-user:ec2-user puppet-repo/
++ cd puppet-repo
++ git init --bare --shared
+Initialized empty shared Git repository in /opt/puppet-repo/
++ sudo yum install git-daemon -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package git-daemon-2.17.2-2.amzn2.x86_64 already installed and latest version
+Nothing to do
++ sudo yum install PolicyKit -y
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package polkit-0.112-18.amzn2.1.x86_64 already installed and latest version
+Nothing to do
++ cd /home/ec2-user
++ git clone https://github.com/git786hub/welcome_Puppet_Logs.git
+Cloning into 'welcome_Puppet_Logs'...
++ sudo cp /home/ec2-user/welcome_Puppet_Logs/gitd.service /etc/systemd/system/
++ cd /etc/systemd/system
++ ls
+cloud-init.target.wants
+default.target
+default.target.wants
+getty.target.wants
+gitd.service
+multi-user.target.wants
+remote-fs.target.wants
+sockets.target.wants
+sysinit.target.wants
+system-update.target.wants
++ sudo systemctl start gitd.service
+Warning: gitd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
++ sudo systemctl daemon-reload
++ sudo systemctl restart gitd.service
++ sudo systemctl status gitd.service
+● gitd.service - Start Git Daemon
+   Loaded: loaded (/etc/systemd/system/gitd.service; disabled; vendor preset: disabled)
+   Active: active (running) since Sun 2019-04-07 09:09:05 UTC; 16ms ago
+ Main PID: 4408 (git)
+   CGroup: /system.slice/gitd.service
+           ├─4408 /usr/bin/git daemon --reuseaddr --base-path=/opt --export-all --enable=receive-pack
+           └─4410 /usr/libexec/git-core/git-daemon --reuseaddr --base-path=/opt --export-all --enable=receive-pack
+
+Apr 07 09:09:05 ip-172-30-4-15.ec2.internal systemd[1]: Started Start Git Daemon.
+Apr 07 09:09:05 ip-172-30-4-15.ec2.internal systemd[1]: Starting Start Git Daemon...
+++ curl http://169.254.169.254/latest/meta-data/public-ipv4
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    13  100    13    0     0   1300      0 --:--:-- --:--:-- --:--:--  1300
++ variable_name=54.237.105.50
++ echo 'git clone git://54.237.105.50/puppet-repo'
+git clone git://54.237.105.50/puppet-repo
+Finished: SUCCESS

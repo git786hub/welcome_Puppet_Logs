@@ -1,0 +1,16 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/7CERTI-sign
+[7CERTI-sign] $ /bin/sh -xe /tmp/jenkins6963340681644581420.sh
++ sudo /opt/puppetlabs/bin/puppet cert list
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: no tty present and no askpass program specified
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

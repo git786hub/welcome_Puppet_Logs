@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins4129018024754539564.sh
++ DNp_Name =jhgy
+/tmp/jenkins4129018024754539564.sh: line 2: DNp_Name: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

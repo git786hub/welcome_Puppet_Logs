@@ -1,0 +1,45 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition plugin="nodelabelparameter@1.7.2">
+          <name>Master </name>
+          <description>Select Master Node</description>
+          <allowedSlaves/>
+          <defaultSlaves/>
+          <triggerIfResult>multiSelectionDisallowed</triggerIfResult>
+          <allowMultiNodeSelection>false</allowMultiNodeSelection>
+          <triggerConcurrentBuilds>false</triggerConcurrentBuilds>
+          <ignoreOfflineNodes>false</ignoreOfflineNodes>
+          <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.IgnoreOfflineNodeEligibility"/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command> sudo /opt/puppetlabs/bin/puppet cert list &gt; certificate_file
+ pwd</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command># sudo /opt/puppetlabs/bin/puppet cert sign  `grep -o &apos;&quot;.*&quot;&apos; /pulkit/workspace/Puppet/7CERTI-sign/certificate_file  | sed &apos;s/&quot;//g&apos;`
+
+ sudo /opt/puppetlabs/bin/puppet cert sign  `grep -o &apos;&quot;.*&quot;&apos; /home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign/certificate_file  | sed &apos;s/&quot;//g&apos;`
+
+#https://unix.stackexchange.com/questions/4782/how-to-pass-the-output-of-one-command-as-the-command-line-argument-to-another</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

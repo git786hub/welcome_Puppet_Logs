@@ -1,0 +1,12 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins8703020776295945127.sh
++ echo Hello
+Hello
++ echo dfer
+dfer
++ set i=1
++ env.DNp_Name = dfer
+/tmp/jenkins8703020776295945127.sh: line 5: env.DNp_Name: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

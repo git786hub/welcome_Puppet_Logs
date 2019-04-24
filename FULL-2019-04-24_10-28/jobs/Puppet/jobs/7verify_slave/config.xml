@@ -1,0 +1,56 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&#xd;
+ENTER NODE </description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition plugin="nodelabelparameter@1.7.2">
+          <name>Slave</name>
+          <description>Enter Slave </description>
+          <allowedSlaves/>
+          <defaultSlaves/>
+          <triggerIfResult>multiSelectionDisallowed</triggerIfResult>
+          <allowMultiNodeSelection>false</allowMultiNodeSelection>
+          <triggerConcurrentBuilds>false</triggerConcurrentBuilds>
+          <ignoreOfflineNodes>false</ignoreOfflineNodes>
+          <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.IgnoreOfflineNodeEligibility"/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#sudo systemctl status puppet -l
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>sudo service puppet start
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#sudo systemctl status puppet -l
+sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command> sudo systemctl restart puppet
+ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+ sudo systemctl status puppet -l
+sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+#sudo /opt/puppetlabs/bin/puppet agent
+#sudo /opt/puppetlabs/bin/puppet agent --test</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

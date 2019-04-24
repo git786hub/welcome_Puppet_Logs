@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins2972196930073470533.sh
++ def DNS_Name =yhy
+/tmp/jenkins2972196930073470533.sh: line 2: def: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

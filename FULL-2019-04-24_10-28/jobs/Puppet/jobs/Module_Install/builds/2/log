@@ -1,0 +1,10 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MycucIv5ODuYm3Fmg1V+Izk1E1xmyLR7+ovjja1uTR+AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifaPcxGIgDQDHHrzpxgAAAA==[0m2master in workspace /home/ec2-user/jenkin/workspace/Puppet/Module_Install
+Run condition [Strings match] enabling prebuild for step [BuilderChain]
+Run condition [Not] preventing prebuild for step [Execute shell]
+Exception caught evaluating condition: [org.jenkinsci.plugins.tokenmacro.MacroEvaluationException: Unrecognized macro 'Module_Install_command' in '${Module_Install_command}'], action = [Don't run]
+Exception caught evaluating condition: [org.jenkinsci.plugins.tokenmacro.MacroEvaluationException: Unrecognized macro 'Module_Install_command' in '$Module_Install_command'], action = [Fail the build]
+Build step 'Conditional step (single)' changed build result to FAILURE
+Build step 'Conditional step (single)' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,71 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.32">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.support.steps.input.InputAction plugin="pipeline-input-step@2.10">
+      <ids class="java.util.concurrent.CopyOnWriteArrayList"/>
+    </org.jenkinsci.plugins.workflow.support.steps.input.InputAction>
+  </actions>
+  <queueId>19</queueId>
+  <timestamp>1554745391191</timestamp>
+  <startTime>1554745391194</startTime>
+  <result>SUCCESS</result>
+  <duration>19180</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>stage &apos;promotion&apos;
+def d
+def userInput = input(
+ id: &apos;userInput&apos;, message: &apos;Let\&apos;s promote?&apos;, parameters: [
+ [$class: &apos;TextParameterDefinition&apos;, defaultValue: &apos;uat&apos;, description: &apos;Environment&apos;, name: &apos;env&apos;],
+ [$class: &apos;TextParameterDefinition&apos;, defaultValue: &apos;uat1&apos;, description: &apos;Target&apos;, name: &apos;target&apos;]
+])
+
+d= echo (userInput[&apos;env&apos;])
+echo (&quot;Target: &quot;+userInput[&apos;target&apos;])
+echo &quot;${d}&quot;</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>54237070</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>65024338</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>164780314</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>23417281</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>6535580</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>8</iota>
+    <head>1:8</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

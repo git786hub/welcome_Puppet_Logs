@@ -1,0 +1,59 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>here I am also zipping all my files in the folder &#xd;
+by using file operation &#xd;
+build-&gt; zip file -&gt; .&#xd;
+&#xd;
+after this, it will create private_repo.zip file in your workspace&#xd;
+&#xd;
+&#xd;
+done</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.9.3">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>git@bitbucket.org:pulkit786agar/myfirstrepo.git</url>
+        <credentialsId>welcomepem</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <quietPeriod>40</quietPeriod>
+  <assignedNode>master</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <com.cloudbees.jenkins.plugins.BitBucketTrigger plugin="bitbucket@1.1.8">
+      <spec></spec>
+    </com.cloudbees.jenkins.plugins.BitBucketTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <sp.sd.fileoperations.FileOperationsBuilder plugin="file-operations@1.7">
+      <fileOperations>
+        <sp.sd.fileoperations.FileZipOperation>
+          <folderPath>.</folderPath>
+        </sp.sd.fileoperations.FileZipOperation>
+      </fileOperations>
+    </sp.sd.fileoperations.FileOperationsBuilder>
+    <hudson.tasks.Shell>
+      <command>
+echo &quot;jai m&quot;
+echo &quot;khk&quot;</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

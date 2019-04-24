@@ -1,0 +1,9 @@
+HOME=/var/lib/jenkins
+LANG=en_US.UTF-8
+LOGNAME=jenkins
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+PWD=/
+SHELL=/bin/bash
+SHLVL=2
+USER=jenkins
+_=/etc/alternatives/java

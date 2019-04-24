@@ -1,0 +1,44 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue plugin="nodelabelparameter@1.7.2">
+          <name>Slave</name>
+          <description>Enter Slave</description>
+          <label>75</label>
+          <nextLabels/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Slave</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+    <org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction plugin="nodelabelparameter@1.7.2">
+      <label>75</label>
+      <tooltip>Run with label [75] (node: 75)</tooltip>
+    </org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction>
+  </actions>
+  <queueId>381</queueId>
+  <timestamp>1554185886143</timestamp>
+  <startTime>1554185886182</startTime>
+  <result>SUCCESS</result>
+  <duration>7210</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>75</builtOn>
+  <workspace>/home/ec2-user/jenkin/workspace/Puppet/8slave_agent--test</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

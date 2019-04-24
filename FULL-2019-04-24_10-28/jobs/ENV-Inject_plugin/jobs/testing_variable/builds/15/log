@@ -1,0 +1,16 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/ENV-Inject_plugin/testing_variable
+[SSH] executing pre build script:
+
+
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - [ERROR] - The given properties file path '/var/lib/jenkins/workspace/envinject/propsfile1' doesn't exist.
+[EnvInject] - [ERROR] - Missing file path was resolved from pattern '/var/lib/jenkins/workspace/envinject/propsfile1' .
+[EnvInject] - [ERROR] - Problems occurs on injecting env vars as a build step: java.io.IOException: The given properties file path '/var/lib/jenkins/workspace/envinject/propsfile1' doesn't exist.
+Build step 'Inject environment variables' changed build result to FAILURE
+Build step 'Inject environment variables' marked build as failure
+[SSH] executing post build script:
+
+
+Finished: FAILURE

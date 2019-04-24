@@ -1,0 +1,26 @@
+Started by upstream project "[8mha:////4MPplvbKSwxtNM+bR6WOEHZhFagsrj/mPhUop5AzjIKQAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzpEgZV/az8JP2A0oKC1BIw07QAzI4vzkksS40HGpKWma4PAP9YIA/aAAAA[0mPuppet/5puppet_slave_config" build number [8mha:////4Bp2ZHnLdS5wpL2179yfpzg+QrkWzDh+aQo8mG0JRp3jAAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjX9rPwk/YDSgoLUEjDTtADMji/OSSxLjQcakpaZrm8OAOjLhhfbAAAA[0m7
+originally caused by:
+ Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Hra6a3XwZ0tmlvp9zu1e/v5XAH8a4OUkHe773jQTF0tAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMLAGI9RnvBAAAA[0m78 in workspace /home/ec2-user/jenkin/workspace/Puppet/6Configuration_on_slave_puppet.conf
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path '/home/ec2-user/jenkin/workspace/Puppet/1Create_slave/propsfile'
+[EnvInject] - Variables injected successfully.
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins8209845116178328642.sh
++ sudo sed -i '$ a [main]' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins3511638345039089267.sh
++ sudo sed -i '/\[main\]/a  runinterval = 1h' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins5376265499653293510.sh
++ sudo sed -i '/\[main\]/a  environment = production' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins7232149491676561081.sh
++ sudo sed -i '/\[main\]/a  server = 3master.pulkit.co' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins2410906299228829222.sh
++ sudo sed -i '/\[main\]/a  certname = 78.pulkit.co' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_slave_puppet.conf] $ /bin/sh -xe /tmp/jenkins8045226515599426689.sh
++ sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+[mNotice: /Service[puppet]/ensure: ensure changed 'stopped' to 'running'[0m
+service { 'puppet':
+  ensure => 'running',
+  enable => 'true',
+}
+Finished: SUCCESS

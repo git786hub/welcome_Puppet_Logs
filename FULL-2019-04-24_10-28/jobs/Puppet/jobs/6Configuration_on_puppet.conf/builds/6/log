@@ -1,0 +1,8 @@
+Started by upstream project "[8mha:////4OQ2HceQntSsmC+UWObSd+uxvRHvwKNMcL5OKUBEMeo6AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyZEgYN/az8JP2A0oKC1BIw09C5KDWxJFXVyAAiGO+bWFySWqQPAHQjxx/dAAAA[0mPuppet/1Create Puppet_Master" build number [8mha:////4IiK/QsuCZNoNCB4UEuCgjS2AmC/5mGOJegGSOAav6eLAAAArx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYt/az8JP2A0oKC1BIw09C5KDWxJFXVyAAiGO+bWFySWqRvZAQAugdaAd8AAAA=[0m22
+originally caused by:
+ Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/6test
+[6test] $ /bin/sh -xe /tmp/jenkins4690586930114404769.sh
++ echo
+
+Finished: SUCCESS

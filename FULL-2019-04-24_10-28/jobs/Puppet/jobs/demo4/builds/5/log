@@ -1,0 +1,14 @@
+Started by upstream project "[8mha:////4L0uRlaBigT/sAHrAZ/hKqiqpo+VNhCTNW7YBQuy8lQrAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/az8JP2A0oKC1BIwMyU1N18fAEJ82IXKAAAA[0mPuppet/demo" build number [8mha:////4OoozYkfAqVYRH2pkggeH6GIbbJciGR56JofeLbo0xUzAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBjH9rPwk/YDSgoLUEjAzJTU3X98UAICMYCrLAAAA[0m5
+originally caused by:
+ Started by upstream project "[8mha:////4OQ2HceQntSsmC+UWObSd+uxvRHvwKNMcL5OKUBEMeo6AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyZEgYN/az8JP2A0oKC1BIw09C5KDWxJFXVyAAiGO+bWFySWqQPAHQjxx/dAAAA[0mPuppet/1Create Puppet_Master" build number [8mha:////4Leyz6Tgzu0U0P4RFyPpsHRUws17lDj9K8hEVDh5hVM/AAAArx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYt/az8JP2A0oKC1BIw09C5KDWxJFXVyAAiGO+bWFySWqRvZAEApO6P4d8AAAA=[0m28
+ originally caused by:
+  Started by user unknown or anonymous
+ Started by upstream project "[8mha:////4OQ2HceQntSsmC+UWObSd+uxvRHvwKNMcL5OKUBEMeo6AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyZEgYN/az8JP2A0oKC1BIw09C5KDWxJFXVyAAiGO+bWFySWqQPAHQjxx/dAAAA[0mPuppet/1Create Puppet_Master" build number [8mha:////4FrVYkLIOmrbqIiZkxWwib8DZUWWQh7D9qUr8Ib4x6VLAAAArx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYt/az8JP2A0oKC1BIw09C5KDWxJFXVyAAiGO+bWFySWqRvZAkAMt6Ilt8AAAA=[0m29
+ originally caused by:
+  Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins4874962723857803124.sh
++ echo puppet.master.co
+puppet.master.co
+Finished: SUCCESS

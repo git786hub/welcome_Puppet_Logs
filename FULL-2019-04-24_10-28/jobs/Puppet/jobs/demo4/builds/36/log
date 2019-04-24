@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins1859739508985673739.sh
++ echo Hello
+Hello
++ echo fggreg
+fggreg
++ set DNp_Name = fggreg
++ echo ''
+
+Finished: SUCCESS

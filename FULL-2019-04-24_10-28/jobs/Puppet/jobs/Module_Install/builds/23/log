@@ -1,0 +1,16 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4JuVxfrV+QZ8UJz++s4IOSyiYd6nsOkSFWoMYTrRGk/rAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifePcxGIgDQBzFctPxgAAAA==[0m3master in workspace /home/ec2-user/jenkin/workspace/Puppet/Module_Install
+[Module_Install] $ /bin/sh -xe /tmp/jenkins3552780337950382975.sh
++ sudo /opt/puppetlabs/bin/puppet module install puppetlabs-git --version 0.5.0
+[mNotice: Preparing to install into /etc/puppetlabs/code/environments/production/modules ...[0m
+[mNotice: Downloading from https://forgeapi.puppet.com ...[0m
+[mNotice: Installing -- do not interrupt ...[0m
+/etc/puppetlabs/code/environments/production/modules
+└─┬ puppetlabs-git ([0;36mv0.5.0[0m)
+  └── puppetlabs-stdlib ([0;36mv5.2.0[0m)
+[Module_Install] $ /bin/sh -xe /tmp/jenkins4085519955248729305.sh
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/Module_Install
++ sudo cp -r /home/ec2-user/.puppetlabs/etc/code/modules/. /etc/puppetlabs/code/environments/production/modules/
+Finished: SUCCESS

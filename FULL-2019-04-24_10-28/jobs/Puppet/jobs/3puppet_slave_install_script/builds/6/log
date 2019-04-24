@@ -1,0 +1,75 @@
+Started by upstream project "[8mha:////4J8SliF4FjKPiZy6/ZcprwU/lYQNf9v5JtIGIHIAtaSyAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBAjCgoQFQ0IAWExACWIUdiONmWfYlgDdaAhiEYhx2Ikor85r/i6f/XF3rBwzgv0mBNfLImWMJ4a1Ok9d2hJ22uO8sITToRwM3DqOX/qbPl8718uE8E0Qb6hCbjPIFu4YlhkFxUqQQpk4kDe22yRTU3bM2tmm7/ugomDHNxsUexL5xDrnHqapZoGL1MkRVrClIbGUiVKHMbWJ41ofgBTJfZse8AAAA=[0mPuppet/2puppet_enter_detatils_in_slave_host_file" build number [8mha:////4MiPzoGPCaPbjfPmSLlgFaZ+igp0C+hQ1VgfBf4NWebiAAAAvh+LCAAAAAAAAP9djTEKwkAQRceIHsBSbLxAFiwEESsbhSiCB1hWMyYbh91ldxL0Gl5DGw/hcbyDmlTmN/8Vj/8fb+gFD+O8TIM18dGaYAnjjU2RVleHnrQ5by0jNOlEABcPo5b/p04X9+fi5l4RRGvoE5qM8wS6pSeGQVKoSglSJhN79tpk8+/csDW3bLr9637AMBeFPYhd6RxyjRNXs0TD6GWKrFhTkNrIQKpCmdvA8qQJxewD85UedfAAAAA=[0m9
+originally caused by:
+ Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4DE/tikzjaJKBA2AS3JA5X+MftXVhrpDDoJAXraRdn3EAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXf0BIA0k2eZtUAAAA=[0m19
+ originally caused by:
+  Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4CfTqVTX+CjJUcc+D9Vw1LEds4Znre8uLQmrRo5Itf8PAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMzAGUQ/pzBAAAA[0m76 in workspace /home/ec2-user/jenkin/workspace/Puppet/3puppet_slave_install_script
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins6570784261651827170.sh
++ sudo yum -y install ntp ntpdate
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package ntp.x86_64 0:4.2.6p5-28.amzn2.2.2 will be installed
+--> Processing Dependency: libopts.so.25()(64bit) for package: ntp-4.2.6p5-28.amzn2.2.2.x86_64
+---> Package ntpdate.x86_64 0:4.2.6p5-28.amzn2.2.2 will be installed
+--> Running transaction check
+---> Package autogen-libopts.x86_64 0:5.18-5.amzn2.0.2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch       Version                    Repository      Size
+================================================================================
+Installing:
+ ntp                 x86_64     4.2.6p5-28.amzn2.2.2       amzn2-core     552 k
+ ntpdate             x86_64     4.2.6p5-28.amzn2.2.2       amzn2-core      86 k
+Installing for dependencies:
+ autogen-libopts     x86_64     5.18-5.amzn2.0.2           amzn2-core      67 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages (+1 Dependent package)
+
+Total download size: 705 k
+Installed size: 1.6 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              1.4 MB/s | 705 kB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : ntpdate-4.2.6p5-28.amzn2.2.2.x86_64                          1/3 
+  Installing : autogen-libopts-5.18-5.amzn2.0.2.x86_64                      2/3 
+  Installing : ntp-4.2.6p5-28.amzn2.2.2.x86_64                              3/3 
+  Verifying  : ntp-4.2.6p5-28.amzn2.2.2.x86_64                              1/3 
+  Verifying  : autogen-libopts-5.18-5.amzn2.0.2.x86_64                      2/3 
+  Verifying  : ntpdate-4.2.6p5-28.amzn2.2.2.x86_64                          3/3 
+
+Installed:
+  ntp.x86_64 0:4.2.6p5-28.amzn2.2.2    ntpdate.x86_64 0:4.2.6p5-28.amzn2.2.2   
+
+Dependency Installed:
+  autogen-libopts.x86_64 0:5.18-5.amzn2.0.2                                     
+
+Complete!
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins9048760898479980341.sh
++ sudo ntpdate 0.centos.pool.ntp.org
+ 2 Apr 11:09:26 ntpdate[979]: adjust time server 98.152.165.38 offset -0.000539 sec
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins8576363431195935072.sh
++ sudo systemctl start ntpd
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins4890237428773600556.sh
++ sudo systemctl enable ntpd
+Created symlink from /etc/systemd/system/multi-user.target.wants/ntpd.service to /usr/lib/systemd/system/ntpd.service.
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins7518570245297785214.sh
++ sudo rpm -Uvh https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+warning: /var/tmp/rpm-tmp.kMlYWX: Header V4 RSA/SHA256 Signature, key ID ef8d349f: NOKEY
+Retrieving https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+Preparing...                          ########################################
+Updating / installing...
+puppet5-release-5.0.0-4.el7           ########################################
+Returning node parameter for 76
+Triggering a new build of [8mha:////4OmyvAMDFgrN73v9zJifQeapbsM4lKngaEJ1/+26A2L3AAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzxEgZ5/az8JP2A0oKC1BIw0wTCji9KTcrPL9EHAOplpXrUAAAA[0mPuppet » 4Puppet_reboot
+Finished: SUCCESS

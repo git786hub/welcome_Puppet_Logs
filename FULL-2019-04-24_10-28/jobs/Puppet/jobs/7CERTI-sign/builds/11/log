@@ -1,0 +1,23 @@
+Started by upstream project "[8mha:////4EPKPSAq/t7wW6Qz3qCpsfTLHaz2utYZgxGRTIvamZNSAAAArx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyVEgY9/az8JP2A0oKC1BIw0wyoPi0zvbQosSQzPy8eiArAkiDz0vQBB8rLpuMAAAA=[0mPuppet/6Configuration_on_puppet.conf" build number [8mha:////4HOA06NmgMHpifICtEi/qzsEWlqm8A/v8RRe/JXxg2nOAAAAsR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYD/az8JP2A0oKC1BIw0wyoPi0zvbQosSQzPy8eiArAkiDz0vQNTQECJIOy5QAAAA==[0m15
+originally caused by:
+ Started by upstream project "[8mha:////4P8eHrHYviq5y2UIG++ExzT76NcqlrTctVvGk9HUdegxAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZ5/az8JP2A0oKC1BIw0xTCjgdqT8tM1wcAZLy7OtQAAAA=[0mPuppet/5Puppet_config" build number [8mha:////4MtOVRmAjhsnTHDzFTaQ5W5soJ6uf5TlO3INp0Ij5srcAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgX9rPwk/YDSgoLUEjDTFMKOB2pPy0zXNwYAOtsyo9UAAAA=[0m3
+ originally caused by:
+  Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MycucIv5ODuYm3Fmg1V+Izk1E1xmyLR7+ovjja1uTR+AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifaPcxGIgDQDHHrzpxgAAAA==[0m2master in workspace /home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign
+[7CERTI-sign] $ /bin/sh -xe /tmp/jenkins8704218669767714314.sh
++ sudo /opt/puppetlabs/bin/puppet cert list
+[1;33mWarning: `puppet cert` is deprecated and will be removed in a future release.
+   (location: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:370:in `run')[0m
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign
+[7CERTI-sign] $ /bin/sh -xe /tmp/jenkins5762520190739822639.sh
+++ sed 's/"//g'
+++ grep -o '".*"' /pulkit/workspace/Puppet/7CERTI-sign/certificate_file
+grep: /pulkit/workspace/Puppet/7CERTI-sign/certificate_file: No such file or directory
++ sudo /opt/puppetlabs/bin/puppet cert sign
+[1;33mWarning: `puppet cert` is deprecated and will be removed in a future release.
+   (location: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:370:in `run')[0m
+[1;31mError: You must provide hosts or --all when using sign[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

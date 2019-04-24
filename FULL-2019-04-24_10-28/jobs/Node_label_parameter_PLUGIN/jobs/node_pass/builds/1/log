@@ -1,0 +1,9 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Node_label_parameter_PLUGIN/node_pass
+[node_pass] $ /bin/sh -xe /tmp/jenkins1785227180464704776.sh
++ pwd
+/var/lib/jenkins/workspace/Node_label_parameter_PLUGIN/node_pass
+Returning node parameter for master
+Triggering a new build of [8mha:////4CtAoxBcHJFgnsDps1HkupHGNlNBlm4FiMjd/Pvm6lqmAAAAth+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyNEgYD/az8JH0/oBPjcxKTUnPiCxKLEnNTS1KL4gN8Qt09/cDyeSD5gsTiYiN9AMkXjfPlAAAA[0mNode_label_parameter_PLUGIN » node_pass2
+Finished: SUCCESS

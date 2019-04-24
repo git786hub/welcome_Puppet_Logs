@@ -1,0 +1,17 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/1Create_Puppet_Master
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins3384035503156548554.sh
++ pwd
+/pulkit/workspace/Puppet/1Create_Puppet_Master
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins1536009270648795237.sh
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins5368089093295311121.sh
+++ echo puppet.master.co
++ echo DNS_Name=puppet.master.co
+++ echo
++ echo runinterval=
+++ echo production
++ echo environment=production
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins1113311367131953482.sh
++ cat /pulkit/workspace/Puppet/1Create_Puppet_Master/DNS_Name /pulkit/workspace/Puppet/1Create_Puppet_Master/runinterval /pulkit/workspace/Puppet/1Create_Puppet_Master/environment
+Finished: SUCCESS

@@ -1,0 +1,22 @@
+Started by BitBucket push by pulkit786agar
+Started by BitBucket push by pulkit786agar
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git # timeout=10
+Fetching upstream changes from https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 99d519cb50ff5b79916d1c36cffcbbdd15408cc7 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 99d519cb50ff5b79916d1c36cffcbbdd15408cc7
+Commit message: "sdsd"
+ > git rev-list --no-walk c25102dddfc117290f01931e38ec3f098d3a1bec # timeout=10
+[demo4] $ /bin/sh -xe /tmp/jenkins4134857544705717582.sh
++ echo hello
+hello
+Finished: SUCCESS

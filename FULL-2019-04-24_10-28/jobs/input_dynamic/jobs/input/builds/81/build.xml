@@ -1,0 +1,89 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.32">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.support.steps.input.InputAction plugin="pipeline-input-step@2.10">
+      <ids class="java.util.concurrent.CopyOnWriteArrayList"/>
+    </org.jenkinsci.plugins.workflow.support.steps.input.InputAction>
+  </actions>
+  <queueId>227</queueId>
+  <timestamp>1555108860687</timestamp>
+  <startTime>1555108860748</startTime>
+  <result>FAILURE</result>
+  <duration>14332</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node(&apos;master&apos;){
+    def d = &quot;None&quot;
+stage(&quot;input&quot;){
+    while(d!=&quot;exit&quot;){
+    def userInput = input(
+ id: &apos;userInput&apos;, message: &apos;Let\&apos;s promote?&apos;, parameters: [
+ [$class: &apos;TextParameterDefinition&apos;, defaultValue: &apos;uat&apos;, description: &apos;Environment&apos;, name: &apos;env&apos;],
+ //[$class: &apos;TextParameterDefinition&apos;, defaultValue: &apos;uat1&apos;, description: &apos;Target&apos;, name: &apos;target&apos;]
+])
+
+d= userInput[&apos;env&apos;]
+//d1=userInput[&apos;target&apos;]
+echo &quot;${d}&quot;
+}
+/*
+
+
+stage(&quot;shell&quot;){
+    
+def currentip= sh (script:&quot;${d} &quot;, returnStdout:true)
+echo &quot;${currentip}&quot;
+def currentip1= sh (script:&quot;${d1} &quot;, returnStdout:true)
+echo &quot;${currentip1}&quot;
+
+}
+*/
+}
+
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1085681315</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>359320884</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2071402987</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>99408191</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>64264876</long>
+      </entry>
+    </timings>
+    <sandbox>false</sandbox>
+    <iota>12</iota>
+    <head>1:12</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

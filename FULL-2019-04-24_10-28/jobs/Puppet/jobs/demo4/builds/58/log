@@ -1,0 +1,27 @@
+Started by BitBucket push by pulkit786agar
+Started by BitBucket push by pulkit786agar
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4A1hxIkVDcYc2c2r9v8+2vz1KGj/AAZ7sdi5zxJsObKGAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZR/eT83ILSktQi/dzEYiCVk1pcbAQASPp+KcoAAAA=[0mmasterless2 in workspace /home/ec2-user/jenkin/workspace/Puppet/demo4
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git
+ > git init /home/ec2-user/jenkin/workspace/Puppet/demo4 # timeout=10
+Fetching upstream changes from https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git # timeout=10
+Fetching upstream changes from https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git
+ > git fetch --tags --progress https://pulkit786agar@bitbucket.org/pulkit786agar/myfirstrepo.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 650ecc3871d79f06536c8f77fa2c2724d2e1916b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 650ecc3871d79f06536c8f77fa2c2724d2e1916b
+Commit message: "trigger jenkins job"
+ > git rev-list --no-walk 61555aed331e91bc727dae591587fc7b2c772d79 # timeout=10
+[demo4] $ /bin/sh -xe /tmp/jenkins3411197740017152705.sh
++ echo hello
+hello
+Finished: SUCCESS

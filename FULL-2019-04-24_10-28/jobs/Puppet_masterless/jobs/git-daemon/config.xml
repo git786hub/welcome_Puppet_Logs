@@ -1,0 +1,60 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>&#xd;
+&#xd;
+always open 9148 port for git-server</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition plugin="nodelabelparameter@1.7.2">
+          <name>git-server</name>
+          <description></description>
+          <allowedSlaves/>
+          <defaultSlaves>
+            <string>git-server</string>
+          </defaultSlaves>
+          <triggerIfResult>multiSelectionDisallowed</triggerIfResult>
+          <allowMultiNodeSelection>false</allowMultiNodeSelection>
+          <triggerConcurrentBuilds>false</triggerConcurrentBuilds>
+          <ignoreOfflineNodes>false</ignoreOfflineNodes>
+          <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.AllNodeEligibility"/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>sudo yum install git -y
+cd /opt
+sudo mkdir puppet-repo
+sudo chown ec2-user:ec2-user puppet-repo/
+cd puppet-repo 
+git init --bare --shared  
+sudo yum install git-daemon -y
+sudo yum install PolicyKit -y
+cd /home/ec2-user
+git clone https://github.com/git786hub/welcome_Puppet_Logs.git 
+sudo cp /home/ec2-user/welcome_Puppet_Logs/gitd.service /etc/systemd/system/
+cd /etc/systemd/system
+ls 
+sudo systemctl start  gitd.service
+sudo systemctl daemon-reload
+sudo systemctl restart gitd.service
+sudo systemctl status gitd.service
+variable_name=$(curl http://169.254.169.254/latest/meta-data/public-ipv4)
+
+echo &quot;git clone git://$variable_name/puppet-repo&quot;</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

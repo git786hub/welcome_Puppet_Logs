@@ -1,0 +1,52 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>DNS_Name</name>
+          <description></description>
+          <value>puppet.master.co</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>DNS_Name</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>Puppet/demo</upstreamProject>
+            <upstreamUrl>job/Puppet/job/demo/</upstreamUrl>
+            <upstreamBuild>3</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>Puppet/1Create Puppet_Master</upstreamProject>
+                <upstreamUrl>job/Puppet/job/1Create%20Puppet_Master/</upstreamUrl>
+                <upstreamBuild>26</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.model.Cause_-UserIdCause/>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>42</queueId>
+  <timestamp>1552635074689</timestamp>
+  <startTime>1552635074691</startTime>
+  <result>SUCCESS</result>
+  <duration>42</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>Pupet-master</builtOn>
+  <workspace>/pulkit/workspace/Puppet/demo4</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

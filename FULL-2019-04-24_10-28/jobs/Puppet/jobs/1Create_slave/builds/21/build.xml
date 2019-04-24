@@ -1,0 +1,194 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>Puppet_Master_IP_address</name>
+          <description>Enter Master Private  IP address </description>
+          <value>172.30.4.136</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>DNS_Name</name>
+          <description>Enter Master DNS </description>
+          <value>5master.pulkit.co</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>runinterval</name>
+          <description></description>
+          <value>1h</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>environment</name>
+          <description></description>
+          <value>production</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Puppet_Slave_IP_address</name>
+          <description>Enter Slave Private IP</description>
+          <value>172.30.4.169</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Puppet_Slave_IP_DNS</name>
+          <description>Enter Slave DNS</description>
+          <value>78.pulkit.co</value>
+        </hudson.model.StringParameterValue>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue plugin="nodelabelparameter@1.7.2">
+          <name>Slave</name>
+          <description>enter New Slave</description>
+          <label>78</label>
+          <nextLabels/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>Puppet_Master_IP_address</string>
+        <string>DNS_Name</string>
+        <string>runinterval</string>
+        <string>environment</string>
+        <string>Puppet_Slave_IP_address</string>
+        <string>Puppet_Slave_IP_DNS</string>
+        <string>Slave</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+    <org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction plugin="nodelabelparameter@1.7.2">
+      <label>78</label>
+      <tooltip>Run with label [78] (node: 78)</tooltip>
+    </org.jvnet.jenkins.plugins.nodelabelparameter.LabelBadgeAction>
+    <hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction plugin="parameterized-trigger@2.35.2">
+      <env serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>49</int>
+          <string>_</string>
+          <string>/usr/bin/java</string>
+          <string>BUILD_CAUSE</string>
+          <string>MANUALTRIGGER</string>
+          <string>BUILD_CAUSE_MANUALTRIGGER</string>
+          <string>true</string>
+          <string>BUILD_DISPLAY_NAME</string>
+          <string>#21</string>
+          <string>BUILD_ID</string>
+          <string>21</string>
+          <string>BUILD_NUMBER</string>
+          <string>21</string>
+          <string>BUILD_TAG</string>
+          <string>jenkins-Puppet-1Create_slave-21</string>
+          <string>BUILD_URL</string>
+          <string>http://100.27.13.56:8080/job/Puppet/job/1Create_slave/21/</string>
+          <string>CLASSPATH</string>
+          <string></string>
+          <string>DNS_Name</string>
+          <string>5master.pulkit.co</string>
+          <string>environment</string>
+          <string>production</string>
+          <string>EXECUTOR_NUMBER</string>
+          <string>0</string>
+          <string>HOME</string>
+          <string>/home/ec2-user</string>
+          <string>HUDSON_HOME</string>
+          <string>/var/lib/jenkins</string>
+          <string>HUDSON_SERVER_COOKIE</string>
+          <string>ed12bc36f8cd531c</string>
+          <string>HUDSON_URL</string>
+          <string>http://100.27.13.56:8080/</string>
+          <string>JENKINS_HOME</string>
+          <string>/var/lib/jenkins</string>
+          <string>JENKINS_SERVER_COOKIE</string>
+          <string>ed12bc36f8cd531c</string>
+          <string>JENKINS_URL</string>
+          <string>http://100.27.13.56:8080/</string>
+          <string>JOB_BASE_NAME</string>
+          <string>1Create_slave</string>
+          <string>JOB_DISPLAY_URL</string>
+          <string>http://100.27.13.56:8080/job/Puppet/job/1Create_slave/display/redirect</string>
+          <string>JOB_NAME</string>
+          <string>Puppet/1Create_slave</string>
+          <string>JOB_URL</string>
+          <string>http://100.27.13.56:8080/job/Puppet/job/1Create_slave/</string>
+          <string>LANG</string>
+          <string>en_US.UTF-8</string>
+          <string>LESSOPEN</string>
+          <string>||/usr/bin/lesspipe.sh %s</string>
+          <string>LOGNAME</string>
+          <string>ec2-user</string>
+          <string>MAIL</string>
+          <string>/var/mail/ec2-user</string>
+          <string>NODE_LABELS</string>
+          <string>78</string>
+          <string>NODE_NAME</string>
+          <string>78</string>
+          <string>OLDPWD</string>
+          <string>/home/ec2-user</string>
+          <string>PATH</string>
+          <string>/usr/local/bin:/usr/bin</string>
+          <string>Puppet_Master_IP_address</string>
+          <string>172.30.4.136</string>
+          <string>Puppet_Slave_IP_address</string>
+          <string>172.30.4.169</string>
+          <string>Puppet_Slave_IP_DNS</string>
+          <string>78.pulkit.co</string>
+          <string>PWD</string>
+          <string>/home/ec2-user/jenkin</string>
+          <string>ROOT_BUILD_CAUSE</string>
+          <string>MANUALTRIGGER</string>
+          <string>ROOT_BUILD_CAUSE_MANUALTRIGGER</string>
+          <string>true</string>
+          <string>RUN_CHANGES_DISPLAY_URL</string>
+          <string>http://100.27.13.56:8080/job/Puppet/job/1Create_slave/21/display/redirect?page=changes</string>
+          <string>RUN_DISPLAY_URL</string>
+          <string>http://100.27.13.56:8080/job/Puppet/job/1Create_slave/21/display/redirect</string>
+          <string>runinterval</string>
+          <string>1h</string>
+          <string>SHELL</string>
+          <string>/bin/bash</string>
+          <string>SHLVL</string>
+          <string>1</string>
+          <string>Slave</string>
+          <string>78</string>
+          <string>SSH_CLIENT</string>
+          <string>3.84.239.54 59744 22</string>
+          <string>SSH_CONNECTION</string>
+          <string>3.84.239.54 59744 172.30.4.169 22</string>
+          <string>USER</string>
+          <string>ec2-user</string>
+          <string>WORKSPACE</string>
+          <string>/home/ec2-user/jenkin/workspace/Puppet/1Create_slave</string>
+          <string>XDG_RUNTIME_DIR</string>
+          <string>/run/user/1000</string>
+          <string>XDG_SESSION_ID</string>
+          <string>1</string>
+        </tree-map>
+        <hudson.EnvVars>
+          <default>
+            <platform>UNIX</platform>
+          </default>
+        </hudson.EnvVars>
+      </env>
+    </hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction>
+  </actions>
+  <queueId>446</queueId>
+  <timestamp>1554279387887</timestamp>
+  <startTime>1554279387889</startTime>
+  <result>SUCCESS</result>
+  <duration>427</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>78</builtOn>
+  <workspace>/home/ec2-user/jenkin/workspace/Puppet/1Create_slave</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

@@ -1,0 +1,30 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4JuVxfrV+QZ8UJz++s4IOSyiYd6nsOkSFWoMYTrRGk/rAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifePcxGIgDQBzFctPxgAAAA==[0m3master in workspace /home/ec2-user/jenkin/workspace/Puppet/7dSite.pp
+[7dSite.pp] $ /bin/sh -xe /tmp/jenkins864208547802735139.sh
++ sudo echo node ''\''76.pulkit.co'\''{' package '{' ''\''httpd'\'':' ensure '=>' '"installed",' '}' service '{' ''\''httpd'\'':' ensure '=>' running, enable '=>' true '}' '}'
+[7dSite.pp] $ /bin/sh -xe /tmp/jenkins2954663706988242188.sh
++ sudo mv /home/ec2-user/jenkin/workspace/Puppet/7dSite.pp/site.pp /etc/puppetlabs/code/environments/production/manifests/
+[7dSite.pp] $ /bin/sh -xe /tmp/jenkins3838552084487094631.sh
++ echo
+
++ echo
+
++ echo -------------------------------------------------------
+-------------------------------------------------------
++ echo PARSER VALIDATE RESULTS
+PARSER VALIDATE RESULTS
++ echo
+
++ echo
+
++ echo -------------------------------------------------------
+-------------------------------------------------------
++ echo
+
++ echo
+
++ puppet parser validate /etc/puppetlabs/code/environments/production/manifests/site.pp
+/tmp/jenkins3838552084487094631.sh: line 12: puppet: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,87 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.TextParameterDefinition>
+          <name>sitedata</name>
+          <description></description>
+          <defaultValue>node &apos;agent.pulkit.co&apos;{  
+class { &apos;docker&apos;: 
+  use_upstream_package_source =&gt; false,
+  service_overrides_template  =&gt; false,
+  docker_ce_package_name      =&gt; &apos;docker&apos;,
+}
+include git
+class { &apos;java&apos; :
+ package =&gt; &apos;java-1.8.0-openjdk-devel&apos;,
+ }
+ tomcat::install { &apos;/opt/tomcat&apos;:
+   source_url =&gt; &apos;https://www.apache.org/dist/tomcat/tomcat-9/v9.0.17/bin/apache-tomcat-9.0.17.tar.gz&apos;,
+ }
+ tomcat::instance { &apos;default&apos;:
+ catalina_home =&gt; &apos;/opt/tomcat&apos;,
+ }
+     package { &apos;httpd&apos;:
+         ensure  =&gt; &quot;installed&quot;,
+     }
+     service { &apos;httpd&apos;:
+         ensure =&gt; running,
+    enable =&gt; true
+   }
+ }
+</defaultValue>
+          <trim>false</trim>
+        </hudson.model.TextParameterDefinition>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition plugin="nodelabelparameter@1.7.2">
+          <name>master</name>
+          <description>enter master node</description>
+          <allowedSlaves/>
+          <defaultSlaves/>
+          <triggerIfResult>multiSelectionDisallowed</triggerIfResult>
+          <allowMultiNodeSelection>false</allowMultiNodeSelection>
+          <triggerConcurrentBuilds>false</triggerConcurrentBuilds>
+          <ignoreOfflineNodes>false</ignoreOfflineNodes>
+          <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.AllNodeEligibility"/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#sudo sed -i &quot;$sitedata&quot; /etc/puppetlabs/code/environments/production/manifests/we.pp
+sudo echo $sitedata &gt;  site.pp
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>sudo mv  /home/ec2-user/jenkin/workspace/Puppet/7dSite.pp/site.pp  /etc/puppetlabs/code/environments/production/manifests/
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>echo 
+echo  
+echo        -------------------------------------------------------
+      				
+echo           PARSER VALIDATE RESULTS
+echo 
+echo  
+echo       -------------------------------------------------------
+echo 
+echo 
+sudo /opt/puppetlabs/bin/puppet parser validate /etc/puppetlabs/code/environments/production/manifests/site.pp
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

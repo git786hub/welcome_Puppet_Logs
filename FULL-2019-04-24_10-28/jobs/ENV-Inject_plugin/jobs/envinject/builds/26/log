@@ -1,0 +1,12 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+[envinject] $ /bin/sh -xe /tmp/jenkins1788808181681505792.sh
+++ echo adad
++ echo AOEU=adad
++ pwd
+/var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+[envinject] $ /bin/sh -xe /tmp/jenkins4424438516787955788.sh
+++ echo prod
++ echo environment=prod
+Finished: SUCCESS

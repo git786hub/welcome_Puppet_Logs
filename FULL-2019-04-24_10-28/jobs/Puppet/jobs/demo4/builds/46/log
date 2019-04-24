@@ -1,0 +1,14 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins3807965299575643551.sh
++ echo jj
+jj
++ set DNp_Name =jj
++ echo
+
+[demo4] $ groovy /var/lib/jenkins/workspace/Puppet/demo4/hudson1582301549423741254.groovy
+Caught: groovy.lang.MissingPropertyException: No such property: env for class: hudson1582301549423741254
+groovy.lang.MissingPropertyException: No such property: env for class: hudson1582301549423741254
+	at hudson1582301549423741254.run(hudson1582301549423741254.groovy:1)
+Build step 'Execute Groovy script' marked build as failure
+Finished: FAILURE

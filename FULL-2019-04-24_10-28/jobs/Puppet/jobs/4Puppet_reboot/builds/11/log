@@ -1,0 +1,73 @@
+Started by upstream project "[8mha:////4NvUIhiQMVWsJ7pW445IuulmIERGg4LQR0iPsw/WnPhnAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzlEgZd/az8JP2A0oKC1BIw07gAzI4vzkksS43PzCsuSczJiS9OLsosKNEHAMFbqz7iAAAA[0mPuppet/3puppet_slave_install_script" build number [8mha:////4KzLD4m8j5UEHgvYm+rNfZc4ieTBxeHWZoTJ/jIJOLUcAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBj39rPwk/YDSgoLUEjDTuADMji/OSSxLjc/MKy5JzMmJL04uyiwo0TcHAElfI7LjAAAA[0m7
+originally caused by:
+ Started by upstream project "[8mha:////4J8SliF4FjKPiZy6/ZcprwU/lYQNf9v5JtIGIHIAtaSyAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBAjCgoQFQ0IAWExACWIUdiONmWfYlgDdaAhiEYhx2Ikor85r/i6f/XF3rBwzgv0mBNfLImWMJ4a1Ok9d2hJ22uO8sITToRwM3DqOX/qbPl8718uE8E0Qb6hCbjPIFu4YlhkFxUqQQpk4kDe22yRTU3bM2tmm7/ugomDHNxsUexL5xDrnHqapZoGL1MkRVrClIbGUiVKHMbWJ41ofgBTJfZse8AAAA=[0mPuppet/2puppet_enter_detatils_in_slave_host_file" build number [8mha:////4GyquLcEFfW/zdAbNCLQ7YGTtLt9DpLSR8A3GixDhfbiAAAAvh+LCAAAAAAAAP9djUEOAUEQRUsLB7AUGxfQWNhgZUOCSByg00yZ6VHp7nTXCNdwDTYO4TjuYDJW5m/+W7z8//xAKwboZ0USnR0cnY2OcLBxCdLy5jGQseetY4RfGgLgGqBX8//Uyfzxmt/9W4BYQZvQppytoVkEYuisc33RkrRN5Z6Dsem0nOvW5ha/rv/6EgTDTObuIHeF98gVjn3FCi1jUAmyZkNRGasi6QuqzEVWJ0MoR8MvGH3++PEAAAA=[0m10
+ originally caused by:
+  Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4Oon24J2GigUhM1YBcw5Ac07x4rBip90PIeVDWrHQSaqAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXfyAAAtaZvNNUAAAA=[0m20
+  originally caused by:
+   Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Hra6a3XwZ0tmlvp9zu1e/v5XAH8a4OUkHe773jQTF0tAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMLAGI9RnvBAAAA[0m78 in workspace /home/ec2-user/jenkin/workspace/Puppet/4Puppet_reboot
+[4Puppet_reboot] $ /bin/sh -xe /tmp/jenkins7877198535890588775.sh
+FATAL: command execution failed
+java.lang.Exception: Object appears to be deallocated at lease before Wed Apr 03 07:47:16 UTC 2019
+	at hudson.remoting.ExportTable.diagnoseInvalidObjectId(ExportTable.java:474)
+Caused: java.util.concurrent.ExecutionException: Invalid object ID 2 iota=17
+	at hudson.remoting.ExportTable.diagnoseInvalidObjectId(ExportTable.java:478)
+	at hudson.remoting.ExportTable.get(ExportTable.java:397)
+	at hudson.remoting.Channel.getExportedObject(Channel.java:780)
+	at hudson.remoting.MultiClassLoaderSerializer$Input.readClassLoader(MultiClassLoaderSerializer.java:109)
+Caused: java.io.IOException: Cannot locate RemoteClassLoader.ClassLoaderProxy(2) in the channel exported table
+	at hudson.remoting.MultiClassLoaderSerializer$Input.readClassLoader(MultiClassLoaderSerializer.java:111)
+	at hudson.remoting.MultiClassLoaderSerializer$Input.resolveProxyClass(MultiClassLoaderSerializer.java:144)
+	at java.io.ObjectInputStream.readProxyDesc(ObjectInputStream.java:1799)
+	at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1747)
+	at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2041)
+	at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1572)
+	at java.io.ObjectInputStream.readObject(ObjectInputStream.java:430)
+	at hudson.remoting.UserRequest.deserialize(UserRequest.java:291)
+	at hudson.remoting.UserRequest$NormalResponse.retrieve(UserRequest.java:326)
+	at hudson.remoting.Channel.call(Channel.java:955)
+	at hudson.Launcher$RemoteLauncher.launch(Launcher.java:1059)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:455)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:109)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+FATAL: Unable to delete script file /tmp/jenkins7877198535890588775.sh
+java.io.EOFException
+	at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2680)
+	at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:3155)
+	at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:861)
+	at java.io.ObjectInputStream.<init>(ObjectInputStream.java:357)
+	at hudson.remoting.ObjectInputStreamEx.<init>(ObjectInputStreamEx.java:49)
+	at hudson.remoting.Command.readFrom(Command.java:140)
+	at hudson.remoting.Command.readFrom(Command.java:126)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.read(AbstractSynchronousByteArrayCommandTransport.java:36)
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:63)
+Caused: java.io.IOException: Unexpected termination of the channel
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:77)
+Caused: hudson.remoting.ChannelClosedException: Channel "unknown": Remote call on 78 failed. The channel is closing down or has closed down
+	at hudson.remoting.Channel.call(Channel.java:948)
+	at hudson.FilePath.act(FilePath.java:1072)
+	at hudson.FilePath.act(FilePath.java:1061)
+	at hudson.FilePath.delete(FilePath.java:1565)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:123)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

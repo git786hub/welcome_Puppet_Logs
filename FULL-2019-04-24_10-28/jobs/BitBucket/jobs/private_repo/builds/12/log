@@ -1,0 +1,41 @@
+Started by user [8mha:////4NLhXnD5JFlpU0tHIRvI4Cdiw3uWMuEU78NPci5KsDGpAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy+EgZB/dLi1CL9gtKc7MyS+KTEpEQA8SXzHsYAAAA=[0mPulkit_Agarwal
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/BitBucket/private_repo
+using credential welcomepem
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@bitbucket.org:pulkit786agar/myfcxirstrepo.git # timeout=10
+Fetching upstream changes from git@bitbucket.org:pulkit786agar/myfcxirstrepo.git
+ > git --version # timeout=10
+using GIT_SSH to set credentials welcomepem
+ > git fetch --tags --progress git@bitbucket.org:pulkit786agar/myfcxirstrepo.git +refs/heads/*:refs/remotes/origin/*
+ERROR: Error fetching remote repo 'origin'
+hudson.plugins.git.GitException: Failed to fetch from git@bitbucket.org:pulkit786agar/myfcxirstrepo.git
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:894)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1161)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1192)
+	at hudson.scm.SCM.checkout(SCM.java:504)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1208)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:574)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:499)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Caused by: hudson.plugins.git.GitException: Command "git fetch --tags --progress git@bitbucket.org:pulkit786agar/myfcxirstrepo.git +refs/heads/*:refs/remotes/origin/*" returned status code 128:
+stdout: 
+stderr: repository does not exist.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2042)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:1761)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.access$400(CliGitAPIImpl.java:72)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$1.execute(CliGitAPIImpl.java:442)
+	at hudson.plugins.git.GitSCM.fetchFrom(GitSCM.java:892)
+	... 11 more
+ERROR: Error fetching remote repo 'origin'
+Finished: FAILURE

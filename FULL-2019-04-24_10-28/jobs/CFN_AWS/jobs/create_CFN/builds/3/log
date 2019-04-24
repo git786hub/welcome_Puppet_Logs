@@ -1,0 +1,64 @@
+Started by user unknown or anonymous
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4EKPfpIi/Is1xzvg6INFSFB9LusYwBjNfC9Egyg+Ax5tAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4IIDC7aPo1yIFjBXV2m3pVBrKUW4kbGq1T0Ps0lE6tZWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4JjUmvdQM9IGM6nb7UWEE0s0d6UqsKsx9zAPIwJ+qd7XAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/CFN_AWS/create_CFN
+[8mha:////4PNBMF5ZijHT4pOzGcP0wY6WLkA3VXD8ncfNo1PRacHYAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4OCiQ6KPi2oA1eG4JVKNfaMagzL3g1EHqEqDRAwWoOu8AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4OlDbMOIsdemGubF05pkd8yrSXngzVczBXRF8oldsSZpAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (git)
+[8mha:////4HwhcScmx0NTLrnTf5iXkWVQ/AF6aqF3ymUF7rU4OqXzAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] git
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/git786hub/welcome_Puppet_Logs.git # timeout=10
+Fetching upstream changes from https://github.com/git786hub/welcome_Puppet_Logs.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/git786hub/welcome_Puppet_Logs.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d6e064a0a7066d909d8bb88d04ac95abe9a2a082 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d6e064a0a7066d909d8bb88d04ac95abe9a2a082
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master d6e064a0a7066d909d8bb88d04ac95abe9a2a082
+Commit message: "template"
+ > git rev-list --no-walk d6e064a0a7066d909d8bb88d04ac95abe9a2a082 # timeout=10
+[8mha:////4EXg4KDi4iWWGfPccOoX8Zi0Ws8GQC4dzZbYwkIFgfHYAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4IGaS84TFSmm/tY8vHqi9iXh1K52JUb4z1XaC3f5A5bVAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4CnIEX0bkDZywUYSuWE6dcuS7a4K7df+uEbx81qWQhhVAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4B5X5Zna17txpQ+U506X3Y+KyIcM9yX/4sz/hNFGmknKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (CFN)
+[8mha:////4JhGBr1+Ot4JNlwnBJHC1snFpIaxvrJFwBh2GzXo0S+cAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] withAWS
+Constructing AWS CredentialsSetting AWS region us-west-2 
+ [8mha:////4LHnPgKamjjuMC4WImhAW1sYuCSco9eHt0Ow7YmVKG+IAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] {
+[8mha:////4NqfV/zTmdYsLd7dpPHs/UrW0aVhEpiCqikcoWQ61MA1AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] cfnUpdate
+Setting up a polling strategy to poll every PT1S for a maximum of PT10M
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Stack: null                                                                                                                                                                                                                         |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| 2019-04-05 12:18:57.153   | WebServerSecurityGro | CREATE_IN_PROGRESS                   |                                                                                                                                              |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| 2019-04-05 12:19:02.149   | WebServerSecurityGro | CREATE_IN_PROGRESS                   | Resource creation Initiated                                                                                                                  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| 2019-04-05 12:19:02.744   | WebServerSecurityGro | CREATE_COMPLETE                      |                                                                                                                                              |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| 2019-04-05 12:19:06.441   | WebServerInstance    | CREATE_IN_PROGRESS                   |                                                                                                                                              |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| 2019-04-05 12:19:07.824   | WebServerInstance    | CREATE_IN_PROGRESS                   | Resource creation Initiated                                                                                                                  |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| 2019-04-05 12:19:40.052   | WebServerInstance    | CREATE_COMPLETE                      |                                                                                                                                              |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[8mha:////4OM48ArkTmJvxnlXvSj+7fe0pikclAUQEk5pmCj0XlEDAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN0uFte2+AAAA[0m[Pipeline] echo
+jenkinsStackUpdateStatus:true
+[8mha:////4BgHCswJJvtDDjO+7ZmSsxzuvIQfK6IK9vWUq6JBBNKEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAGI1pjGvgAAAA==[0m[Pipeline] echo
+WebsiteURL:http://ec2-34-222-147-205.us-west-2.compute.amazonaws.com
+[8mha:////4MI/Quxsh+jgjJkwbgh8jKtclJ/p/sRvDOGGldW9Oi/LAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQG7xuaSvgAAAA==[0m[Pipeline] }
+[8mha:////4E8nyjodrPp88RORbBa7XBD34Vd5BFQISkqCS+XJHmSfAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiqJAQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N/hEtxS+AAAA[0m[Pipeline] // withAWS
+[8mha:////4ESbpEw2HBwqp4mW1EWzZ0Qo4qOhvDv83R9RhFUzd0a2AAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyKR3Hypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs3btuf1r4AAAA=[0m[Pipeline] echo
+http://ec2-34-222-147-205.us-west-2.compute.amazonaws.com
+[8mha:////4IFXpfsYt7wfJYrxIdJIBuKIRz1cgUkqkWRQDh7yulscAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIhtIgqrZWGF5j4ME6sO2M7JBUv4mv8AYtIVGyx2tlmXm9YxwAnDkb0SIOl2Fnh3WjyEhOH4ep4Ej1fRMcU2aFocWpZY7NgywlhSVHCSsIGqXMcLZkEW9mrh6qcIlOdU8jfUUJp9R2eUMhsTiqkL8wBdrdRR6af568AZu8TlId9rrr+ALKNBVC+AAAA[0m[Pipeline] }
+[8mha:////4J00Rn4+iXNcPf3sfnFzg/JT9VFRkHZ3kFUUyFxxLGyhAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIhtIgqrZWGF5j4ME6sO2M7JBUv4mv8AYtIVGyx2tlmXm9YxwAnDkb0SIOl2Fnh3WjyEhOH4ep4Ej1fRMcU2aFocWpZY7NgywlhSVHCSsIGqXMcLZkEW9mrh6qcIlOdU8jfUUJp9R2eUMhsTiqkL8wBdrdRR6af568AZu8TlIc6V73/AIFuXuy+AAAA[0m[Pipeline] // stage
+[8mha:////4NaKhPyTfQg6okHz1TSXHD1VIdaexo4YskUsZPB97p+kAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkxM04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL0tBtv8ASwoRLr0AAAA=[0m[Pipeline] }
+[8mha:////4OC5+7ucxnT+Zz/gvA/VO0vmqjduFAn3BaL+qJeqSWLiAAAAoh+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkMhon14bFL6hQa6F5D9uHMPlF/pr/IJHEyTvdc5bzemOdIo4cnWotdZ5S7VUfBjc/NXLsroFH1fJF1UyJg1WVHStu7GnBisViWZZjpbGxVAdOnpxgq1vzMEUw5IqzxNkdNHLf3PFEpueymChfmCJ2t6FJTL/O3wCmvhfk+1KQlR9YthWNvQAAAA==[0m[Pipeline] // node
+[8mha:////4JePlbsLmZ6GKLs26V7WZL5q+JSt/N8HONEl5qSfQyQXAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkxM04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0gL/eCrPwA3loySL0AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

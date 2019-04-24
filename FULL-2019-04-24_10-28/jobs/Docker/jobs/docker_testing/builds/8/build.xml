@@ -1,0 +1,137 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.32">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartFlowFactoryAction plugin="pipeline-model-definition@1.3.7">
+      <originRunId>Docker/docker_testing#7</originRunId>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.RestartFlowFactoryAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+        <entry>
+          <org.jenkinsci.plugins.pipeline.modeldefinition.causes.RestartDeclarativePipelineCause plugin="pipeline-model-definition@1.3.7">
+            <originRunNumber>7</originRunNumber>
+            <originStage>Test</originStage>
+          </org.jenkinsci.plugins.pipeline.modeldefinition.causes.RestartDeclarativePipelineCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.65">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.3.7">
+      <stagesUUID>5673eb1f-d504-4006-9cf2-68fb82624173</stagesUUID>
+      <stagesList>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages plugin="pipeline-model-api@1.3.7">
+          <stages>
+            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <name>Test</name>
+              <branches>
+                <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                  <name>default</name>
+                  <steps>
+                    <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                      <name>sh</name>
+                      <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                        <arguments class="linked-hash-map">
+                          <entry>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <key>script</key>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                            <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                              <value class="string">node --version</value>
+                            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                          </entry>
+                        </arguments>
+                      </args>
+                    </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                  </steps>
+                </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+              </branches>
+              <parallelContent/>
+            </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+          </stages>
+          <uuid>5673eb1f-d504-4006-9cf2-68fb82624173</uuid>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStages>
+      </stagesList>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+    <org.jenkinsci.plugins.docker.commons.fingerprint.DockerFingerprintAction plugin="docker-commons@1.14">
+      <imageIDs>
+        <string>sha256:4b72b56791f9a7b9a590774e1e31fea46e9805d18a51aeb9190092d5cc0ba5ee</string>
+      </imageIDs>
+    </org.jenkinsci.plugins.docker.commons.fingerprint.DockerFingerprintAction>
+    <org.jenkinsci.plugins.docker.workflow.ImageAction plugin="docker-workflow@1.18">
+      <names class="sorted-set">
+        <string>node:7-alpine</string>
+      </names>
+    </org.jenkinsci.plugins.docker.workflow.ImageAction>
+  </actions>
+  <queueId>179</queueId>
+  <timestamp>1555054468928</timestamp>
+  <startTime>1555054468930</startTime>
+  <result>SUCCESS</result>
+  <duration>7267</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>/*node{
+    stage(&apos;chcek docker&apos;){
+        sh &apos;&apos;&apos; docker info &apos;&apos;&apos;
+        sh &apos;&apos;&apos; docker ps &apos;&apos;&apos;
+    }
+}
+*/
+pipeline {
+    agent {
+        docker { image &apos;node:7-alpine&apos; }
+    }
+    stages {
+        stage(&apos;Test&apos;) {
+            steps {
+                sh &apos;node --version&apos;
+            }
+        }
+    }
+}
+
+
+</script>
+    <loadedScripts class="map"/>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>110383929</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>1065106524</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>6291555212</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>74202442</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>90216768</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>17</iota>
+    <head>1:17</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

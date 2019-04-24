@@ -1,0 +1,23 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KFH+lXND8BHwBdWOe+JW4Yp07+i5/Z8FHGjTf2zKIs6AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/cT01LwScwMAY/i2HcYAAAA=[0magent70 in workspace /home/ec2-user/jenkin/workspace/Puppet/1Create_slave
+[1Create_slave] $ /bin/sh -xe /tmp/jenkins7665780060375413326.sh
+++ echo master.pulkit.co
++ echo DNS_Name=master.pulkit.co
+++ echo 1h
++ echo runinterval=1h
+++ echo production
++ echo environment=production
+++ echo x.x.x.x
++ echo Puppet_Master_IP_address=x.x.x.x
+++ echo x.x.x.x
++ echo Puppet_Slave_IP_address=x.x.x.x
+++ echo agent.pulkit.co
++ echo Puppet_Slave_IP_DNS=agent.pulkit.co
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/1Create_slave
+[1Create_slave] $ /bin/sh -xe /tmp/jenkins556916948688622679.sh
++ cat /root/jenkin/workspace/Puppet/1Create_slave/DNS_Name /root/jenkin/workspace/Puppet/1Create_slave/runinterval /root/jenkin/workspace/Puppet/1Create_slave/environment /root/jenkin/workspace/Puppet/1Create_slave/Puppet_Master_IP_address /root/jenkin/workspace/Puppet/1Create_slave/Puppet_Slave_IP_address /root/jenkin/workspace/Puppet/1Create_slave/Puppet_Slave_IP_DNS
+/tmp/jenkins556916948688622679.sh: line 2: /root/jenkin/workspace/Puppet/1Create_slave/propsfile: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

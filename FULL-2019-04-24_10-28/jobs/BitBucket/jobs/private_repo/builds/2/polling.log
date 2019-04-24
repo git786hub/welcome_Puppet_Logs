@@ -1,0 +1,11 @@
+Started on Apr 15, 2019 7:12:59 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 86261a114d5e8f3e39798ff95eb3524bbb5d977a (refs/remotes/origin/master)
+using credential welcomepem
+ > git --version # timeout=10
+using GIT_SSH to set credentials welcomepem
+ > git ls-remote -h git@bitbucket.org:pulkit786agar/myfirstrepo.git # timeout=10
+Found 1 remote heads on git@bitbucket.org:pulkit786agar/myfirstrepo.git
+[poll] Latest remote head revision on refs/heads/master is: 46ff5ba2368e3012dce4ca4376140c5b65d58fd3
+Done. Took 0.77 sec
+Changes found

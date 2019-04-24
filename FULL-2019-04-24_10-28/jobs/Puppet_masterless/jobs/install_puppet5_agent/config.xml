@@ -1,0 +1,58 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>create a new instance&#xd;
+Before this, you have to ssh Jenkins master with the newly created instance.&#xd;
+enter into machine :::::::::::::::::::&#xd;
+sudo yum install java -y&#xd;
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.201.b09-0.amzn2.x86_64/jre&#xd;
+export PATH=$JAVA_HOME/bin:$PATH&#xd;
+ cd /home/ec2-user&#xd;
+ mkdir jenkin&#xd;
+&#xd;
+now go to jenkins -&gt; manage nodes-&gt; new node -&gt; &#xd;
+&#xd;
+&#xd;
+&#xd;
+</description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition plugin="nodelabelparameter@1.7.2">
+          <name>puppet_agent</name>
+          <description></description>
+          <allowedSlaves/>
+          <defaultSlaves/>
+          <triggerIfResult>multiSelectionDisallowed</triggerIfResult>
+          <allowMultiNodeSelection>false</allowMultiNodeSelection>
+          <triggerConcurrentBuilds>false</triggerConcurrentBuilds>
+          <ignoreOfflineNodes>false</ignoreOfflineNodes>
+          <nodeEligibility class="org.jvnet.jenkins.plugins.nodelabelparameter.node.AllNodeEligibility"/>
+        </org.jvnet.jenkins.plugins.nodelabelparameter.NodeParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>sudo yum install git -y
+sudo rpm -Uvh https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+sudo yum install -y puppet-agent
+/opt/puppetlabs/bin/puppet status
+sudo rm -rf /etc/puppetlabs/code/environments/production/*
+cd /etc/puppetlabs/code/environments/production/
+sudo git clone git://34.207.212.16/puppet-repo .
+sudo /opt/puppetlabs/bin/puppet apply /etc/puppetlabs/code/environments/production/puppet-cron.pp
+</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

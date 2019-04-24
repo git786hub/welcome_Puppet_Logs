@@ -1,0 +1,15 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+[EnvInject] - Preparing an environment for the build.
+[EnvInject] - Keeping Jenkins system variables.
+[EnvInject] - Keeping Jenkins build variables.
+[EnvInject] - Injecting as environment variables the properties file path '/var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/propsfile'
+[EnvInject] - Variables injected successfully.
+[EnvInject] - Injecting contributions.
+Building on master in workspace /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties content 
+AOEU=abcd
+
+[EnvInject] - Variables injected successfully.
+Finished: SUCCESS

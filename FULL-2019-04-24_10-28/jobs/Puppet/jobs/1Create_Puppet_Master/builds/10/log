@@ -1,0 +1,9 @@
+Started by user unknown or anonymous
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/1Create Puppet_Master
+[1Create Puppet_Master] $ /bin/sh -xe /tmp/jenkins2849336991639728522.sh
++ sudo sed -i ' 3i9.8.7.6  puppet.master.copulkit' /etc/hosts
+[1Create Puppet_Master] $ /bin/sh -xe /tmp/jenkins8487826759645245640.sh
++ export puppet.master.copulkit
+/tmp/jenkins8487826759645245640.sh: line 2: export: `puppet.master.copulkit': not a valid identifier
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

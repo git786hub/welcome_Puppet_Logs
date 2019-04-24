@@ -1,0 +1,20 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4JuVxfrV+QZ8UJz++s4IOSyiYd6nsOkSFWoMYTrRGk/rAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifePcxGIgDQBzFctPxgAAAA==[0m3master in workspace /home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign
+[7CERTI-sign] $ /bin/sh -xe /tmp/jenkins4717150095230695622.sh
++ sudo /opt/puppetlabs/bin/puppet cert list
+[1;33mWarning: `puppet cert` is deprecated and will be removed in a future release.
+   (location: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:370:in `run')[0m
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign
+[7CERTI-sign] $ /bin/sh -xe /tmp/jenkins4956115761288000214.sh
+++ sed 's/"//g'
+++ grep -o '".*"' /home/ec2-user/jenkin/workspace/Puppet/7CERTI-sign/certificate_file
++ sudo /opt/puppetlabs/bin/puppet cert sign 78.pulkit.co
+[1;33mWarning: `puppet cert` is deprecated and will be removed in a future release.
+   (location: /opt/puppetlabs/puppet/lib/ruby/vendor_ruby/puppet/application.rb:370:in `run')[0m
+Signing Certificate Request for:
+  "78.pulkit.co" (SHA256) DF:D3:D6:67:F4:2C:7B:7F:FA:62:99:E6:3C:24:BA:FE:AD:50:BA:03:C1:4F:F0:D5:9A:6E:22:D3:D2:E9:4E:CB
+[mNotice: Signed certificate request for 78.pulkit.co[0m
+[mNotice: Removing file Puppet::SSL::CertificateRequest 78.pulkit.co at '/etc/puppetlabs/puppet/ssl/ca/requests/78.pulkit.co.pem'[0m
+Finished: SUCCESS

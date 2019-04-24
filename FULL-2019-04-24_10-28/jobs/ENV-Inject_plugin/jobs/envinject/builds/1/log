@@ -1,0 +1,7 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/envinject
+[envinject] $ /bin/sh -xe /tmp/jenkins8175393113096144841.sh
+++ echo aoeu
++ echo AOEU=aoeu
+Finished: SUCCESS

@@ -1,0 +1,14 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4PzX04R3fuVTcEy6tmtqGnuS4mBpq2itXdwVtoXnw3IrAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLLUPABdurQJxQAAAA==[0mslaven in workspace /home/ec2-user/jenkin/workspace/Puppet/8slave_agent--test
+[8slave_agent--test] $ /bin/sh -xe /tmp/jenkins3997928522396550177.sh
++ sudo /opt/puppetlabs/bin/puppet agent --test
+[1;33mWarning: Downgrading to PSON for future requests[0m
+[0;32mInfo: Using configured environment 'production'[0m
+[0;32mInfo: Retrieving pluginfacts[0m
+[0;32mInfo: Retrieving plugin[0m
+[0;32mInfo: Loading facts[0m
+[0;32mInfo: Caching catalog for agent.pulkit.vm[0m
+[0;32mInfo: Applying configuration version '1554896588'[0m
+[mNotice: Applied catalog in 0.49 seconds[0m
+Finished: SUCCESS

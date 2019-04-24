@@ -1,0 +1,13 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MycucIv5ODuYm3Fmg1V+Izk1E1xmyLR7+ovjja1uTR+AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifaPcxGIgDQDHHrzpxgAAAA==[0m2master in workspace /home/ec2-user/jenkin/workspace/Puppet/5Puppet_config
+[5Puppet_config] $ /bin/sh -xe /tmp/jenkins1331804984849272225.sh
++ sudo yum -y install puppetserver
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Package puppetserver-5.3.8-1.el7.noarch already installed and latest version
+Nothing to do
+[5Puppet_config] $ /bin/sh -xe /tmp/jenkins1977231847867489890.sh
++ sudo sed -i '/^JAVA/ s/2g/1g/g' /etc/sysconfig/puppetserver
+Returning node parameter for 2master
+Triggering a new build of [8mha:////4Bpt/yb6IXx08QZlh7S8pJK+66qlNVjhMlhK4fetJdE0AAAArx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy1EgY9/az8JP2A0oKC1BIw0wyoPi0zvbQosSQzPy8eiArAkiDz0vQBpP/YdeMAAAA=[0mPuppet » 6Configuration_on_puppet.conf
+Finished: SUCCESS

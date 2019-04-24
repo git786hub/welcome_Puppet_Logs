@@ -1,0 +1,17 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4NnZ7GX7X2dHNSekCzBsweOWwvDtWnayh3dZKTKrki53AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXNTAN9B9wXBAAAA[0m75 in workspace /home/ec2-user/jenkin/workspace/Puppet/8slave_agent--test
+[8slave_agent--test] $ /bin/sh -xe /tmp/jenkins8445403321414714625.sh
++ sudo /opt/puppetlabs/bin/puppet agent --test
+[0;32mInfo: Using configured environment 'production'[0m
+[0;32mInfo: Retrieving pluginfacts[0m
+[0;32mInfo: Retrieving plugin[0m
+[0;32mInfo: Retrieving locales[0m
+[0;32mInfo: Caching catalog for 75.pulkit.co[0m
+[0;32mInfo: Applying configuration version '1554138586'[0m
+[mNotice: /Stage[main]/Main/Node[75.pulkit.co]/Package[httpd]/ensure: created[0m
+[mNotice: /Stage[main]/Main/Node[75.pulkit.co]/Service[httpd]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;32mInfo: /Stage[main]/Main/Node[75.pulkit.co]/Service[httpd]: Unscheduling refresh on Service[httpd][0m
+[mNotice: Applied catalog in 4.11 seconds[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

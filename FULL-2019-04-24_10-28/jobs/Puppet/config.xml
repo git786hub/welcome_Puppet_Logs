@@ -1,0 +1,288 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<com.cloudbees.hudson.plugins.folder.Folder plugin="cloudbees-folder@6.7">
+  <actions/>
+  <properties/>
+  <folderViews class="com.cloudbees.hudson.plugins.folder.views.DefaultFolderViewHolder">
+    <views>
+      <hudson.model.AllView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>All</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+      </hudson.model.AllView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>small_functions_for_puppet</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          <string>2Puppet_master_install_script</string>
+          <string>4Puppet_reboot</string>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+        </columns>
+        <recurse>false</recurse>
+      </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>testing jobs</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          <string>demo4</string>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+        </columns>
+        <recurse>false</recurse>
+      </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>Master_creation</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          <string>1Create_Puppet_Master</string>
+          <string>2Puppet_master_install_script</string>
+          <string>3master_reboot</string>
+          <string>5Puppet_config</string>
+          <string>6Configuration_on_puppet.conf</string>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+        </columns>
+        <recurse>false</recurse>
+      </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>site.pp</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView[3]/jobNames/comparator"/>
+          <string>7CERTI-sign</string>
+          <string>7dSite.pp</string>
+          <string>7verify_slave</string>
+          <string>8slave_agent--test</string>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+        </columns>
+        <recurse>false</recurse>
+      </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>Slave_creation</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.model.ListView[3]/jobNames/comparator"/>
+          <string>1Add_slave_DNS_in_Master_host_file</string>
+          <string>1Create_slave</string>
+          <string>2puppet_enter_detatils_in_slave_host_file</string>
+          <string>3puppet_slave_install_script</string>
+          <string>4Puppet_reboot</string>
+          <string>5puppet_slave_config</string>
+          <string>6Configuration_on_slave_puppet.conf</string>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+        </columns>
+        <recurse>false</recurse>
+      </hudson.model.ListView>
+      <hudson.model.ListView>
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>module_install</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <jobNames>
+          <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          <string>Module_Install</string>
+        </jobNames>
+        <jobFilters/>
+        <columns>
+          <hudson.views.StatusColumn/>
+          <hudson.views.WeatherColumn/>
+          <hudson.views.JobColumn/>
+          <hudson.views.LastSuccessColumn/>
+          <hudson.views.LastFailureColumn/>
+          <hudson.views.LastDurationColumn/>
+          <hudson.views.BuildButtonColumn/>
+        </columns>
+        <recurse>false</recurse>
+      </hudson.model.ListView>
+      <hudson.plugins.sectioned__view.SectionedView plugin="sectioned-view@1.25">
+        <owner class="com.cloudbees.hudson.plugins.folder.Folder" reference="../../../.."/>
+        <name>sectioned_view</name>
+        <filterExecutors>false</filterExecutors>
+        <filterQueue>false</filterQueue>
+        <properties class="hudson.model.View$PropertyList"/>
+        <sections>
+          <hudson.plugins.sectioned__view.FolderViewSection>
+            <jobNames>
+              <comparator class="hudson.util.CaseInsensitiveComparator"/>
+              <string>0Build_pipelines_views</string>
+            </jobNames>
+            <jobFilters/>
+            <name>folder </name>
+            <width>FULL</width>
+            <alignment>CENTER</alignment>
+            <viewColumns>1</viewColumns>
+            <folderLevels>10</folderLevels>
+            <hideJobs>true</hideJobs>
+            <regexFilter></regexFilter>
+          </hudson.plugins.sectioned__view.FolderViewSection>
+          <hudson.plugins.sectioned__view.JobGraphsSection>
+            <jobNames>
+              <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.sectioned__view.FolderViewSection/jobNames/comparator"/>
+              <string>1Create_Puppet_Master</string>
+              <string>2Puppet_master_install_script</string>
+            </jobNames>
+            <jobFilters/>
+            <name>job graph</name>
+            <width>FULL</width>
+            <alignment>CENTER</alignment>
+          </hudson.plugins.sectioned__view.JobGraphsSection>
+          <hudson.plugins.sectioned__view.ListViewSection>
+            <jobNames>
+              <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.sectioned__view.FolderViewSection/jobNames/comparator"/>
+              <string>4Puppet_reboot</string>
+              <string>5puppet_slave_config</string>
+              <string>6Configuration_on_slave_puppet.conf</string>
+            </jobNames>
+            <jobFilters/>
+            <name>list</name>
+            <width>FULL</width>
+            <alignment>CENTER</alignment>
+            <columns>
+              <hudson.views.StatusColumn/>
+              <hudson.views.WeatherColumn/>
+              <hudson.views.JobColumn/>
+              <hudson.views.LastSuccessColumn/>
+              <hudson.views.LastFailureColumn/>
+              <hudson.views.LastDurationColumn/>
+              <hudson.views.BuildButtonColumn/>
+            </columns>
+          </hudson.plugins.sectioned__view.ListViewSection>
+          <hudson.plugins.sectioned__view.TestResultViewSection>
+            <jobNames>
+              <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.sectioned__view.FolderViewSection/jobNames/comparator"/>
+              <string>1Add_slave_DNS_in_Master_host_file</string>
+              <string>2Puppet_master_install_script</string>
+              <string>7dSite.pp</string>
+            </jobNames>
+            <jobFilters/>
+            <name>test</name>
+            <width>FULL</width>
+            <alignment>CENTER</alignment>
+          </hudson.plugins.sectioned__view.TestResultViewSection>
+          <hudson.plugins.sectioned__view.TextSection>
+            <jobNames>
+              <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.sectioned__view.FolderViewSection/jobNames/comparator"/>
+            </jobNames>
+            <jobFilters/>
+            <name>text sction</name>
+            <width>FULL</width>
+            <alignment>CENTER</alignment>
+            <text></text>
+            <style>NONE</style>
+          </hudson.plugins.sectioned__view.TextSection>
+          <hudson.plugins.sectioned__view.ViewListingSection>
+            <jobNames>
+              <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.sectioned__view.FolderViewSection/jobNames/comparator"/>
+            </jobNames>
+            <jobFilters/>
+            <name>view listing</name>
+            <width>FULL</width>
+            <alignment>CENTER</alignment>
+            <views>
+              <string>Slave_creation</string>
+              <string>module_install</string>
+            </views>
+            <columns>1</columns>
+          </hudson.plugins.sectioned__view.ViewListingSection>
+          <hudson.plugins.sectioned__view.TestResultViewSection>
+            <jobNames>
+              <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.sectioned__view.FolderViewSection/jobNames/comparator"/>
+              <string>0Build_pipelines_views</string>
+              <string>1Add_slave_DNS_in_Master_host_file</string>
+              <string>2puppet_enter_detatils_in_slave_host_file</string>
+              <string>2Puppet_master_install_script</string>
+            </jobNames>
+            <jobFilters/>
+            <name>test result</name>
+            <width>FULL</width>
+            <alignment>CENTER</alignment>
+          </hudson.plugins.sectioned__view.TestResultViewSection>
+          <hudson.plugins.sectioned__view.ViewListingSection>
+            <jobNames>
+              <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../hudson.plugins.sectioned__view.FolderViewSection/jobNames/comparator"/>
+            </jobNames>
+            <jobFilters/>
+            <name>view</name>
+            <width>THIRD</width>
+            <alignment>RIGHT</alignment>
+            <views>
+              <string>Master_creation</string>
+              <string>kkk</string>
+            </views>
+            <columns>3</columns>
+          </hudson.plugins.sectioned__view.ViewListingSection>
+        </sections>
+      </hudson.plugins.sectioned__view.SectionedView>
+    </views>
+    <tabBar class="hudson.views.DefaultViewsTabBar"/>
+  </folderViews>
+  <healthMetrics>
+    <com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
+      <nonRecursive>false</nonRecursive>
+    </com.cloudbees.hudson.plugins.folder.health.WorstChildHealthMetric>
+  </healthMetrics>
+  <icon class="com.cloudbees.hudson.plugins.folder.icons.StockFolderIcon"/>
+</com.cloudbees.hudson.plugins.folder.Folder>

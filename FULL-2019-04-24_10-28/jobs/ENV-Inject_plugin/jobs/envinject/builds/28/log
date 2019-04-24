@@ -1,0 +1,15 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+[envinject] $ /bin/sh -xe /tmp/jenkins6154339013483051165.sh
+++ echo asaa
++ echo DNS_Name=asaa
+++ echo prod
++ echo environment=prod
+++ echo 1h
++ echo runinterval=1h
++ pwd
+/var/lib/jenkins/workspace/ENV-Inject_plugin/envinject
+[envinject] $ /bin/sh -xe /tmp/jenkins7678213680828103140.sh
++ cat /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/DNS_Name /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/runinterval /var/lib/jenkins/workspace/ENV-Inject_plugin/envinject/environment
+Finished: SUCCESS

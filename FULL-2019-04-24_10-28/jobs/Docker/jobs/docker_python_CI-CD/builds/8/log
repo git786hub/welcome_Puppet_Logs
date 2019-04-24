@@ -1,0 +1,317 @@
+Started by user unknown or anonymous
+Obtained jenkins/Jenkinsfile from git https://github.com/git786hub/simple-python-pyinstaller-app.git
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4EKPfpIi/Is1xzvg6INFSFB9LusYwBjNfC9Egyg+Ax5tAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4IIDC7aPo1yIFjBXV2m3pVBrKUW4kbGq1T0Ps0lE6tZWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4JjUmvdQM9IGM6nb7UWEE0s0d6UqsKsx9zAPIwJ+qd7XAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/Docker/docker_python_CI-CD
+[8mha:////4PNBMF5ZijHT4pOzGcP0wY6WLkA3VXD8ncfNo1PRacHYAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4OCiQ6KPi2oA1eG4JVKNfaMagzL3g1EHqEqDRAwWoOu8AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4OlDbMOIsdemGubF05pkd8yrSXngzVczBXRF8oldsSZpAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HwhcScmx0NTLrnTf5iXkWVQ/AF6aqF3ymUF7rU4OqXzAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/git786hub/simple-python-pyinstaller-app.git # timeout=10
+Fetching upstream changes from https://github.com/git786hub/simple-python-pyinstaller-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/git786hub/simple-python-pyinstaller-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bde7e05fb7ed394e5718c7cce04e170369ea153e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bde7e05fb7ed394e5718c7cce04e170369ea153e
+Commit message: "ading label for each node"
+ > git rev-list --no-walk e73455a5e2f90368edbe1eb4c4499c58735c5f85 # timeout=10
+[8mha:////4EXg4KDi4iWWGfPccOoX8Zi0Ws8GQC4dzZbYwkIFgfHYAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4IGaS84TFSmm/tY8vHqi9iXh1K52JUb4z1XaC3f5A5bVAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4CnIEX0bkDZywUYSuWE6dcuS7a4K7df+uEbx81qWQhhVAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4B5X5Zna17txpQ+U506X3Y+KyIcM9yX/4sz/hNFGmknKAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4JhGBr1+Ot4JNlwnBJHC1snFpIaxvrJFwBh2GzXo0S+cAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4LHnPgKamjjuMC4WImhAW1sYuCSco9eHt0Ow7YmVKG+IAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Build)
+[8mha:////4K5+hIThLt58CFZTa/3ygSxQ/MWvc59iOyqkbQooD7j4AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUCDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxAbNWnxXCAAAA[0m[Pipeline] node
+Running on [8mha:////4JjUmvdQM9IGM6nb7UWEE0s0d6UqsKsx9zAPIwJ+qd7XAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2
+[8mha:////4GfePFqplPeWqO+sJ1Zmg/w9aaE6tJjD+lAWSVNEgc5+AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUSDAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD5WQ+PfCAAAA[0m[Pipeline] {
+[8mha:////4Ertns4ToewSm/m4RW3E82tM0aVKtaptCi60uGezsmIGAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCmgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN7LjSKW+AAAA[0m[Pipeline] checkout
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/git786hub/simple-python-pyinstaller-app.git
+ > git init /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2 # timeout=10
+Fetching upstream changes from https://github.com/git786hub/simple-python-pyinstaller-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/git786hub/simple-python-pyinstaller-app.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/git786hub/simple-python-pyinstaller-app.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/git786hub/simple-python-pyinstaller-app.git # timeout=10
+Fetching upstream changes from https://github.com/git786hub/simple-python-pyinstaller-app.git
+ > git fetch --tags --progress https://github.com/git786hub/simple-python-pyinstaller-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bde7e05fb7ed394e5718c7cce04e170369ea153e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bde7e05fb7ed394e5718c7cce04e170369ea153e
+Commit message: "ading label for each node"
+[8mha:////4KiPhxYmj2JDt/xmUqo03AIiQyEIMrIAe8mYBmlc57AEAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDIgBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfABe7r57wgAAAA==[0m[Pipeline] withEnv
+[8mha:////4F6eKjv19rqx/JJ45asine8nLay3fv6nVtsi7123jtQtAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4L7V+8pmaZ2yrvq1RlrFvmcSpq42E2UoJV28caJKhqleAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] sh
++ docker inspect -f . python:2-alpine
+.
+[8mha:////4He9oEhgGqXyZAWqwNIQPa9JqEsN4xBEtu4PCyegaf2HAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUmJBQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQF8icecwgAAAA==[0m[Pipeline] withDockerContainer
+Jenkins does not seem to be running inside a container
+$ docker run -t -d -u 996:994 -w /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2 -v /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2:/var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2:rw,z -v /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2@tmp:/var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** python:2-alpine cat
+$ docker top 1c8b0c95d992f3793af95507959de61d7daecf93f531385252c4e2dd09a9eee1 -eo pid,comm
+[8mha:////4HSPxwrFDwi4cKAad3WElooT+kkRqqjL1ftlz2lEdC7sAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUWBFT1ygLJwhNCGmj/8tPSjtxIq7GHWipxIQHy7ZkvdcbishwInaisdh6jLUXXejdlMRA3F4DDaKhi6gJIwUrlB0UGVstVVGysCjLYSVhbbEOFD26BBvZ6Icug0ZXnhNP21FC7s0dnpDJiZw0p28ZGba33kTCH+cvAMYuQX7Yzbafn8UHbGnGmsIAAAA=[0m[Pipeline] {
+[8mha:////4OBtxe+Z0yKTwJ+7BevpobJitiloNOzAQ8v300kBvaVnAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIi0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJp+grPefqv0bH7uiub4AAAA=[0m[Pipeline] sh
++ python -m py_compile sources/add2vals.py sources/calc.py
+[8mha:////4AxaSHp+by8GwBC6hle0RdR6UmHt5DwnfWEP7BRJmP42AAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioERUaS03vMDExjix7oztkFS8iK/xBwKRqNhitbPNPF+wTBGOHC22hjpHqXEYfG+nhQPH7uJ5wJbP2DAl9galGSRrU88oORuYU5SwELAy1HhOjmyGtWjVXVVeka1OOU7fQUDp9A0eUIjJnFXMXxgjbK69Tkw/z18BjCFkKHf7T23f36y8/b4AAAA=[0m[Pipeline] }
+$ docker stop --time=1 1c8b0c95d992f3793af95507959de61d7daecf93f531385252c4e2dd09a9eee1
+$ docker rm -f 1c8b0c95d992f3793af95507959de61d7daecf93f531385252c4e2dd09a9eee1
+[8mha:////4PR1lcz215Rd5PWI0Ij8fJWJSFw9EG5w7ONLVgt7ksF6AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BvGsvpe+AAAA[0m[Pipeline] // withDockerContainer
+[8mha:////4LS6+zgwdXOaTptgimvb9D+/aYWcYJS5mbNbt3Cpf7HEAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikJCQUCpayw0vMIkxTqy7YDs4FS/ia/wBi0hUbLHa2WZeb1gGDzV7g52m3lJoLA5uNHlhYt9fHSfs+IINU2CnUeokudWnGSVHDXOKEhYCVpoax8GSibAWnXqoyiky1Tn6/B0FlLa9wxMKkc1R+fiFycPmNraB6ef5K4BpGCKUu32u7eEDpaQUeb4AAAA=[0m[Pipeline] }
+[8mha:////4LQXU2wbyVDf78IabpcbtRARgzMiLtq5wzVBAODiVaeKAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+ayz9vvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4HRsBAaDQu8s1qDp22UrZV4gyyyIP5D9o3oppVr7LtVaAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8AE3ltSr4AAAA=[0m[Pipeline] }
+[8mha:////4AusdoqB7r/jqe/tbwUs7wjelpka7GcLDKeziMv2ic5wAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8AUPs8zL4AAAA=[0m[Pipeline] // node
+[8mha:////4Bu3u2FylHgaI5iQ9PHRyX27O7uL5a6tukTAXX9LBGXZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdIdd2/wFWvQSZvgAAAA==[0m[Pipeline] }
+[8mha:////4CbQlQb8orUpsFu4+yN6o7SP0w4veupo9+DKcyBkCA1PAAAApB+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGLDp0SpaC03nMAkxjixdoPt4FSciKtxBywiUTHFaN407/WGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYhQnnY5trtP7zXe2++AAAA[0m[Pipeline] // stage
+[8mha:////4C0tKFpyGe4K7k6T8PNRfzEn2cbY1bbNNrr4mm9zwESIAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUESNiYo2ycIKQhJA2+r8kKe3EibgadyBQiQkPlm3Jes8XNCnCgaJjncXeY9KeDWF0JbGJYn8JNLGOzkwTJgqWSTtJMva4VEnZwqKqhpWAtUUdKHl0GTaiU3fVBoWuPeVYtr2A2psbPKAShZxVzN8yR9heR5MIf5y/AJiHDDXnxXb882ze6G+hisIAAAA=[0m[Pipeline] stage
+[8mha:////4HUsYBkj2HW29TNidozGImTkkTYVP3eUzLqXiy27Tmd1AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] { (Test)
+[8mha:////4DFnKX/KB/otyD4D8oztKU62TovUQwxMQe2ant6aRjpaAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycohUoiNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsPfTawssIAAAA=[0m[Pipeline] node
+Running on [8mha:////4JjUmvdQM9IGM6nb7UWEE0s0d6UqsKsx9zAPIwJ+qd7XAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2
+[8mha:////4LChVu9BS/t9IXkLGvALFXGjMRWcXlmOh4sOzyMOXy7+AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0KBtiYo2ycILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMUAJwqGOY2dxdha1vvRzIllCt3NU2aOrqwljOQ1EzoLUvq8VkFJw6qihA2HrcbWU7RoEuy4kw9Ze4mmvqQwb0cOpVUDPKHgMznJkL5lCrC/jyoS/jh/ATD1CcqmWeywPKsPBdk7bsIAAAA=[0m[Pipeline] {
+[8mha:////4CDpDAL0eNK5mCQixczZ6MAbqQKzns3SqCQvBt/QSHBoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBtZos2m+AAAA[0m[Pipeline] checkout
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/git786hub/simple-python-pyinstaller-app.git # timeout=10
+Fetching upstream changes from https://github.com/git786hub/simple-python-pyinstaller-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/git786hub/simple-python-pyinstaller-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bde7e05fb7ed394e5718c7cce04e170369ea153e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bde7e05fb7ed394e5718c7cce04e170369ea153e
+Commit message: "ading label for each node"
+[8mha:////4FVA0d75yRI0Ox3Gdji3NhFYYuwZb2cuuFGcgdu4D3zSAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ALEgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD41tyArCAAAA[0m[Pipeline] withEnv
+[8mha:////4EcGltpe+MKqF772hwnBIlPTl3Llyn6M4GuW5mO31G8BAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QIIBMXWNsnCC0ISQNvq//KS0EyfiatyBlkpMeLBsS9Z7vaGIDCdiJxqLrcdYe9GF3k1JDMTtNdAgGrqImjBSsELZQZGx1VIVJQuLshxWEtYW60DRo0uwkY1+6DJodOU58bQdJeTe3OEJmZzISXP6lpFhe+tNJPxx/gJg7BLku/1sh/lZfADpB/iZwgAAAA==[0m[Pipeline] {
+[8mha:////4AJKKRMl5FEHyA3+L3oxNxJP382uYQNHeMM5/+a4WunqAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUICEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEGDPXtvgAAAA==[0m[Pipeline] sh
++ docker inspect -f . qnib/pytest
+
+Error: No such object: qnib/pytest
+[8mha:////4MEM8gtxjMOI/jrP/lyF5Qn4NiCdlN2tlyF0ax47KXO4AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSUCCEqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAFHPe70vgAAAA==[0m[Pipeline] sh
++ docker pull qnib/pytest
+Using default tag: latest
+latest: Pulling from qnib/pytest
+f2b6b4884fc8: Pulling fs layer
+4fb899b4df21: Pulling fs layer
+74eaa8be7221: Pulling fs layer
+2d6e98fe4040: Pulling fs layer
+414666f7554d: Pulling fs layer
+bb0bcc8d7f6a: Pulling fs layer
+48c658404050: Pulling fs layer
+017da2081734: Pulling fs layer
+db789acdfe25: Pulling fs layer
+6f32167f8494: Pulling fs layer
+bb0bcc8d7f6a: Waiting
+48c658404050: Waiting
+017da2081734: Waiting
+db789acdfe25: Waiting
+6f32167f8494: Waiting
+2d6e98fe4040: Waiting
+414666f7554d: Waiting
+4fb899b4df21: Verifying Checksum
+4fb899b4df21: Download complete
+74eaa8be7221: Verifying Checksum
+74eaa8be7221: Download complete
+f2b6b4884fc8: Verifying Checksum
+f2b6b4884fc8: Download complete
+414666f7554d: Verifying Checksum
+414666f7554d: Download complete
+48c658404050: Verifying Checksum
+48c658404050: Download complete
+017da2081734: Verifying Checksum
+017da2081734: Download complete
+bb0bcc8d7f6a: Verifying Checksum
+bb0bcc8d7f6a: Download complete
+6f32167f8494: Verifying Checksum
+6f32167f8494: Download complete
+db789acdfe25: Verifying Checksum
+db789acdfe25: Download complete
+2d6e98fe4040: Verifying Checksum
+2d6e98fe4040: Download complete
+f2b6b4884fc8: Pull complete
+4fb899b4df21: Pull complete
+74eaa8be7221: Pull complete
+2d6e98fe4040: Pull complete
+414666f7554d: Pull complete
+bb0bcc8d7f6a: Pull complete
+48c658404050: Pull complete
+017da2081734: Pull complete
+db789acdfe25: Pull complete
+6f32167f8494: Pull complete
+Digest: sha256:02a659c938f1d1a89dbdcc2593dde1f9ffeb3ee5edc4379e93c6d84b77ad5ad6
+Status: Downloaded newer image for qnib/pytest:latest
+[8mha:////4Cm9TRA4x1qwYLNwTWKGnE7QHIEgsxrhKSEobTCyRjc8AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCSQG1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHK7T7bbvN5Vm8f1tSAwgAAAA==[0m[Pipeline] withDockerContainer
+Jenkins does not seem to be running inside a container
+$ docker run -t -d -u 996:994 -w /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2 -v /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2:/var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2:rw,z -v /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2@tmp:/var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** qnib/pytest cat
+$ docker top 75741102e4ab3ca9bf1cb0bcc60b41df95b48eed3ea6ccc39b6c3435fa1f78b8 -eo pid,comm
+[8mha:////4PbJGc0r1qbZdHpfoEdT0sEeXHQ1zBdKbeSTvnJDrHteAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUJDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAbb5KxbCAAAA[0m[Pipeline] {
+[8mha:////4MppuNuzHJ5CGzk/ty3vUScYcTczqx1hbCsP5KZg6FF9AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBirOQHu+AAAA[0m[Pipeline] sh
++ py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.14, pytest-3.5.0, py-1.5.3, pluggy-0.6.0 -- /usr/local/bin/python
+cachedir: .pytest_cache
+rootdir: /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2, inifile:
+plugins: cov-2.5.1
+collecting ... collected 5 items
+
+sources/test_calc.py::TestCalc::test_add_floats PASSED                   [ 20%]
+sources/test_calc.py::TestCalc::test_add_integers PASSED                 [ 40%]
+sources/test_calc.py::TestCalc::test_add_string_and_integer PASSED       [ 60%]
+sources/test_calc.py::TestCalc::test_add_string_and_number PASSED        [ 80%]
+sources/test_calc.py::TestCalc::test_add_strings PASSED                  [100%]
+
+ generated xml file: /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2/test-reports/results.xml 
+=========================== 5 passed in 0.01 seconds ===========================
+Post stage
+[8mha:////4EmuAELyyOReYZmUVaL467VP5tL92yZKK/Kje6Rz2fFoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBmv/W2K+AAAA[0m[Pipeline] junit
+Recording test results
+[8mha:////4Pb8shSjwyJSjp8kiNPntcRPGA4gLLMfnk5zvGAGwh1LAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIipHSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BtsOM9W+AAAA[0m[Pipeline] }
+$ docker stop --time=1 75741102e4ab3ca9bf1cb0bcc60b41df95b48eed3ea6ccc39b6c3435fa1f78b8
+$ docker rm -f 75741102e4ab3ca9bf1cb0bcc60b41df95b48eed3ea6ccc39b6c3435fa1f78b8
+[8mha:////4B19H+HmcxVG/1GpFSWD3eg4cBdgTTvnzK+QqdxEcXT4AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCARWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BujtaGm+AAAA[0m[Pipeline] // withDockerContainer
+[8mha:////4FFOOs4bDxJzFb8LLbCynmslphcl6LvriXCi9f2TAdqvAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw8inNk+vgAAAA==[0m[Pipeline] }
+[8mha:////4AbG77u4kL6nQkIGCmb9VPB783yl7MkB4P1O6AsW8klpAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgKBAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w8Rf4KCvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4EGwFqAUBvLQN2/e7g2BXON0NO27StW4i7V8aAzDqUuSAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIpSIGEqNJaaXiBiQ/jxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgRI80WIqdFd6NJi8xcRiujifR80V0TJEdihanljU2C7acEJYUJawkbJA6x9GSSbCVvXqoyiky1TmF/B0llFbf4QmFzOakQvrCHGB3G3Vk+nn+CmD2PkFZH3Lt6w/orNqdvgAAAA==[0m[Pipeline] }
+[8mha:////4D2Oy4MYEJZEIptDzD8xGpqK2g0h1MfQ/xzzRilHMIEzAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJShAYhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QHu6uLIvgAAAA==[0m[Pipeline] // node
+[8mha:////4OFxqYdyI52T83lGi8gPaeXz/TCJ6xofW4DKnWRqk6EZAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCQFQoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrDNtd+9wEEgJ0+vgAAAA==[0m[Pipeline] }
+[8mha:////4CG8LMQ00FXk3Sw6nG1NypVRAgLmiW8R0eQwEMW44Ub1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiCFEhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QEbAshsvgAAAA==[0m[Pipeline] // stage
+[8mha:////4I4+VjPkQLHANuAXzL2HqddV52qIXBeYuP0iQehCuatlAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohURWJCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsmmz73edZvQF8KOVvwgAAAA==[0m[Pipeline] stage
+[8mha:////4GXjbQTIspG5dLc+kXUPAwnLM/O0gyFolhhfKaHr7rTZAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUAjEhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD6emXT7CAAAA[0m[Pipeline] { (Deliver)
+[8mha:////4My3kddkAZzfWz08wQqWqBxF0Yc/VOYOCaWDRywW/AD9AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0ACbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAd9J1uLCAAAA[0m[Pipeline] node
+Running on [8mha:////4JjUmvdQM9IGM6nb7UWEE0s0d6UqsKsx9zAPIwJ+qd7XAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2
+[8mha:////4Hc2ibQpB6e0A7iEE65qS8mi8BLpRfV92shpvqjUMP3HAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoh0oRNiYo26cILQhJA0+r9NUtKJE3E17kBLJSY8WLYl673eUMYAJwqGO42dxdha3vvRzIlnCt3NU+aOrrwljOQ1b3RuSOnzWhtKGlYVDDYCthpbT9GiSbATTj5k5SWa6pLCvB0FMKsGeEIhZnKSIX3LFGB/H1Uk/HH+AmDqE7D6sFi9PMsP+Y+xAMIAAAA=[0m[Pipeline] {
+[8mha:////4POFpye2nqdUeF/QqQsG7s9PXfS8ZrgzfVfd1d/oViPXAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeghSxcaxsmVoPAEmiBDmfwJEUnkir+YdRDNj5RY7+7Z5zxesY4AjBc2swsFg7AzzbtJlsUxhuDrKzNKFdYSRnGJCZUG9Oi0oKClYUtWw4rBR2DmKBnWCLbfyLhsnUTfnFMp34FCbfoQHVLyYkwzpC3OA3W3qI+HP81cAs09Qt+2n9v4NlEULJr4AAAA=[0m[Pipeline] checkout
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/git786hub/simple-python-pyinstaller-app.git # timeout=10
+Fetching upstream changes from https://github.com/git786hub/simple-python-pyinstaller-app.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/git786hub/simple-python-pyinstaller-app.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision bde7e05fb7ed394e5718c7cce04e170369ea153e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bde7e05fb7ed394e5718c7cce04e170369ea153e
+Commit message: "ading label for each node"
+[8mha:////4CigV52PkMqQ3QSahkwMvF+snHvKHeGgTubourxY/nQhAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0qhgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ADLx94zCAAAA[0m[Pipeline] withEnv
+[8mha:////4K7/TTmTmU2DqgBAZEAa/yO5SIsmmybBG9xg018j4bTBAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0QiAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LDyb6zSXCAAAA[0m[Pipeline] {
+[8mha:////4AB9gxP/RStIuETOA1yYqzIJShgdgzaedu8kpR+QVBPjAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSIYEQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN5s4RMC+AAAA[0m[Pipeline] sh
++ docker inspect -f . cdrx/pyinstaller-linux:python2
+
+Error: No such object: cdrx/pyinstaller-linux:python2
+[8mha:////4PNszaedZN93DqD6pr7hTQ5G1NKSieZ/s0FykRZ+MLltAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCA0JCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKYhQrk75Npvhw+LPcATvgAAAA==[0m[Pipeline] sh
++ docker pull cdrx/pyinstaller-linux:python2
+python2: Pulling from cdrx/pyinstaller-linux
+e53f134edff2: Pulling fs layer
+efbbd466a715: Pulling fs layer
+e11368b8e0c7: Pulling fs layer
+7dab2de7692b: Pulling fs layer
+75d777f43022: Pulling fs layer
+64e68f59d5ca: Pulling fs layer
+832738e614cb: Pulling fs layer
+473ba45d3200: Pulling fs layer
+7dab2de7692b: Waiting
+75d777f43022: Waiting
+64e68f59d5ca: Waiting
+832738e614cb: Waiting
+473ba45d3200: Waiting
+efbbd466a715: Verifying Checksum
+efbbd466a715: Download complete
+e11368b8e0c7: Verifying Checksum
+e11368b8e0c7: Download complete
+7dab2de7692b: Verifying Checksum
+7dab2de7692b: Download complete
+64e68f59d5ca: Download complete
+832738e614cb: Download complete
+473ba45d3200: Verifying Checksum
+473ba45d3200: Download complete
+e53f134edff2: Verifying Checksum
+e53f134edff2: Download complete
+75d777f43022: Verifying Checksum
+75d777f43022: Download complete
+e53f134edff2: Pull complete
+efbbd466a715: Pull complete
+e11368b8e0c7: Pull complete
+7dab2de7692b: Pull complete
+75d777f43022: Pull complete
+64e68f59d5ca: Pull complete
+832738e614cb: Pull complete
+473ba45d3200: Pull complete
+Digest: sha256:4d99cba5143e347f7dc9d3fd156a20c169f54326cc3465c77b9a53b19894a524
+Status: Downloaded newer image for cdrx/pyinstaller-linux:python2
+[8mha:////4KP9Y6YLGgMdleJUudu4tgZcuUgeYEQbGwn/yh3767+7AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDCAk1Ik16sIJQhNC0uj/kqSkEyfiatyBQCUmPFi2Jes9X1AFDw15zazC3mDoDBvcqHNiiXx/cZSYpTPrCAM5xVqVWpLqONeWooJZRQkLDkuFnaNgUEdYcSvuonYCdX2KPm8HDqWRN3hAwTM5Ch+/ZfKwvo4yEP44fwEwDRHK7T7bbvN5Vm+1RdKgwgAAAA==[0m[Pipeline] withDockerContainer
+Jenkins does not seem to be running inside a container
+$ docker run -t -d -u 996:994 -w /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2 -v /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2:/var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2:rw,z -v /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2@tmp:/var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2@tmp:rw,z -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** -e ******** cdrx/pyinstaller-linux:python2 cat
+$ docker top 21a668f2092a75a14de3b8cd54a4416411af02d7ec383b8cf5db0cde491d7e89 -eo pid,comm
+[8mha:////4PKjeiJ+FIOKSRVgxmsyJTb+r6/6rmIBvjSSPrkAsTzYAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUMLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYL8sJttPz+LD27blSrCAAAA[0m[Pipeline] {
+[8mha:////4P0rS5yQEgI7/uaWLXJkDQmCtCQl9BLdGZUkdFM7Kp5MAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAHlNhISvgAAAA==[0m[Pipeline] sh
++ pyinstaller --onefile sources/add2vals.py
+201 INFO: PyInstaller: 3.4
+201 INFO: Python: 2.7.6
+201 INFO: Platform: Linux-4.14.104-95.84.amzn2.x86_64-x86_64-with-Ubuntu-14.04-trusty
+201 INFO: wrote /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2/add2vals.spec
+241 INFO: UPX is not available.
+242 INFO: Extending PYTHONPATH with paths
+['/var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2/sources',
+ '/var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2']
+242 INFO: checking Analysis
+242 INFO: Building Analysis because Analysis-00.toc is non existent
+242 INFO: Initializing module dependency graph...
+243 INFO: Initializing module graph hooks...
+430 INFO: running Analysis Analysis-00.toc
+635 INFO: Caching module hooks...
+638 INFO: Analyzing /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2/sources/add2vals.py
+677 INFO: Loading module hooks...
+678 INFO: Loading module hook "hook-encodings.py"...
+8634 INFO: Looking for ctypes DLLs
+8634 INFO: Analyzing run-time hooks ...
+8655 INFO: Looking for dynamic libraries
+10583 INFO: Looking for eggs
+10584 INFO: Python library not in binary dependencies. Doing additional searching...
+10813 INFO: Using Python library /usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0
+10852 INFO: Warnings written to /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2/build/add2vals/warn-add2vals.txt
+10918 INFO: Graph cross-reference written to /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2/build/add2vals/xref-add2vals.html
+11083 INFO: checking PYZ
+11083 INFO: Building PYZ because PYZ-00.toc is non existent
+11083 INFO: Building PYZ (ZlibArchive) /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2/build/add2vals/PYZ-00.pyz
+11842 INFO: Building PYZ (ZlibArchive) /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2/build/add2vals/PYZ-00.pyz completed successfully.
+11963 INFO: checking PKG
+11963 INFO: Building PKG because PKG-00.toc is non existent
+11963 INFO: Building PKG (CArchive) PKG-00.pkg
+20670 INFO: Building PKG (CArchive) PKG-00.pkg completed successfully.
+20690 INFO: Bootloader /usr/local/lib/python2.7/dist-packages/PyInstaller/bootloader/Linux-64bit/run
+20690 INFO: checking EXE
+20690 INFO: Building EXE because EXE-00.toc is non existent
+20690 INFO: Building EXE from EXE-00.toc
+20690 INFO: Appending archive to ELF section in EXE /var/lib/jenkins/workspace/Docker/docker_python_CI-CD@2/dist/add2vals
+20732 INFO: Building EXE from EXE-00.toc completed successfully.
+Post stage
+[8mha:////4KgPDKbh1xHI+U6ORKdsX5aArfdrZdzHYyo/MlnHsafpAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUSDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK//dQuvAEioFNdvgAAAA==[0m[Pipeline] archiveArtifacts
+Archiving artifacts
+[8mha:////4PwSeAU4XHcetouVUmsU7utRTYnmPPfUGLz7C2GNP0KEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDud5/avgFv/88ivgAAAA==[0m[Pipeline] }
+$ docker stop --time=1 21a668f2092a75a14de3b8cd54a4416411af02d7ec383b8cf5db0cde491d7e89
+$ docker rm -f 21a668f2092a75a14de3b8cd54a4416411af02d7ec383b8cf5db0cde491d7e89
+[8mha:////4DAaaouelZJWMptEn6X33gQ+9dvqXe5r8o+uqa9ZfYrMAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIimjSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BnvcUj2+AAAA[0m[Pipeline] // withDockerContainer
+[8mha:////4Cjhvaehk6I1sZXa6g4UWJp01mt+OvBjnEz1aURFbKBEAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGJT8ZFQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+55P+kvgAAAA==[0m[Pipeline] }
+[8mha:////4PVzPibMp6jNOeVw7MFGVBnHw23pq8eYmDWivf0CrkQRAAAApR+LCAAAAAAAAP9tjTsOwjAQRDdBFLSUHGJT8ZFQKlrLDScwiTFOrN1gOzgVJ+Jq3AGLSFRMMZo3zXu9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDuDrm2+w/9SxbFvgAAAA==[0m[Pipeline] // withEnv
+[8mha:////4Jf9ALIxyS28FzrLLZJSwMqQzzmUviiC1g2Ds8v+Zj54AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSBQkhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3h1x1/QF0+UTgvgAAAA==[0m[Pipeline] }
+[8mha:////4IssrB/8XBJEZ/ECC6Tz36hIJucqy7d2uXKfIZPJFXhNAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCAaJAqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFAetrn2uw+ekzsWvgAAAA==[0m[Pipeline] // node
+[8mha:////4L7m4ylTHeViqtrF6InqHtr4w3ELTmacwhV1BqiHS1ZLAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4TysM21330AmNUDQ74AAAA=[0m[Pipeline] }
+[8mha:////4GrkcP7fAo5wLvX6dPgAgN1yZYJv3qG3aB6MHZsaCZrJAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiRUIUiCqtlYYXmNgYJ9adsR2SihfxNf6ARSQqtljtbDOvN6xjgBMHg72mwVLsLHo3mrxw4jBcHU/Y8wU7pshOY6unlpVuFmw5aVhSlLASsNHUOY6WTIKt6OVDVk6Sqc4p5O8ooLTqDk8oRDYnGdIX5gC726gi08/zVwCz9wnKQ51rX38AoJeQsr4AAAA=[0m[Pipeline] // stage
+[8mha:////4OpxaOPZ13QOJ1Rbn+nJ/KhA/DtusbRGpbgEoZzqWrFUAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiiIICUaW10vACExvjxLoztkNS8SK+xh+wiETFFqudbeb1hnUMcOJgsNc0WIqdRe9GkxdOHIar4wl7vmDHFNlpbPXUstLNgi0nDUuKElYCNpo6x9GSSbAVvXzIykky1TmF/B0FlFbd4QmFyOYkQ/rCHGB3G1Vk+nn+CmD2PkF52Oeq6w+70KmEvgAAAA==[0m[Pipeline] }
+[8mha:////4MF8IaiTv5y0xyy0xfvs7eTQAaURYFJ4xobkAzGVEDUyAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEhIFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4TysM+1234AldCr7r4AAAA=[0m[Pipeline] // withEnv
+[8mha:////4BnxHY+RttAtq3RwN50CNy4Fgzreor7lzK23dggQWjf6AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJpQBSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfL8TZNsP6Ef8zL0AAAA=[0m[Pipeline] }
+[8mha:////4J10q6zc6EpbEhoRi+at4dOO6VpMYFYyZUj8ZTR3w1ZfAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpkKBAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5PudINt+AJuoOBW9AAAA[0m[Pipeline] // node
+[8mha:////4PiGG978FpeT7sxmXKUuJPNS9F2nAuxop7LiSTkZO4+0AAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkLgzGybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FeVkKsv0HvbFfX70AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

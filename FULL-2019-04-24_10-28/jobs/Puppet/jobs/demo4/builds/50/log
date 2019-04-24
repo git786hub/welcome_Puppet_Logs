@@ -1,0 +1,9 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/demo4
+[demo4] $ /bin/sh -xe /tmp/jenkins9035904804627292515.sh
++ echo grher
+grher
++ q=grher
++ echo grher
+grher
+Finished: SUCCESS

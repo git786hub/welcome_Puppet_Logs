@@ -1,0 +1,125 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.32">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>region</name>
+          <description></description>
+          <value>us-west-2</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>key_Name</name>
+          <description></description>
+          <value>abcd</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>Instance_type</name>
+          <description></description>
+          <value>t2.micro</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>stack</name>
+          <description></description>
+          <value>h</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>region</string>
+        <string>key_Name</string>
+        <string>Instance_type</string>
+        <string>stack</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>pulkit_baba</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.13">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.workflow.support.steps.input.InputAction plugin="pipeline-input-step@2.10">
+      <ids class="java.util.concurrent.CopyOnWriteArrayList"/>
+    </org.jenkinsci.plugins.workflow.support.steps.input.InputAction>
+    <org.jenkinsci.plugins.workflow.support.steps.input.ApproverAction plugin="pipeline-input-step@2.10">
+      <userId>pulkit_baba</userId>
+    </org.jenkinsci.plugins.workflow.support.steps.input.ApproverAction>
+    <org.jenkinsci.plugins.workflow.cps.EnvActionImpl plugin="workflow-cps@2.65">
+      <env class="tree-map"/>
+    </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
+  </actions>
+  <queueId>14</queueId>
+  <timestamp>1554725178931</timestamp>
+  <startTime>1554725178972</startTime>
+  <result>FAILURE</result>
+  <duration>13990</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node {
+    stage(&quot;git&quot;){
+       // git &apos;https://github.com/git786hub/welcome_Puppet_Logs.git&apos;
+    } 
+       def  stack=&quot;${params.stack}&quot;
+       def url;
+		def IT=&quot;${params.Instance_type}&quot;
+		def KeyName =&quot;${params.key_Name}&quot;
+		def reg=&quot;${params.region}&quot;
+		echo &quot;${stack}&quot;
+		stage(&quot;input&quot;){
+		    input message: &apos;enter command&apos;, parameters: [string(defaultValue: &apos;&apos;, description: &apos;&apos;, name: &apos;command_here&apos;, trim: false)]
+		}
+    stage(&quot;CFN&quot;){
+        echo command_here
+       // echo (&quot;Env: &quot;+userInput[&apos;env&apos;])
+     //   withAWS(credentials: &apos;AWS_CFN&apos;, region:&quot;${reg}&quot; ) {
+       //   def outputs = cfnUpdate(stack:&quot;${stack}&quot;,params:[&quot;KeyName=${KeyName}&quot;,&quot;InstanceType=${IT}&quot;], url:&apos;https://s3-us-west-2.amazonaws.com/aws-cfn-pulkit/ec.json&apos;)
+         //  outputs.each{ k, v -&gt; println &quot;${k}:${v}&quot; } 
+        //	url = outputs.find{ it.key == &quot;WebsiteURL&quot;}.value
+            	
+            
+}
+	//echo &quot;${url}&quot;
+    
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>1281893550</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>174471106</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>2519334589</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>302959284</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>182689575</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>21</iota>
+    <head>1:21</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

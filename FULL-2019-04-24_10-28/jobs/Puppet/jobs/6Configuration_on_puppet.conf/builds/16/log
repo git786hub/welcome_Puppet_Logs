@@ -1,0 +1,25 @@
+Started by upstream project "[8mha:////4P8eHrHYviq5y2UIG++ExzT76NcqlrTctVvGk9HUdegxAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzREgZ5/az8JP2A0oKC1BIw0xTCjgdqT8tM1wcAZLy7OtQAAAA=[0mPuppet/5Puppet_config" build number [8mha:////4JulfroLeNx8YAhSO41Y7b/cqW/eZWYFzEbyMLVxvuwHAAAAox+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgX9rPwk/YDSgoLUEjDTFMKOB2pPy0zXNwEAmU5WPdUAAAA=[0m4
+originally caused by:
+ Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MycucIv5ODuYm3Fmg1V+Izk1E1xmyLR7+ovjja1uTR+AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifaPcxGIgDQDHHrzpxgAAAA==[0m2master in workspace /home/ec2-user/jenkin/workspace/Puppet/6Configuration_on_puppet.conf
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path '/home/ec2-user/jenkin/workspace/Puppet/1Create_Puppet_Master/propsfile1'
+[EnvInject] - Variables injected successfully.
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins4362788416936032490.sh
++ sudo sed -i '/\[master\]/a dns_alt_names=2master.pulkit.co,puppet' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins3968303894250348939.sh
++ sudo sed -i '/\[main\]/a  runinterval = 1h' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins8065788425910149776.sh
++ sudo sed -i '/\[main\]/a  environment = production' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins4839795700708521979.sh
++ sudo sed -i '/\[main\]/a server=2master.pulkit.co' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins7447710472307342699.sh
++ sudo sed -i '/\[main\]/a  certname=2master.pulkit.co' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins6305799658246834072.sh
++ sudo systemctl start puppetserver
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins6098842493647479924.sh
++ sudo systemctl enable puppetserver
+Returning node parameter for 2master
+Triggering a new build of [8mha:////4K8HfpFgLpPJWliOlqkdZMdNp5RhwrkDZwMXagVJeZ5sAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgYZ/az8JP2A0oKC1BIw09zZNSjEU7c4Mz1PHwCl1tEC0QAAAA==[0mPuppet » 7CERTI-sign
+Finished: SUCCESS

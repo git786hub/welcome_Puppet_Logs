@@ -1,0 +1,22 @@
+commit bde7e05fb7ed394e5718c7cce04e170369ea153e
+tree 9b4fa11880af1c1f213652999b2b83c08c2dffbf
+parent 35f6e39d35488207ed85995c40b5289130e0ea18
+author Pulkit Agarwal <apulkit21@gmail.com> 2019-04-12 15:11:28 +0530
+committer GitHub <noreply@github.com> 2019-04-12 15:11:28 +0530
+
+    ading label for each node
+
+
+
+:100644 100644 6d773d3483629b427cb715611166e7c3b45cf0fe 96dcbbac053a6f89f85c14e8003e55391065ec2b M	jenkins/Jenkinsfile
+commit 35f6e39d35488207ed85995c40b5289130e0ea18
+tree e1cd780041c513dd986fc29d72797a1bca10b232
+parent e73455a5e2f90368edbe1eb4c4499c58735c5f85
+author Pulkit Agarwal <apulkit21@gmail.com> 2019-04-12 15:10:47 +0530
+committer GitHub <noreply@github.com> 2019-04-12 15:10:47 +0530
+
+    adding label master in agent
+
+
+
+:100644 100644 91833ee0ea6271e0d1efd64e70bd979d4208aabc 6d773d3483629b427cb715611166e7c3b45cf0fe M	jenkins/Jenkinsfile

@@ -1,0 +1,126 @@
+Started by upstream project "[8mha:////4NvUIhiQMVWsJ7pW445IuulmIERGg4LQR0iPsw/WnPhnAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzlEgZd/az8JP2A0oKC1BIw07gAzI4vzkksS43PzCsuSczJiS9OLsosKNEHAMFbqz7iAAAA[0mPuppet/3puppet_slave_install_script" build number [8mha:////4NjSevUkjYzqNnt46GmHVpWyzH0eRSCHI0240FGhqN9dAAAAtR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZ9/az8JP2A0oKC1BIw07gAzI4vzkksS43PzCsuSczJiS9OLsosKNE3NAIAyD2+++QAAAA=[0m12
+originally caused by:
+ Started by upstream project "[8mha:////4J8SliF4FjKPiZy6/ZcprwU/lYQNf9v5JtIGIHIAtaSyAAAAvh+LCAAAAAAAAP9djbENwjAQRY8gGIAS0bBAjCgoQFQ0IAWExACWIUdiONmWfYlgDdaAhiEYhx2Ikor85r/i6f/XF3rBwzgv0mBNfLImWMJ4a1Ok9d2hJ22uO8sITToRwM3DqOX/qbPl8718uE8E0Qb6hCbjPIFu4YlhkFxUqQQpk4kDe22yRTU3bM2tmm7/ugomDHNxsUexL5xDrnHqapZoGL1MkRVrClIbGUiVKHMbWJ41ofgBTJfZse8AAAA=[0mPuppet/2puppet_enter_detatils_in_slave_host_file" build number [8mha:////4IoLsICMa/GN9miCSEuhZBWHTSawmFCcrNBtkMvi75lvAAAAvh+LCAAAAAAAAP9djUEOAUEQRUsLB7AUGxfQIWGDlQ0JInGATjNlpkelu9NdI1zDNdg4hOO4g8lYmb/5b/Hy//MDrRignxVJdHZwdDY6wsHGJUjLm8dAxp63jhF+aQiAa4Bezf9TJ/PHa373bwFiBW1Cm3K2hmYRiKGzzvVFS9I2lXsOxqbTcq5bm1v8uv7rSxAMM5m7g9wV3iNXOPIVK7SMQSXImg1FZayKpC+oMhdZnQyhHI6/l4mUiPEAAAA=[0m15
+ originally caused by:
+  Started by upstream project "[8mha:////4DqfVO9LU8XPXwEx/kiBQVr02KmvykPRJPYQUo2xSXJOAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyREgY5/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFUfABRn/YfTAAAA[0mPuppet/1Create_slave" build number [8mha:////4AMnBxi76mUb/D5JpicVosntQ2wKO5n3nQnK55aLxlKIAAAAqR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYF/az8JP2A0oKC1BIw09C5KDWxJDW+OCexLFXfyBQAOlIFRNUAAAA=[0m25
+  originally caused by:
+   Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4PzX04R3fuVTcEy6tmtqGnuS4mBpq2itXdwVtoXnw3IrAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLLUPABdurQJxQAAAA==[0mslaven in workspace /home/ec2-user/jenkin/workspace/Puppet/4Puppet_reboot
+[4Puppet_reboot] $ /bin/sh -xe /tmp/jenkins5128048030648999249.sh
+FATAL: Unable to delete script file /tmp/jenkins5128048030648999249.sh
+java.io.IOException: Cannot read full block, EOF reached.
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.getBlock(CipherInputStream.java:81)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.read(CipherInputStream.java:108)
+	at com.trilead.ssh2.transport.TransportConnection.receiveMessage(TransportConnection.java:232)
+	at com.trilead.ssh2.transport.TransportManager.receiveLoop(TransportManager.java:706)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:502)
+Caused: java.io.IOException: The connection is being shutdown
+	at com.trilead.ssh2.channel.ChannelManager.handleEndMessage(ChannelManager.java:1525)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:535)
+	at java.lang.Thread.run(Thread.java:748)
+Caused: java.io.IOException: SSH channel is closed
+	at com.trilead.ssh2.channel.ChannelManager.ioException(ChannelManager.java:1543)
+	at com.trilead.ssh2.channel.ChannelManager.sendData(ChannelManager.java:373)
+	at com.trilead.ssh2.channel.ChannelOutputStream.write(ChannelOutputStream.java:63)
+	at com.trilead.ssh2.channel.ChannelOutputStream.write(ChannelOutputStream.java:68)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:89)
+	at hudson.remoting.ChunkedOutputStream.drain(ChunkedOutputStream.java:85)
+	at hudson.remoting.ChunkedOutputStream.write(ChunkedOutputStream.java:54)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:45)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:47)
+	at hudson.remoting.Channel.send(Channel.java:721)
+	at hudson.remoting.Request.call(Request.java:160)
+	at hudson.remoting.Channel.call(Channel.java:954)
+	at hudson.FilePath.act(FilePath.java:1072)
+	at hudson.FilePath.act(FilePath.java:1061)
+	at hudson.FilePath.delete(FilePath.java:1565)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:123)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+ERROR: Build step failed with exception
+java.io.IOException: Cannot read full block, EOF reached.
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.getBlock(CipherInputStream.java:81)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.read(CipherInputStream.java:108)
+	at com.trilead.ssh2.transport.TransportConnection.receiveMessage(TransportConnection.java:232)
+	at com.trilead.ssh2.transport.TransportManager.receiveLoop(TransportManager.java:706)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:502)
+Caused: java.io.IOException: The connection is being shutdown
+	at com.trilead.ssh2.channel.ChannelManager.handleEndMessage(ChannelManager.java:1525)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:535)
+	at java.lang.Thread.run(Thread.java:748)
+Caused: java.io.IOException: SSH channel is closed
+	at com.trilead.ssh2.channel.ChannelManager.ioException(ChannelManager.java:1543)
+	at com.trilead.ssh2.channel.ChannelManager.sendData(ChannelManager.java:373)
+	at com.trilead.ssh2.channel.ChannelOutputStream.write(ChannelOutputStream.java:63)
+	at com.trilead.ssh2.channel.ChannelOutputStream.write(ChannelOutputStream.java:68)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:89)
+	at hudson.remoting.ChunkedOutputStream.sendBreak(ChunkedOutputStream.java:62)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:46)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:47)
+	at hudson.remoting.Channel.send(Channel.java:721)
+	at hudson.remoting.Request.call(Request.java:160)
+	at hudson.remoting.Channel.call(Channel.java:954)
+	at hudson.remoting.RemoteInvocationHandler.invoke(RemoteInvocationHandler.java:283)
+Caused: hudson.remoting.RemotingSystemException
+	at hudson.remoting.RemoteInvocationHandler.invoke(RemoteInvocationHandler.java:299)
+	at com.sun.proxy.$Proxy79.getIOtriplet(Unknown Source)
+	at hudson.Launcher$RemoteLauncher$ProcImpl.<init>(Launcher.java:1113)
+	at hudson.Launcher$RemoteLauncher.launch(Launcher.java:1059)
+	at hudson.Launcher$ProcStarter.start(Launcher.java:455)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:109)
+	at hudson.tasks.CommandInterpreter.perform(CommandInterpreter.java:66)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.Build$BuildExecution.build(Build.java:206)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:504)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Build step 'Execute shell' marked build as failure
++ sudo reboot
+FATAL: SSH channel is closed
+java.io.IOException: Cannot read full block, EOF reached.
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.getBlock(CipherInputStream.java:81)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.read(CipherInputStream.java:108)
+	at com.trilead.ssh2.transport.TransportConnection.receiveMessage(TransportConnection.java:232)
+	at com.trilead.ssh2.transport.TransportManager.receiveLoop(TransportManager.java:706)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:502)
+Caused: java.io.IOException: The connection is being shutdown
+	at com.trilead.ssh2.channel.ChannelManager.handleEndMessage(ChannelManager.java:1525)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:535)
+	at java.lang.Thread.run(Thread.java:748)
+Caused: java.io.IOException: SSH channel is closed
+	at com.trilead.ssh2.channel.ChannelManager.ioException(ChannelManager.java:1543)
+	at com.trilead.ssh2.channel.ChannelManager.sendData(ChannelManager.java:373)
+	at com.trilead.ssh2.channel.ChannelOutputStream.write(ChannelOutputStream.java:63)
+	at com.trilead.ssh2.channel.ChannelOutputStream.write(ChannelOutputStream.java:68)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:89)
+	at hudson.remoting.ChunkedOutputStream.drain(ChunkedOutputStream.java:85)
+	at hudson.remoting.ChunkedOutputStream.write(ChunkedOutputStream.java:54)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:45)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:47)
+	at hudson.remoting.Channel.send(Channel.java:721)
+	at hudson.remoting.Request.call(Request.java:160)
+	at hudson.remoting.Channel.call(Channel.java:954)
+	at hudson.Launcher$RemoteLauncher.kill(Launcher.java:1085)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:510)
+	at hudson.model.Run.execute(Run.java:1810)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Returning node parameter for slaven
+Triggering a new build of [8mha:////4GSMADjgqkCNmBzA2QsvN/Wccc1XGwE4H0h2j/LsP3Z4AAAAqh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzZEgZV/az8JP2A0oKC1BIw07QAzI4vzkksS40HGpKWma4PAPoxwhLaAAAA[0mPuppet » 5puppet_slave_config
+Finished: FAILURE

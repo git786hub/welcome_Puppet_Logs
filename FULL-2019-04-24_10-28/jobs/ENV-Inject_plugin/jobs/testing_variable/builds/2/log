@@ -1,0 +1,6 @@
+Started by user unknown or anonymous
+Building on master in workspace /var/lib/jenkins/workspace/testing_variable
+[testing_variable] $ /bin/sh -xe /tmp/jenkins5112090327929803038.sh
+++ echo hello
++ AOEU=hello
+Finished: SUCCESS

@@ -1,0 +1,119 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.6"/>
+    <hudson.plugins.git.util.BuildData plugin="git@3.9.3">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.7.6">
+              <sha1>b5a47daabc3651da8a8209903a3e15dcf820e763</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>2</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>https://github.com/git786hub/welcome_Puppet_Logs.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.9.3">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/home/ec2-user/jenkin/workspace/last_chaange_plugin/last_CHANGE</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <com.github.jenkins.lastchanges.LastChangesBuildAction plugin="last-changes@2.7.3">
+      <buildChanges>
+        <currentRevision>
+          <commitId>b5a47daabc3651da8a8209903a3e15dcf820e763</commitId>
+          <commitMessage>last change plugin</commitMessage>
+          <committerName>GitHub</committerName>
+          <committerEmail>noreply@github.com</committerEmail>
+          <commitDate>Apr 6, 2019 2:05:56 PM GMT+05:30</commitDate>
+        </currentRevision>
+        <previousRevision>
+          <commitId>d6e064a0a7066d909d8bb88d04ac95abe9a2a082</commitId>
+          <commitMessage>template</commitMessage>
+          <committerName>GitHub</committerName>
+          <committerEmail>noreply@github.com</committerEmail>
+          <commitDate>Apr 5, 2019 4:26:08 PM GMT+05:30</commitDate>
+        </previousRevision>
+        <diff>diff --git a/script.sh.txt b/script.sh.txt
+index eb66088..cefcc3a 100644
+--- a/script.sh.txt
++++ b/script.sh.txt
+@@ -1,4 +1,5 @@
+ #!/bin/bash
++#pulkit
+ export Slave=0
+ sudo yum install java -y
+ sudo chmod +x /home/ec2-user/script.sh
+</diff>
+        <commits>
+          <com.github.jenkins.lastchanges.model.CommitChanges>
+            <commitInfo reference="../../../currentRevision"/>
+            <changes>diff --git a/script.sh.txt b/script.sh.txt
+index eb66088..cefcc3a 100644
+--- a/script.sh.txt
++++ b/script.sh.txt
+@@ -1,4 +1,5 @@
+ #!/bin/bash
++#pulkit
+ export Slave=0
+ sudo yum install java -y
+ sudo chmod +x /home/ec2-user/script.sh
+</changes>
+          </com.github.jenkins.lastchanges.model.CommitChanges>
+        </commits>
+      </buildChanges>
+      <config>
+        <format>LINE</format>
+        <matching>NONE</matching>
+        <matchWordsThreshold>0.25</matchWordsThreshold>
+        <matchingMaxComparisons>1000.0</matchingMaxComparisons>
+        <showFiles>true</showFiles>
+        <synchronisedScroll>true</synchronisedScroll>
+        <since>PREVIOUS_REVISION</since>
+        <specificRevision></specificRevision>
+      </config>
+    </com.github.jenkins.lastchanges.LastChangesBuildAction>
+  </actions>
+  <queueId>514</queueId>
+  <timestamp>1554539815458</timestamp>
+  <startTime>1554539815497</startTime>
+  <result>SUCCESS</result>
+  <duration>2134</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn>5master</builtOn>
+  <workspace>/home/ec2-user/jenkin/workspace/last_chaange_plugin/last_CHANGE</workspace>
+  <hudsonVersion>2.150.3</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.9.3">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
+    <string>noreply</string>
+  </culprits>
+</build>

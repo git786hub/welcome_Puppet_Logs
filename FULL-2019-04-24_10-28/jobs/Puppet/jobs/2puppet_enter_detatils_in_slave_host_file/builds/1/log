@@ -1,0 +1,10 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4AzgnYCZXns5Rm66SWuZns1IAsC0kevZDIvVSVeKChsFAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/eKcxLJUAEnZB8bEAAAA[0mslave in workspace /root/jenkin/workspace/Puppet/2puppet_enter_detatils_in_slave_host_file
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path '/root/jenkin/workspace/Puppet/1Create_slave/propsfile'
+[EnvInject] - Variables injected successfully.
+[2puppet_enter_detatils_in_slave_host_file] $ /bin/sh -xe /tmp/jenkins8096809575380799612.sh
++ sudo sed -i ' 3ix.x.x.x  pulkit' /etc/hosts
++ sudo sed -i '$ix.x.x.x  pulkit' /etc/hosts
+Finished: SUCCESS

@@ -1,0 +1,43 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <assignedNode>73</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <EnvInjectBuilder plugin="envinject@2.1.6">
+      <info>
+        <propertiesFilePath>/home/ec2-user/jenkin/workspace/Puppet/1Create_slave/propsfile</propertiesFilePath>
+      </info>
+    </EnvInjectBuilder>
+    <hudson.tasks.Shell>
+      <command>sudo  sed -i &quot;$ a [main]&quot; /etc/puppetlabs/puppet/puppet.conf
+</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>sudo sed -i &quot;/\[main\]/a  runinterval = $runinterval&quot; /etc/puppetlabs/puppet/puppet.conf</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>sudo sed -i &quot;/\[main\]/a  environment = $environment&quot; /etc/puppetlabs/puppet/puppet.conf</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>sudo sed -i &quot;/\[main\]/a  server = $DNS_Name&quot; /etc/puppetlabs/puppet/puppet.conf</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>sudo sed -i &quot;/\[main\]/a  certname = $Puppet_Slave_IP_DNS&quot; /etc/puppetlabs/puppet/puppet.conf</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

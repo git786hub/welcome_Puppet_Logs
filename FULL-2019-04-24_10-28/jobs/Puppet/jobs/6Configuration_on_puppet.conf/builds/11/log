@@ -1,0 +1,19 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/6Configuration_on_puppet.conf
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path '/pulkit/workspace/Puppet/1Create_Puppet_Master/propsfile1'
+[EnvInject] - Variables injected successfully.
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins31160913450843269.sh
++ sudo sed -i '/\[master\]/a dns_alt_names=alpha,puppet' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins3443512517584543345.sh
++ sudo sed -i '/\[main\]/a  runinterval = 1h' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins5227048974012684600.sh
++ sudo sed -i '/\[main\]/a  environment = alpha' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins7478318028438747126.sh
++ sudo sed -i '/\[main\]/a server=alpha' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins4418320492323790369.sh
++ sudo sed -i '/\[main\]/a  certname=alpha' /etc/puppetlabs/puppet/puppet.conf
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins8289481978860995456.sh
+[6Configuration_on_puppet.conf] $ /bin/sh -xe /tmp/jenkins4353608473544707450.sh
+Finished: SUCCESS

@@ -1,0 +1,69 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KFH+lXND8BHwBdWOe+JW4Yp07+i5/Z8FHGjTf2zKIs6AAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQi/cT01LwScwMAY/i2HcYAAAA=[0magent70 in workspace /home/ec2-user/jenkin/workspace/Puppet/3puppet_slave_install_script
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins5836212233566252794.sh
++ sudo yum -y install ntp ntpdate
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+Resolving Dependencies
+--> Running transaction check
+---> Package ntp.x86_64 0:4.2.6p5-28.amzn2.2.2 will be installed
+--> Processing Dependency: libopts.so.25()(64bit) for package: ntp-4.2.6p5-28.amzn2.2.2.x86_64
+---> Package ntpdate.x86_64 0:4.2.6p5-28.amzn2.2.2 will be installed
+--> Running transaction check
+---> Package autogen-libopts.x86_64 0:5.18-5.amzn2.0.2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch       Version                    Repository      Size
+================================================================================
+Installing:
+ ntp                 x86_64     4.2.6p5-28.amzn2.2.2       amzn2-core     552 k
+ ntpdate             x86_64     4.2.6p5-28.amzn2.2.2       amzn2-core      86 k
+Installing for dependencies:
+ autogen-libopts     x86_64     5.18-5.amzn2.0.2           amzn2-core      67 k
+
+Transaction Summary
+================================================================================
+Install  2 Packages (+1 Dependent package)
+
+Total download size: 705 k
+Installed size: 1.6 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              2.8 MB/s | 705 kB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : ntpdate-4.2.6p5-28.amzn2.2.2.x86_64                          1/3 
+  Installing : autogen-libopts-5.18-5.amzn2.0.2.x86_64                      2/3 
+  Installing : ntp-4.2.6p5-28.amzn2.2.2.x86_64                              3/3 
+  Verifying  : ntp-4.2.6p5-28.amzn2.2.2.x86_64                              1/3 
+  Verifying  : autogen-libopts-5.18-5.amzn2.0.2.x86_64                      2/3 
+  Verifying  : ntpdate-4.2.6p5-28.amzn2.2.2.x86_64                          3/3 
+
+Installed:
+  ntp.x86_64 0:4.2.6p5-28.amzn2.2.2    ntpdate.x86_64 0:4.2.6p5-28.amzn2.2.2   
+
+Dependency Installed:
+  autogen-libopts.x86_64 0:5.18-5.amzn2.0.2                                     
+
+Complete!
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins5506272176241263015.sh
++ sudo ntpdate 0.centos.pool.ntp.org
+30 Mar 14:56:06 ntpdate[1190]: adjust time server 69.89.207.199 offset -0.001013 sec
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins760878439413420545.sh
++ sudo systemctl start ntpd
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins4494782362239147252.sh
++ sudo systemctl enable ntpd
+Created symlink from /etc/systemd/system/multi-user.target.wants/ntpd.service to /usr/lib/systemd/system/ntpd.service.
+[3puppet_slave_install_script] $ /bin/sh -xe /tmp/jenkins2593749631004518051.sh
++ sudo rpm -Uvh https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+warning: /var/tmp/rpm-tmp.kH3FWh: Header V4 RSA/SHA256 Signature, key ID ef8d349f: NOKEY
+Retrieving https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
+Preparing...                          ########################################
+Updating / installing...
+puppet5-release-5.0.0-4.el7           ########################################
+Finished: SUCCESS

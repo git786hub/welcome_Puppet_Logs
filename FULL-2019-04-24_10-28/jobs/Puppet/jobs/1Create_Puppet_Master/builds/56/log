@@ -1,0 +1,11 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4MycucIv5ODuYm3Fmg1V+Izk1E1xmyLR7+ovjja1uTR+AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifaPcxGIgDQDHHrzpxgAAAA==[0m2master in workspace /home/ec2-user/jenkin/workspace/Puppet/1Create_Puppet_Master
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins2784167838387615061.sh
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/1Create_Puppet_Master
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins2366431134239014335.sh
++ sudo sed -i '$i172.30.4.56   2master.pulkit.co' /etc/hosts
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins6535582520749528303.sh
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins3007093887548632306.sh
+Finished: SUCCESS

@@ -1,0 +1,20 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Hra6a3XwZ0tmlvp9zu1e/v5XAH8a4OUkHe773jQTF0tAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMLAGI9RnvBAAAA[0m78 in workspace /home/ec2-user/jenkin/workspace/Puppet/8slave_agent--test
+[8slave_agent--test] $ /bin/sh -xe /tmp/jenkins4486764032023400502.sh
++ sudo /opt/puppetlabs/bin/puppet agent --test
+[1;33mWarning: Unable to fetch my node definition, but the agent run will continue:[0m
+[1;33mWarning: SSL_connect returned=1 errno=0 state=error: certificate verify failed: [unable to get local issuer certificate for /CN=5master.pulkit.co][0m
+[0;32mInfo: Retrieving pluginfacts[0m
+[1;31mError: /File[/opt/puppetlabs/puppet/cache/facts.d]: Failed to generate additional resources using 'eval_generate': SSL_connect returned=1 errno=0 state=error: certificate verify failed: [unable to get local issuer certificate for /CN=5master.pulkit.co][0m
+[1;31mError: /File[/opt/puppetlabs/puppet/cache/facts.d]: Could not evaluate: Could not retrieve file metadata for puppet:///pluginfacts: SSL_connect returned=1 errno=0 state=error: certificate verify failed: [unable to get local issuer certificate for /CN=5master.pulkit.co][0m
+[0;32mInfo: Retrieving plugin[0m
+[1;31mError: /File[/opt/puppetlabs/puppet/cache/lib]: Failed to generate additional resources using 'eval_generate': SSL_connect returned=1 errno=0 state=error: certificate verify failed: [unable to get local issuer certificate for /CN=5master.pulkit.co][0m
+[1;31mError: /File[/opt/puppetlabs/puppet/cache/lib]: Could not evaluate: Could not retrieve file metadata for puppet:///plugins: SSL_connect returned=1 errno=0 state=error: certificate verify failed: [unable to get local issuer certificate for /CN=5master.pulkit.co][0m
+[0;32mInfo: Loading facts[0m
+[1;31mError: Could not retrieve catalog from remote server: SSL_connect returned=1 errno=0 state=error: certificate verify failed: [unable to get local issuer certificate for /CN=5master.pulkit.co][0m
+[1;33mWarning: Not using cache on failed catalog[0m
+[1;31mError: Could not retrieve catalog; skipping run[0m
+[1;31mError: Could not send report: SSL_connect returned=1 errno=0 state=error: certificate verify failed: [unable to get local issuer certificate for /CN=5master.pulkit.co][0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

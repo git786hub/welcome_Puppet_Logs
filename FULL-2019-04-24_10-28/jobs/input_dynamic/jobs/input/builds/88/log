@@ -1,0 +1,82 @@
+Started by user unknown or anonymous
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4EKPfpIi/Is1xzvg6INFSFB9LusYwBjNfC9Egyg+Ax5tAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4IIDC7aPo1yIFjBXV2m3pVBrKUW4kbGq1T0Ps0lE6tZWAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4JjUmvdQM9IGM6nb7UWEE0s0d6UqsKsx9zAPIwJ+qd7XAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/input_dynamic/input
+[8mha:////4PNBMF5ZijHT4pOzGcP0wY6WLkA3VXD8ncfNo1PRacHYAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4OCiQ6KPi2oA1eG4JVKNfaMagzL3g1EHqEqDRAwWoOu8AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4OlDbMOIsdemGubF05pkd8yrSXngzVczBXRF8oldsSZpAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (input)
+[8mha:////4HwhcScmx0NTLrnTf5iXkWVQ/AF6aqF3ymUF7rU4OqXzAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] input
+[8mha:////4ObbbxATPEwJZWpaitBLs1fUsnfjyM9PSZqc/OKkZeuFAAAAmR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2FQ08/KT9LPzCsoLYlPqcxLzM1MRojoW1hAGQC1nFqlqwAAAA==[0mInput requested
+[8mha:////4MHzC01OoKs/eLn+QRpiS4WnjW4Rj1t6SOEU0xFaZmgTAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED8v8DEJvAAAAA==[0m[Pipeline] echo
+cd / && ls -la
+[8mha:////4P6S7VaCvt3PtPrlcdbtuJjCCKkHwZLKc+TtYVBdWGrVAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbmRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI4F2L72ED9uwSoQvAAAAA==[0m[Pipeline] sh
++ cd /
++ ls -la
+[8mha:////4PL0v1//UG98XKFgVeN2qXZRTzb1u120Cd31/duE2p+gAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiJoY+NY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMnSDbC/LdtvsAfEnCxL0AAAA=[0m[Pipeline] echo
+total 16
+dr-xr-xr-x  18 root root  257 Mar 14 10:38 .
+dr-xr-xr-x  18 root root  257 Mar 14 10:38 ..
+-rw-r--r--   1 root root    0 Mar 14 10:38 .autorelabel
+lrwxrwxrwx   1 root root    7 Mar  8 19:58 bin -> usr/bin
+dr-xr-xr-x   4 root root  332 Mar  8 20:00 boot
+drwxr-xr-x  15 root root 2820 Apr 12 06:58 dev
+drwxr-xr-x  90 root root 8192 Apr 12 11:01 etc
+drwxr-xr-x   3 root root   22 Mar 14 10:38 home
+lrwxrwxrwx   1 root root    7 Mar  8 19:58 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Mar  8 19:58 lib64 -> usr/lib64
+drwxr-xr-x   2 root root    6 Mar  8 19:58 local
+drwxr-xr-x   2 root root    6 Jul 27  2018 media
+drwxr-xr-x   2 root root    6 Jul 27  2018 mnt
+drwxr-xr-x   4 root root   27 Mar  8 19:59 opt
+dr-xr-xr-x 113 root root    0 Apr 12 06:58 proc
+dr-xr-x---   4 root root  138 Apr 12 11:03 root
+drwxr-xr-x  28 root root 1080 Apr 12 11:02 run
+lrwxrwxrwx   1 root root    8 Mar  8 19:58 sbin -> usr/sbin
+drwxr-xr-x   2 root root    6 Jul 27  2018 srv
+dr-xr-xr-x  13 root root    0 Apr 12 06:58 sys
+drwxrwxrwt  17 root root 4096 Apr 12 19:35 tmp
+drwxr-xr-x  13 root root  155 Mar  8 19:58 usr
+drwxr-xr-x  19 root root  269 Mar 14 10:38 var
+
+[8mha:////4P/Fm9sCIh29dgLSQ7IJRymzlh+qke2DfVg9LAmsKr67AAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiIMjY1jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9YJsL8jLsv8APXjZ3b0AAAA=[0m[Pipeline] input
+[8mha:////4ObbbxATPEwJZWpaitBLs1fUsnfjyM9PSZqc/OKkZeuFAAAAmR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2FQ08/KT9LPzCsoLYlPqcxLzM1MRojoW1hAGQC1nFqlqwAAAA==[0mInput requested
+[8mha:////4BZHGHzQ7kGnk8r/r8wv8tVBRuFWRw2UeGCCUg1rsk4gAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2AmyvSDf7roP/iv09r0AAAA=[0m[Pipeline] echo
+cd /opt && ls -la
+[8mha:////4CvjdZnn3qAbZNNxSHihZBt7M9OKmAspcM2OW7QkBBvpAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRQqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axk6Q7QX5dtd9AL8a7++9AAAA[0m[Pipeline] sh
++ cd /opt
++ ls -la
+[8mha:////4DtzybEFwJCifyIfT0CwbVhPOBl5W7i1IhUqM902bSQ8AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREqJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axk6Q7QX5dtd9AHiMrqC9AAAA[0m[Pipeline] echo
+total 0
+drwxr-xr-x  4 root root  27 Mar  8 19:59 .
+dr-xr-xr-x 18 root root 257 Mar 14 10:38 ..
+drwxr-xr-x  4 root root  33 Mar  8 19:59 aws
+drwxr-xr-x  2 root root   6 Aug 16  2018 rh
+
+[8mha:////4HcRwZ/pV7BDuVq+iVlgWEhtmcLirtc2LrKaXIFUeBrhAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRBTSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2AmyvSDf7roPOb21ub0AAAA=[0m[Pipeline] input
+[8mha:////4ObbbxATPEwJZWpaitBLs1fUsnfjyM9PSZqc/OKkZeuFAAAAmR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2FQ08/KT9LPzCsoLYlPqcxLzM1MRojoW1hAGQC1nFqlqwAAAA==[0mInput requested
+[8mha:////4LKdl6+m73n1fIPQM+VP/b7eyTisRhlSaB5s7c/AUOrUAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiKMDY1jZZuh8QQRYgxkdjFZhMoTeTXvICMzVv7qv9e81xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9YKsFOT7sv8A+u6Ykr0AAAA=[0m[Pipeline] echo
+echo $USER
+[8mha:////4NnHAgh+CLQ0VSzB+ceVmvph0APimpiugodpD63aOtmMAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDRSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2AmynSDf7rsPu9+Di70AAAA=[0m[Pipeline] sh
++ echo jenkins
+[8mha:////4A61OCcHuPZtiqyZlmBbwQNp3SHKIk+m0qFfPBVisrBRAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDUJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axk6Q7QT5dt99AHTDGwy9AAAA[0m[Pipeline] echo
+jenkins
+
+[8mha:////4D8BpEPLRq0rwD6eYhQJuoDYc9u3RSQV4pxA+85PKEz4AAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRDRJCVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axk6Q7QT5dt99ADXyABW9AAAA[0m[Pipeline] input
+[8mha:////4ObbbxATPEwJZWpaitBLs1fUsnfjyM9PSZqc/OKkZeuFAAAAmR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMjgL2FQ08/KT9LPzCsoLYlPqcxLzM1MRojoW1hAGQC1nFqlqwAAAA==[0mInput requested
+[8mha:////4AKBEApEehp9IpGif2kgvOG8gKn2igEr3411U95sS0nmAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBFDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2AmyvSDfbbsPJfeExr0AAAA=[0m[Pipeline] echo
+vi abc.txt
+[8mha:////4P7pkdwwdTGC2Z5+mE37knBF2E0SYngZzuKd/bXP4lMZAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIRFDSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2AmyvSDfbbsPZMaf370AAAA=[0m[Pipeline] sh
++ vi abc.txt
+Vim: Warning: Output is not to a terminal
+Vim: Warning: Input is not from a terminal
+[m[m[0m[H[2J[24;1H"abc.txt" [New File][2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [1;1H[24;1H[0mVim: Error reading input, exiting...
+Vim: Finished.
+[24;1H
+[8mha:////4MSSq2Nh0AONo2fENJgbVjsFWvuXX348hLoyJJ3RdBEpAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FeVkKsv0HZ2sfwL0AAAA=[0m[Pipeline] }
+[8mha:////4BUMJh+go4hjluMyk+RdYatmk7fFaHUUKkpcKiswDzS6AAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsTZPsPbRN2ZL0AAAA=[0m[Pipeline] // stage
+[8mha:////4Ao6g3TDcbvqZef99Y62pOsFHuhXV3gP1nwHgMJYjf/bAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6Ikhs04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwA6/9Rob0AAAA=[0m[Pipeline] }
+[8mha:////4KfrwtHBQCTst6EOVsMIyW9bKXywJt5yqWS/nSTi2CVmAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsP+ENVAr0AAAA=[0m[Pipeline] // node
+[8mha:////4CLSik8RPOPdpNBk9Y6Q3pbJeEkdm/6UJ4TgMXYeOVvfAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHvgnyMr0AAAA=[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

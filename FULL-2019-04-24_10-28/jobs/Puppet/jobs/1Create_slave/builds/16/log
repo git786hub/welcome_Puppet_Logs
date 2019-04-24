@@ -1,0 +1,23 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /var/lib/jenkins/workspace/Puppet/1Create_slave
+[1Create_slave] $ /bin/sh -xe /tmp/jenkins5011554263181399221.sh
+++ echo master.pulkit.co
++ echo DNS_Name=master.pulkit.co
+++ echo 1h
++ echo runinterval=1h
+++ echo production
++ echo environment=production
+++ echo 172.30.4.144
++ echo Puppet_Master_IP_address=172.30.4.144
+++ echo 172.30.4.128
++ echo Puppet_Slave_IP_address=172.30.4.128
+++ echo 74.pulkit.co
++ echo Puppet_Slave_IP_DNS=74.pulkit.co
++ pwd
+/var/lib/jenkins/workspace/Puppet/1Create_slave
+[1Create_slave] $ /bin/sh -xe /tmp/jenkins2091616728677739565.sh
++ cat /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/DNS_Name /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/runinterval /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/environment /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/Puppet_Master_IP_address /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/Puppet_Slave_IP_address /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/Puppet_Slave_IP_DNS
+/tmp/jenkins2091616728677739565.sh: line 2: /home/ec2-user/jenkin/workspace/Puppet/1Create_slave/propsfile: Permission denied
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

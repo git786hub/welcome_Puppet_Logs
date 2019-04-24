@@ -1,0 +1,8 @@
+Started by upstream project "[8mha:////4OQ2HceQntSsmC+UWObSd+uxvRHvwKNMcL5OKUBEMeo6AAAArR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyZEgYN/az8JP2A0oKC1BIw09C5KDWxJFXVyAAiGO+bWFySWqQPAHQjxx/dAAAA[0mPuppet/1Create Puppet_Master" build number [8mha:////4PDqHPXSYsCTZfejMmGac8YsUE1T93snBqpuEV21CANYAAAArx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYt/az8JP2A0oKC1BIw09C5KDWxJFXVyAAiGO+bWFySWqRvZAgAAFZTmN8AAAA=[0m21
+originally caused by:
+ Started by user unknown or anonymous
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/6test
+[6test] $ /bin/sh -xe /tmp/jenkins4406572392085767851.sh
++ echo
+
+Finished: SUCCESS

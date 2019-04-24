@@ -1,0 +1,16 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4KCi5FDToNiYiiA4tetjZuIG2vUn3wBp13p1PC4Naj8KAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/eT83ILSktQi/YDSgtQS3dzEYiAHANRnwdXLAAAA[0mPupet-master (puppet-master) in workspace /pulkit/workspace/Puppet/Site.pp
+[Site.pp] $ /bin/sh -xe /tmp/jenkins6774035080901978499.sh
++ sudo echo node ''\''agent.pulkit.co'\''{' class '{' ''\''docker'\'':' use_upstream_package_source '=>' false, service_overrides_template '=>' false, docker_ce_package_name '=>' ''\''docker'\'',' '}' includ git class '{' ''\''java'\''' : package '=>' ''\''java-1.8.0-openjdk-devel'\'',' '}' tomcat::install '{' ''\''/opt/tomcat'\'':' source_url '=>' ''\''https://www.apache.org/dist/tomcat/tomcat-9/v9.0.16/bin/apache-tomcat-9.0.16.tar.gz'\'',' '}' tomcat::instance '{' ''\''default'\'':' catalina_home '=>' ''\''/opt/tomcat'\'',' '}' package '{' ''\''httpd'\'':' ensure '=>' '"installed",' '}' service '{' ''\''httpd'\'':' ensure '=>' running, enable '=>' true '}' '}'
+[Site.pp] $ /bin/sh -xe /tmp/jenkins2987954078145275338.sh
++ sudo mv /pulkit/workspace/Puppet/Site.pp/we.pp /etc/puppetlabs/code/environments/production/manifests/
+[Site.pp] $ /bin/sh -xe /tmp/jenkins4121545284877304430.sh
++ echo --------------------------------------------------------
+--------------------------------------------------------
++ echo PARSER VALIDATE RESULTS
+PARSER VALIDATE RESULTS
++ puppet parser validate /etc/puppetlabs/code/environments/production/manifests/we.pp
+[1;31mError: Could not parse for environment production: This Name has no effect. A value was produced and then forgotten (one or more preceding expressions may have the wrong form) (file: /etc/puppetlabs/code/environments/production/manifests/we.pp, line: 1, column: 156)[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

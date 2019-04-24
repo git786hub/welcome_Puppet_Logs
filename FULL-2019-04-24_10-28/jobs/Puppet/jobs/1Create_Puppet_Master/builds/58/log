@@ -1,0 +1,20 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4Pf7rSD80t1QGqdTmUXrwmkwXwneYfv2ZnyRIpLFD0WVAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifZPcxGIgDQD9K2yKxgAAAA==[0m4master in workspace /home/ec2-user/jenkin/workspace/Puppet/1Create_Puppet_Master
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins5426714513498700777.sh
++ pwd
+/home/ec2-user/jenkin/workspace/Puppet/1Create_Puppet_Master
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins8168676137236982299.sh
++ sudo sed -i '$i172.30.4.27   4master.pulkit.co' /etc/hosts
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins7722654101659494703.sh
+++ echo 4master.pulkit.co
++ echo DNS_Name=4master.pulkit.co
+++ echo 1h
++ echo runinterval=1h
+++ echo production
++ echo environment=production
+[1Create_Puppet_Master] $ /bin/sh -xe /tmp/jenkins344173991547215279.sh
++ cat /home/ec2-user/jenkin/workspace/Puppet/1Create_Puppet_Master/DNS_Name /home/ec2-user/jenkin/workspace/Puppet/1Create_Puppet_Master/runinterval /home/ec2-user/jenkin/workspace/Puppet/1Create_Puppet_Master/environment
+Returning node parameter for 4master
+Triggering a new build of [8mha:////4M8N9uDqKDcync5qnSTx+P8GMXNKCVoP0J2NzPWp7i+PAAAAsx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy1EgY9/az8JP2A0oKC1BIw0wjCjs9NLC5JLYrPzCsuSczJiS9OLsosKNEHADMFHC3jAAAA[0mPuppet » 2Puppet_master_install_script
+Finished: SUCCESS

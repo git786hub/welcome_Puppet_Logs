@@ -1,0 +1,18 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4K/Ovz+xHp11Io6MBVDojmv2xD3wj8kCoIwJRM5W7P4TAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYe/eT83ILSktQifXMjAHzUk5vBAAAA[0m72 in workspace /home/ec2-user/jenkin/workspace/Puppet/7verify_slave
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins6157767294926785702.sh
++ sudo systemctl status puppet -l
+● puppet.service - Puppet agent
+   Loaded: loaded (/usr/lib/systemd/system/puppet.service; enabled; vendor preset: disabled)
+   Active: active (running) since Sun 2019-03-31 10:13:51 UTC; 1min 59s ago
+ Main PID: 3636 (puppet)
+   CGroup: /system.slice/puppet.service
+           └─3636 /opt/puppetlabs/puppet/bin/ruby /opt/puppetlabs/puppet/bin/puppet agent --no-daemonize
+
+Mar 31 10:13:51 ip-172-30-4-118.ec2.internal systemd[1]: Started Puppet agent.
+Mar 31 10:13:51 ip-172-30-4-118.ec2.internal systemd[1]: Starting Puppet agent...
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins7545790828636176933.sh
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins8223196592321515208.sh
+[7verify_slave] $ /bin/sh -xe /tmp/jenkins7014898655669892344.sh
+Finished: SUCCESS

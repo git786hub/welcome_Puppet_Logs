@@ -1,0 +1,25 @@
+Started by user unknown or anonymous
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4D6f41d2qYFVo09aNJxeY4QEFRLv4OjuzlJfiLs7aADKAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZB/eT83ILSktQifdPcxGIgDQBJIBssxgAAAA==[0m5master in workspace /home/ec2-user/jenkin/workspace/last_chaange_plugin/last_CHANGE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/git786hub/welcome_Puppet_Logs.git
+ > git init /home/ec2-user/jenkin/workspace/last_chaange_plugin/last_CHANGE # timeout=10
+Fetching upstream changes from https://github.com/git786hub/welcome_Puppet_Logs.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/git786hub/welcome_Puppet_Logs.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/git786hub/welcome_Puppet_Logs.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/git786hub/welcome_Puppet_Logs.git # timeout=10
+Fetching upstream changes from https://github.com/git786hub/welcome_Puppet_Logs.git
+ > git fetch --tags --progress https://github.com/git786hub/welcome_Puppet_Logs.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d6e064a0a7066d909d8bb88d04ac95abe9a2a082 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d6e064a0a7066d909d8bb88d04ac95abe9a2a082
+Commit message: "template"
+First time build. Skipping changelog.
+Publishing build last changes...
+[8mha:////4KvP7DPAXjPdWdLVttIqKcLKD9A1hgs4pzgiaAJOKPA4AAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMiIKmEQ1NPTNwQaUVyim5wBNCi1GAAjj1NclgAAAA==[0mLast changes from revision d6e064a (current) to 9b0b7bf (previous) published successfully!
+Finished: SUCCESS
